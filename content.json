@@ -293,6 +293,8 @@
                 }
             }
         },
+                //      "{{ModId}}_BangChan2Beach": "speak {{ModId}}_SKZBangChan \"Answer 1 response\"./end",
+                // "{{ModId}}_BangChan2Forest": "speak {{ModId}}_SKZBangChan \"Answer 2 response.\"/
                 //         move {{ModId}}_SKZBangChan 0 -4 0/
                 // speak {{ModId}}_SKZBangChan \"No, its not right.\"/
                 // move {{ModId}}_SKZBangChan 0 4 2/
@@ -306,28 +308,37 @@
                 // speak {{ModId}}_SKZBangChan \"The location needs to be perfect...\"/
                 // speak {{ModId}}_SKZBangChan \"The boys and the whole company are counting on me to make this project amazing after we’ve spent so long here working on it.\"/
                 // speak {{ModId}}_SKZBangChan \"I can’t let them down...\"/
+                //      "{{ModId}}_BangChan2Beach": "speak {{ModId}}_SKZBangChan \"Answer 1 response\"./end",
+                // "{{ModId}}_BangChan2Forest": "speak {{ModId}}_SKZBangChan \"Answer 2 response.\"/
+                // speak {{ModId}}_SKZBangChan \"Answer again response.\"/end",
+                // "{{ModId}}_BangChan2Town": "end",
+                // "{{ModId}}_BangChanEvent2/f {{ModId}}_SKZBangChan 500/Time 600 1200": "none/follow/
+                // farmer 21 16 0 {{ModId}}_SKZBangChan 21 14 0/
+                // skippable/
+                // viewport 21 14 clamp/
+                // speak {{ModId}}_SKZBangChan \"So, do you know any good places?\"/
+                // quickQuestion \"Do you know of any good places?\"#The beach.#The forest.#Pelican Town.
+                // (break)speak {{ModId}}_SKZBangChan \"You chose the beach.\"\\switchEvent {{ModId}}_BangChan2Beach(break)speak {{ModId}}_SKZBangChan \"You chose the forest.\"\\switchEvent {{ModId}}_BangChan2Forest(break)speak {{ModId}}_SKZBangChan \"You chose Pelican Town.\"\\switchEvent {{ModId}}_BangChan2Town
+                // speak {{ModId}}_SKZBangChan \"Oh Okay\"/
+                // /pause 300/end"
         {
+            "LogName": "BangChan Location Event",
             "Action": "EditData",
             "Target": "Data/Events/Backwoods",
             "Entries": {
+                "3QKEY": "This is the Question.#'This is answer 1.'#'This is answer 2.'#'This is answer 3.'",
+                "i18nkey": "I am the NPC talking",
+                "{{ModId}}_Answer1": "pause 300/I am continuing where the switchEvent for answer 1 is/", //take note how this one doesn't start like a standard event entry? think of this as continuing the original event script
+                "{{ModId}}_Answer2": "pause 300/I am continuing where the switchEvent for answer 1 is/",
                 "{{ModId}}_BangChanEvent2/f {{ModId}}_SKZBangChan 500/Time 600 1200": "none/follow/
-                farmer 21 16 0 {{ModId}}_SKZBangChan 21 14 0/
-                skippable/
-                viewport 21 14 clamp/
-
-                speak {{ModId}}_SKZBangChan \"So, do you know any good places?\"/
-                question fork0 \"Do you knbow of any good places?#The beach.#The forest.#Pelican town.\"/
-                fork QuestionForkAnswerBeach/
-                fork QuestionForkAnswerForest/
-                speak {{ModId}}_SKZBangChan \"Pelican Town? Well lead the way!\"
-                /end",
-                "QuestionForkAnswerBeach": 
-                "speak {{ModId}}_SKZBangChan \"The Beach? Well lead the way!\"
-                /end",
-                "QuestionForkAnswerForest": 
-                "speak {{ModId}}_SKZBangChan \"The Forest? Well lead the way!\"
-                /end",
-               
+                farmer 21 16 0 {{ModId}}_SKZBangChan 21 14 0
+                /skippable
+                /quickQuestion This is the Question.#'This is answer 1.'#'This is answer 2.'#'This is answer 3.' (break)I am the script for answer 1\\I am continuing the script for answer 1\\switchEvent {{ModId}}_Answer1(break)I am the script for answer 2\\I am continuing the script for answer 2\\switchEvent {{ModId}}_Answer2(break)I am the script for answer 3\\I am continuing the script for answer 3
+                /BUT WAIT, I'M CIRCLING BACK TO THIS MAIN EVENT
+                /speak <NPC> \"{{i18n:i18nkey}}\"
+                /pause 300
+                /end", 
+                
             }
         },
         {
