@@ -9,13 +9,18 @@
         },
         {
             "Action": "Load",
+            "Target": "Portraits/{{ModId}}_SKZFelix_Winter",
+            "FromFile": "Portraits/SKZFelixWinter.png"
+        },
+        {
+            "Action": "Load",
             "Target": "Portraits/{{ModId}}_SKZBangChan",
             "FromFile": "Portraits/SKZBangChan.png"
         },
         {
             "Action": "Load",
-            "Target": "Portraits/{{ModId}}_SKZFelix_Winter",
-            "FromFile": "Portraits/SKZFelixWinter.png"
+            "Target": "Portraits/{{ModId}}_SKZBangChan_Winter",
+            "FromFile": "Portraits/SKZBangChanWinter.png"
         },
         {
             "Action": "Load",
@@ -24,7 +29,7 @@
         },
         {
             "Action": "Load",
-            "Target": "Portraits/{{ModId}}_SKZChangBinWinter",
+            "Target": "Portraits/{{ModId}}_SKZChangBin_Winter",
             "FromFile": "Portraits/SKZChangBinWinter.png"
         },
         {
@@ -34,7 +39,7 @@
         },
         {
             "Action": "Load",
-            "Target": "Portraits/{{ModId}}_SKZHyunjinWinter",
+            "Target": "Portraits/{{ModId}}_SKZHyunjin_Winter",
             "FromFile": "Portraits/SKZHyunjinWinter.png"
         },
     {
@@ -44,8 +49,18 @@
         },
         {
             "Action": "Load",
-            "Target": "Portraits/{{ModId}}_SKZSeungminWinter",
+            "Target": "Portraits/{{ModId}}_SKZSeungmin_Winter",
             "FromFile": "Portraits/SKZSeungminWinter.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/{{ModId}}_SKZLeeKnow",
+            "FromFile": "Portraits/SKZLeeKnow.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/{{ModId}}_SKZLeeKnow_Winter",
+            "FromFile": "Portraits/SKZLeeKnowWinter.png"
         },
         //Characters 
         {
@@ -65,12 +80,18 @@
         },
         {
             "Action": "Load",
-            "Target": "Characters/{{ModId}}_SKZChangBin",
-            "FromFile": "Characters/SKZChangBin.png"
+            "Target": "Characters/{{ModId}}_SKZBangChan_Winter",
+            "FromFile": "Characters/SKZBangChanWinter.png"
         },
         {
             "Action": "Load",
-            "Target": "Characters/{{ModId}}_SKZChangBinWinter",
+            "Target": "Characters/{{ModId}}_SKZChangBin",
+            "FromFile": "Characters/SKZChangBin.png"
+        },
+        
+        {
+            "Action": "Load",
+            "Target": "Characters/{{ModId}}_SKZChangBin_Winter",
             "FromFile": "Characters/SKZChangBinWinter.png"
         },
         {
@@ -80,13 +101,23 @@
         },
         {
             "Action": "Load",
-            "Target": "Characters/{{ModId}}_SKZHyunjinWinter",
+            "Target": "Characters/{{ModId}}_SKZHyunjin_Winter",
             "FromFile": "Characters/SKZHyunjinWinter.png"
         },
         {
             "Action": "Load",
             "Target": "Characters/{{ModId}}_SKZSeungmin",
             "FromFile": "Characters/SKZSeungmin.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/{{ModId}}_SKZLeeKnow",
+            "FromFile": "Characters/SKZLeeKnow.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/{{ModId}}_SKZLeeKnow_Winter",
+            "FromFile": "Characters/SKZLeeKnowWinter.png"
         },
         //Dialogue
         {
@@ -185,7 +216,49 @@
                         "MapPath": "Maps/{{ModId}}_StayHotel_BangChan",
                         "AlwaysActive": true
                     }
-                }
+                },
+                "StayHotelChangBin": {
+                    "DisplayName": "Stay Hotel ChangBin's Room",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_StayHotel_ChangBin",
+                        "AlwaysActive": true
+                    }
+                },
+                "StayHotelLeeKnow": {
+                    "DisplayName": "Stay Hotel LeeKnow's Room",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_StayHotel_LeeKnow",
+                        "AlwaysActive": true
+                    }
+                },      
+                "StayHotelHyunjin": {
+                    "DisplayName": "Stay Hotel Hyunjin's Room",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_StayHotel_Hyunjin",
+                        "AlwaysActive": true
+                    }
+                },  
+                "StayHotelIn": {
+                    "DisplayName": "Stay Hotel In's Room",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_StayHotel_In",
+                        "AlwaysActive": true
+                    }
+                },
+                "StayHotelSeungmin": {
+                    "DisplayName": "Stay Hotel Seungmin's Room",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_StayHotel_Seungmin",
+                        "AlwaysActive": true
+                    }
+                }, 
+                   "StayHotelHan": {
+                    "DisplayName": "Stay Hotel Han's Room",
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/{{ModId}}_StayHotel_Han",
+                        "AlwaysActive": true
+                    }
+                }          
             }
         },
         {
@@ -337,6 +410,14 @@
                                 "Y": 6
                             },
                             "Direction": "down"
+                        },
+                        {
+                            "LogName": "Seasonal Portraits - Winter BangChan",
+                            "Id": "{{ModId}}_WinterBangChanOutfit",
+                            "Season": "winter",
+                            "Portrait": "Portraits/{{ModId}}_SKZBangChan_Winter",
+                            "Sprite": "Characters/{{ModId}}_SKZBangChan_Winter",
+                            "Precedence": -1
                         }
                     ],
                     "Appearance": [
@@ -387,6 +468,126 @@
                             "Sprite": "Characters/{{ModId}}_SKZChangBin_Winter",
                             "Precedence": -1
                         }
+                    ]
+                },
+                "{{ModId}}_SKZLeeKnow": {
+                    "DisplayName": "Lee Know",
+                    "BirthSeason": "Autumn",
+                    "BirthDay": 14,
+                    "HomeRegion": "Town",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "StayHotelLeeKnow",
+                            "Tile": {
+                                "X": 6,
+                                "Y": 5
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "Id": "Default",
+                            "Interval": "Any",
+                            "Portrait": "Portraits/{{ModId}}_SKZLeeKnow",
+                            "Sprite": "Characters/{{ModId}}_SKZLeeKnow",
+                            "Precedence": 2
+                        },
+                        {
+                            "LogName": "Seasonal Portraits - Winter Lee Know",
+                            "Id": "{{ModId}}_WinterLeeKnowOutfit",
+                            "Season": "winter",
+                            "Portrait": "Portraits/{{ModId}}_SKZLeeKnow_Winter",
+                            "Sprite": "Characters/{{ModId}}_SKZLeeKnow_Winter",
+                            "Precedence": -1
+                        }
+                    ]
+                },
+                "{{ModId}}_SKZHyunjin": {
+                    "DisplayName": "Hyunjin",
+                    "BirthSeason": "Winter",
+                    "BirthDay": 20,
+                    "HomeRegion": "Town",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "StayHotelHyunjin",
+                            "Tile": {
+                                "X": 6,
+                                "Y": 5
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "Id": "Default",
+                            "Interval": "Any",
+                            "Portrait": "Portraits/{{ModId}}_SKZHyunjin",
+                            "Sprite": "Characters/{{ModId}}_SKZHyunjin",
+                            "Precedence": 2
+                        },
+                        {
+                            "LogName": "Seasonal Portraits - Winter Hyunjin",
+                            "Id": "{{ModId}}_WinterHyunjinOutfit",
+                            "Season": "winter",
+                            "Portrait": "Portraits/{{ModId}}_SKZHyunjin_Winter",
+                            "Sprite": "Characters/{{ModId}}_SKZHyunjin_Winter",
+                            "Precedence": -1
+                        }
+                    ]
+                },
+                "{{ModId}}_SKZSuengmin": {
+                    "DisplayName": "Suengmin",
+                    "BirthSeason": "Autumn",
+                    "BirthDay": 20,
+                    "HomeRegion": "Town",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "StayHotelSuengmin",
+                            "Tile": {
+                                "X": 6,
+                                "Y": 5
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "Id": "Default",
+                            "Interval": "Any",
+                            "Portrait": "Portraits/{{ModId}}_SKZSuengmin",
+                            "Sprite": "Characters/{{ModId}}_SKZSuengmin",
+                            "Precedence": 2
+                        }
+                        // {
+                        //     "LogName": "Seasonal Portraits - Autumn Suengmin",
+                        //     "Id": "{{ModId}}_WinterHyunjinOutfit",
+                        //     "Season": "winter",
+                        //     "Portrait": "Portraits/{{ModId}}_SKZSuengmin_Winter",
+                        //     "Sprite": "Characters/{{ModId}}_SKZSuengmin_Winter",
+                        //     "Precedence": -1
+                        // }
                     ]
                 },
             }
