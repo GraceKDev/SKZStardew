@@ -11,7 +11,7 @@
   <image source="townInterior_2.png" width="512" height="656"/>
  </tileset>
  <tileset firstgid="3489" source="furniture_3.tsx"/>
- <tileset firstgid="3840" source="Lee SonDonDorFix.tsx"/>
+ <tileset firstgid="3840" source="LeeSonDonDorFix.tsx"/>
  <layer id="1" name="Back" width="16" height="16">
   <data encoding="csv">
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,

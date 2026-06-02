@@ -132,6 +132,28 @@
         },
         {
             "Action": "Load",
+            "Target": "Characters/Dialogue/{{ModId}}_SKZChangBin",
+            "FromFile": "Dialogue/SKZChangBin.json"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/{{ModId}}_SKZSeungmin",
+            "FromFile": "Dialogue/SKZSeungmin.json"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/{{ModId}}_SKZLeeKnow",
+            "FromFile": "Dialogue/SKZLeeKnow.json"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/{{ModId}}_SKZHyunjin",
+            "FromFile": "Dialogue/SKZHyunjin.json"
+        },
+
+        //Maps 
+        {
+            "Action": "Load",
             "Target": "Maps/{{ModId}}_StayHotel",
             "FromFile": "Tilesets/StayHotel.tmx"
         },
@@ -165,11 +187,40 @@
             "Target": "Maps/{{ModId}}_StayHotel_Felix",
             "FromFile": "Tilesets/StayHotel_Felix.tmx"
         },
-
-          {
+        {
             "Action": "Load",
             "Target": "Maps/{{ModId}}_StayHotel_BangChan",
             "FromFile": "Tilesets/StayHotel_BangChan.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_StayHotel_ChangBin",
+            "FromFile": "Tilesets/StayHotel_ChangBin.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_StayHotel_Seungmin",
+            "FromFile": "Tilesets/StayHotel_Seungmin.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_StayHotel_LeeKnow",
+            "FromFile": "Tilesets/StayHotel_LeeKnow.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_StayHotel_In",
+            "FromFile": "Tilesets/StayHotel_In.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_StayHotel_Hyunjin",
+            "FromFile": "Tilesets/StayHotel_Hyunjin.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/{{ModId}}_StayHotel_Han",
+            "FromFile": "Tilesets/StayHotel_Han.tmx"
         },
         {
             "Action": "EditData",
@@ -444,7 +495,7 @@
                     "Home": [
                         {
                             "Id": "Default",
-                            "Location": "StayHotelChangbin",
+                            "Location": "StayHotelChangBin",
                             "Tile": {
                                 "X": 6,
                                 "Y": 5
@@ -550,8 +601,8 @@
                         }
                     ]
                 },
-                "{{ModId}}_SKZSuengmin": {
-                    "DisplayName": "Suengmin",
+                "{{ModId}}_SKZSeungmin": {
+                    "DisplayName": "Seungmin",
                     "BirthSeason": "Autumn",
                     "BirthDay": 20,
                     "HomeRegion": "Town",
@@ -564,7 +615,7 @@
                     "Home": [
                         {
                             "Id": "Default",
-                            "Location": "StayHotelSuengmin",
+                            "Location": "StayHotelSeungmin",
                             "Tile": {
                                 "X": 6,
                                 "Y": 5
@@ -576,16 +627,16 @@
                         {
                             "Id": "Default",
                             "Interval": "Any",
-                            "Portrait": "Portraits/{{ModId}}_SKZSuengmin",
-                            "Sprite": "Characters/{{ModId}}_SKZSuengmin",
+                            "Portrait": "Portraits/{{ModId}}_SKZSeungmin",
+                            "Sprite": "Characters/{{ModId}}_SKZSeungmin",
                             "Precedence": 2
                         }
                         // {
-                        //     "LogName": "Seasonal Portraits - Autumn Suengmin",
-                        //     "Id": "{{ModId}}_WinterHyunjinOutfit",
+                        //     "LogName": "Seasonal Portraits - Autumn Seungmin",
+                        //     "Id": "{{ModId}}_WinterSeungminOutfit",
                         //     "Season": "winter",
-                        //     "Portrait": "Portraits/{{ModId}}_SKZSuengmin_Winter",
-                        //     "Sprite": "Characters/{{ModId}}_SKZSuengmin_Winter",
+                        //     "Portrait": "Portraits/{{ModId}}_SKZSeungmin_Winter",
+                        //     "Sprite": "Characters/{{ModId}}_SKZSeungmin_Winter",
                         //     "Precedence": -1
                         // }
                     ]
