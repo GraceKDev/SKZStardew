@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.12.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="16" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="7">
  <properties>
-  <property name="DayTiles" value="Front 6 2 225 Buildings 6 3 257 Buildings 10 2 225 Buildings 10 3 257"/>
-  <property name="NightTiles" value="Buildings 6 2 1222 Buildings 6 2 1254 Buildings 10 2 1222 Buildings 10 3 1254"/>
+  <property name="DayTiles" value="Front 4 2 225 Buildings 4 3 257 Buildings 12 2 225 Buildings 12 3 257"/>
+  <property name="NightTiles" value="Buildings 4 2 1222 Buildings 4 3 1254 Buildings 12 2 1222 Buildings 12 3 1254"/>
  </properties>
  <tileset firstgid="1" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
@@ -62,13 +62,13 @@
 0,0,33,45,257,46,46,46,46,46,46,46,257,47,37,0,
 0,0,65,77,289,78,78,1424,1425,78,3615,3616,289,79,69,0,
 0,0,65,109,389,390,3584,0,3846,3847,3628,3629,550,111,69,0,
-0,0,65,141,0,0,3597,0,3854,3855,3641,3642,582,143,69,0,
+0,0,65,141,357,358,3597,0,3854,3855,3641,3642,582,143,69,0,
 0,0,65,0,0,0,0,0,0,0,3844,3845,0,0,69,0,
 0,0,65,0,323,324,0,0,0,0,3852,3853,0,0,69,0,
 0,0,65,0,0,0,0,0,0,0,0,0,0,0,69,0,
 0,0,65,0,0,0,0,0,0,0,0,3641,3642,0,69,0,
-0,0,65,0,2147,3639,3640,0,0,3850,3851,0,0,0,69,0,
-0,0,65,364,2147,2147,2147,0,0,0,0,0,464,0,69,0,
+0,0,65,0,0,3639,3640,0,0,3850,3851,0,0,0,69,0,
+0,0,65,364,0,0,0,0,0,0,0,0,464,0,69,0,
 0,0,161,162,166,166,166,163,0,164,166,166,166,167,168,0,
 0,0,0,0,0,0,0,65,0,69,0,0,0,0,0,0,
 0,0,0,0,0,0,0,65,0,69,0,0,0,0,0,0,

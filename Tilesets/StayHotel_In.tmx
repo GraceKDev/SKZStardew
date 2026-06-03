@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.12.0" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="16" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="7">
  <properties>
-  <property name="DayTiles" value="Front 6 2 225 Buildings 6 3 257 Buildings 10 2 225 Buildings 10 3 257"/>
-  <property name="NightTiles" value="Buildings 6 2 1222 Buildings 6 2 1254 Buildings 10 2 1222 Buildings 10 3 1254"/>
+  <property name="DayTiles" value="Buildings 5 2 225 Buildings 5 3 257 Buildings 6 2 225 Buildings 6 3 257 Buildings 10 2 225 Buildings 10 3 257 Buildings 11 2 225 B uildings 11 3 257"/>
+  <property name="NightTiles" value="Buildings 5 2 1222 Buildings 5 3 1254 Buildings 6 2 1222 Buildings 6 3 1254 Buildings 10 2 1222 Buildings 10 3 1254 Buildings 11 2 1222 Buildings 11 3 1254"/>
  </properties>
  <tileset firstgid="1" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
@@ -60,14 +60,14 @@
 0,0,33,2313,2314,257,257,0,0,0,257,257,0,44,37,0,
 0,0,65,74,75,289,289,75,75,75,289,289,75,76,69,0,
 0,0,65,106,528,529,530,487,488,370,107,325,326,108,69,0,
-0,0,65,138,560,561,562,519,520,402,0,0,0,140,69,0,
+0,0,65,138,560,561,562,519,520,402,0,357,358,140,69,0,
 0,0,65,0,0,0,0,0,0,0,0,0,0,0,69,0,
-0,0,65,0,0,0,0,0,0,0,0,0,0,0,69,0,
+0,0,65,0,0,0,0,0,0,0,0,321,322,0,69,0,
 0,0,65,0,0,0,0,0,0,0,0,0,0,0,69,0,
 0,0,65,0,0,0,0,0,0,0,0,0,0,0,69,0,
 0,0,65,0,0,0,0,0,0,0,0,0,0,0,69,0,
 0,0,65,0,0,0,0,0,0,0,0,0,0,2243,69,0,
-0,0,161,162,0,166,166,163,0,164,166,166,166,167,168,0,
+0,0,161,162,166,166,166,163,0,164,166,166,166,167,168,0,
 0,0,0,0,0,0,0,65,0,69,0,0,0,0,0,0,
 0,0,0,0,0,0,0,65,0,69,0,0,0,0,0,0,
 0,0,0,0,0,0,0,65,0,69,0,0,0,0,0,0
@@ -81,7 +81,7 @@
 0,0,65,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,65,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,65,0,0,0,0,0,0,0,0,355,356,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,387,388,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,2179,0,0,

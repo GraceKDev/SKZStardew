@@ -361,8 +361,7 @@
                 "8 15 StayHotel 25 25"
             ]
         },
-
-           {
+        {
             "Action": "EditMap",
             "Target": "Maps/{{ModId}}_StayHotel_BangChan",
             "AddWarps": [
@@ -371,8 +370,61 @@
         },
         {
             "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_StayHotel_Han",
+            "AddWarps": [
+                "8 15 StayHotel 21 22"
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_StayHotel_In",
+            "AddWarps": [
+                "8 15 StayHotel 27 22"
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_StayHotel_LeeKnow",
+            "AddWarps": [
+                "8 15 StayHotel 27 25"
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_StayHotel_ChangBin",
+            "AddWarps": [
+                "8 15 StayHotel 23 25"
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_StayHotel_Seungmin",
+            "AddWarps": [
+                "8 15 StayHotel 25 22"
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/{{ModId}}_StayHotel_Hyunjin",
+            "AddWarps": [
+                "8 15 StayHotel 23 22"
+            ]
+        },
+        {
+            "Action": "EditMap",
             "Target": "Maps/{{ModId}}_StayHotel",
             "MapTiles": [
+                {
+                    "Position": {
+                        "X": 27,
+                        "Y": 24
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 8 14 StayHotelLeeKnow 630 2200",
+                        "Text": "It's locked."
+                    }
+                },
                 {
                     "Position": {
                         "X": 25,
@@ -386,12 +438,67 @@
                 },
                 {
                     "Position": {
+                        "X": 23,
+                        "Y": 24
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 8 14 StayHotelChangBin 630 2200",
+                        "Text": "It's locked."
+                    }
+                },
+                {
+                    "Position": {
                         "X": 21,
                         "Y": 24
                     },
                     "Layer": "Buildings",
                     "SetProperties": {
                         "Action": "LockedDoorWarp 8 14 StayHotelBangChan 630 2200",
+                        "Text": "It's locked."
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 27,
+                        "Y": 21
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 8 14 StayHotelIn 630 2200",
+                        "Text": "It's locked."
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 25,
+                        "Y": 21
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 8 14 StayHotelSeungmin 630 2200",
+                        "Text": "It's locked."
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 23,
+                        "Y": 21
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 8 14 StayHotelHyunjin 630 2200",
+                        "Text": "It's locked."
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 21,
+                        "Y": 21
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 8 14 StayHotelHan 630 2200",
                         "Text": "It's locked."
                     }
                 }
@@ -497,8 +604,8 @@
                             "Id": "Default",
                             "Location": "StayHotelChangBin",
                             "Tile": {
-                                "X": 6,
-                                "Y": 5
+                                "X": 11,
+                                "Y": 6
                             },
                             "Direction": "down"
                         }
@@ -523,7 +630,7 @@
                 },
                 "{{ModId}}_SKZLeeKnow": {
                     "DisplayName": "Lee Know",
-                    "BirthSeason": "Autumn",
+                    "BirthSeason": "Fall",
                     "BirthDay": 14,
                     "HomeRegion": "Town",
                     "Gender": "Male",
@@ -537,8 +644,8 @@
                             "Id": "Default",
                             "Location": "StayHotelLeeKnow",
                             "Tile": {
-                                "X": 6,
-                                "Y": 5
+                                "X": 5,
+                                "Y": 6
                             },
                             "Direction": "down"
                         }
@@ -577,8 +684,8 @@
                             "Id": "Default",
                             "Location": "StayHotelHyunjin",
                             "Tile": {
-                                "X": 6,
-                                "Y": 5
+                                "X": 11,
+                                "Y": 6
                             },
                             "Direction": "down"
                         }
@@ -603,7 +710,7 @@
                 },
                 "{{ModId}}_SKZSeungmin": {
                     "DisplayName": "Seungmin",
-                    "BirthSeason": "Autumn",
+                    "BirthSeason": "Fall",
                     "BirthDay": 20,
                     "HomeRegion": "Town",
                     "Gender": "Male",
@@ -617,8 +724,8 @@
                             "Id": "Default",
                             "Location": "StayHotelSeungmin",
                             "Tile": {
-                                "X": 6,
-                                "Y": 5
+                                "X": 11,
+                                "Y": 6
                             },
                             "Direction": "down"
                         }
@@ -629,7 +736,7 @@
                             "Interval": "Any",
                             "Portrait": "Portraits/{{ModId}}_SKZSeungmin",
                             "Sprite": "Characters/{{ModId}}_SKZSeungmin",
-                            "Precedence": 2
+                            "Precedence": 1
                         }
                         // {
                         //     "LogName": "Seasonal Portraits - Autumn Seungmin",
