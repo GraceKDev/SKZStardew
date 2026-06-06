@@ -1003,8 +1003,184 @@
                 globalFadeToClear 0.007 false/
                 /message \"And representing Pelican town, Felix Lee!\"/
                 speak {{ModId}}_SKZFelix \"Thank you everyone!\"/    
-                end"
+                end",
+                "{{ModId}}_ChangBin2/f {{ModId}}_SKZChangBin 250/Time 900 1500": "none/follow/
+                farmer 33 14 3 {{ModId}}_SKZChangBin 1000 1000 0 lewis 1000 1000 3/ 
+                skippable/
+                viewport 36 14 clamp/
+                move farmer -3 0 0/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                pause 100/
+                move farmer 0 0 1/
+                pause 50/
+                move farmer 0 0 2/
+                pause 50/
+                move farmer 0 0 3/
+                pause 50/
+                move farmer 0 0 0/
+                pause 50/
+                emote farmer 16/
+                pause 500/
+                move farmer 3 0 0/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                pause 100/
+                move farmer 0 0 1/
+                pause 50/
+                move farmer 0 0 2/
+                pause 50/
+                move farmer 0 0 3/
+                pause 50/
+                move farmer 0 0 0/
+                pause 50/
+                emote farmer 16/
+                pause 500/
+                move farmer -3 0 0/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                pause 100/
+                move farmer 0 0 1/
+                pause 50/
+                move farmer 0 0 2/
+                pause 50/
+                move farmer 0 0 3/
+                pause 50/
+                move farmer 0 0 0/
+                pause 50/
+                emote farmer 16/
+                pause 500/
+                warp lewis 36 2/ 
+                speed lewis 5/
+                advancedMove lewis false 0 12/
+                pause 3000/
+                speed lewis 1/
+                stopAdvancedMoves/
+                move lewis 0 0 3/
+                move farmer 0 0 1/
+                speak lewis \"@! Run quick! There’s an earthquake!\"/
+                emote farmer 8/
+                pause 500/
+                move farmer 0 1 2/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                move farmer 0 0 0/
+                speak {{ModId}}_SKZChangBin \"SERIOUSLY?!?\"/
+                move lewis 0 0 0/
+                warp {{ModId}}_SKZChangBin 36 1/
+                move {{ModId}}_SKZChangBin 0 6 2/
+                speak {{ModId}}_SKZChangBin \"WHEN CAN I CATCH A BREAK??\"/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                move {{ModId}}_SKZChangBin 0 5 2/
+                move {{ModId}}_SKZChangBin -1 0 3/
+                move {{ModId}}_SKZChangBin 0 1 3/
+                move farmer 0 0 1/
+                move lewis 0 0 3/
+                speak {{ModId}}_SKZChangBin \"@!\"/
+                speak {{ModId}}_SKZChangBin \"LISTEN TO ME!\"/
+                speak {{ModId}}_SKZChangBin \"HEIGHT IS NOT ABOUT HOW TALL YOU ARE!\"/
+                speak {{ModId}}_SKZChangBin \"IT’S ABOUT THE SIZE OF YOUR HEART!\"/
+                speak {{ModId}}_SKZChangBin \"I’M HUGE, OKAY?\"/
+                speak {{ModId}}_SKZChangBin \"HUGE!\"/
+                speak {{ModId}}_SKZChangBin \"GIANT!!\"/
+                speak {{ModId}}_SKZChangBin \"NO MATTER WHAT ANYBODY SAYS!\"/
+                speak {{ModId}}_SKZChangBin \"NEVER LET YOUR MEMBERS HIDE YOUR SNACKS ON THE TOP SHELF!\"/
+                speak {{ModId}}_SKZChangBin \"OF YOUR HEART!\"/
+                speak {{ModId}}_SKZChangBin \"UAAH!!!\"/
+                move {{ModId}}_SKZChangBin 0 3 2/
+                move farmer 0 0 2/
+                move lewis 0 0 2/
+                speak {{ModId}}_SKZChangBin \"WHHAARRGH\"/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                end/"
             }
+            
         },
         {
             "LogName": "Felix Final",
