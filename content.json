@@ -943,6 +943,114 @@
                 end"
             }
         },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/SeedShop",
+            "Entries": {
+                "{{ModId}}_ChangBin4/f {{ModId}}_SKZChangBin 1500/Time 900 1500": "none/follow/
+                farmer 12 23 2 {{ModId}}_SKZChangBin 12 25 0/
+                skippable/
+                viewport 6 22 clamp/
+                move {{ModId}}_SKZChangBin 0 1 1/
+                emote {{ModId}}_SKZChangBin 12/
+                pause 300/
+                move {{ModId}}_SKZChangBin 0 -1 3/
+                emote {{ModId}}_SKZChangBin 12/
+                pause 300/
+                move {{ModId}}_SKZChangBin 0 1 2/
+                emote {{ModId}}_SKZChangBin 12/
+                pause 300/
+                speak {{ModId}}_SKZChangBin \"WHERE IS THE PROTEIN!\"/
+                speak {{ModId}}_SKZChangBin \"I NEED MEAT!\"/
+                speak {{ModId}}_SKZChangBin \"MEEEEAT!\"/
+                pause 300/
+                move {{ModId}}_SKZChangBin 0 -2 0/
+                speak {{ModId}}_SKZChangBin \"@!\"/
+                speak {{ModId}}_SKZChangBin \"You have animals right?\"/
+                speak {{ModId}}_SKZChangBin \"Like chickens and stuff?\"/
+                speak {{ModId}}_SKZChangBin \"Why don’t you sell them to Piere? There’s no meat in this town.\"/
+                speak {{ModId}}_SKZChangBin \"Like really at all, what’s going on with that?\"/
+                speak {{ModId}}_SKZChangBin \"Piere asked me to leave the store because I was being too loud anyway...\"/
+                speak {{ModId}}_SKZChangBin \"I guess I should go...\"/
+                speak {{ModId}}_SKZChangBin \"But if you find anywhere that can sell meat, tell me please!\"/
+                speak {{ModId}}_SKZChangBin \"GOODBYE!\"/
+                move {{ModId}}_SKZChangBin 0 4 2/
+                end"
+            }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Mountain",
+            "Entries": {
+                "{{ModId}}_ChangBin6/f {{ModId}}_SKZChangBin 1500/Time 900 1500": "none/follow/
+                farmer 43 7 1 {{ModId}}_SKZChangBin 50 9 2/
+                skippable/
+                viewport 50 9 clamp/
+                move farmer 3 0 3/
+                speak {{ModId}}_SKZChangBin \"AAK\"/
+                changeYSourceRectOffset {{ModId}}_SKZChangBin 128/
+                addTemporaryActor {{ModId}}_SKZChangBin 16 32 50 11 0 true Character fishing/
+                changeYSourceRectOffset fishing 96/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                move farmer 0 0 2/
+                speak {{ModId}}_SKZChangBin \"UUAH!\"/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                speak {{ModId}}_SKZChangBin \"COME BACK!\"/
+                speak {{ModId}}_SKZChangBin \"I’LL GET YOU NEXT TIME FISHY\"/
+                changeYSourceRectOffset {{ModId}}_SKZChangBin 0/
+                
+                move {{ModId}}_SKZChangBin 0 0 0 /
+                speak {{ModId}}_SKZChangBin \"@, I’m trying to catch a fish to eat.\"/
+                speak {{ModId}}_SKZChangBin \"It’s the only way I get a good meal here.\"/
+                speak {{ModId}}_SKZChangBin \"I miss Korea.\"/
+                move {{ModId}}_SKZChangBin 0 0 2/
+                speak {{ModId}}_SKZChangBin \"GOT IT!\"/
+                speak {{ModId}}_SKZChangBin \"YEEEAAAAAAHHHH!\"/
+                speak {{ModId}}_SKZChangBin \"Little fishy you will be so yummy!\"/
+                speak {{ModId}}_SKZChangBin \"I can’t wait to eat you, little fishy.\"/
+                speak {{ModId}}_SKZChangBin \"This is my second one.\"/
+                speak {{ModId}}_SKZChangBin \"Hey, I can share, you take one as well you probably need it just as much as me.\"/
+                speak {{ModId}}_SKZChangBin \"What a happy day!\"/
+                speak {{ModId}}_SKZChangBin \"This is my second one.\"/
+                move {{ModId}}_SKZChangBin 0 -1 0/
+                move {{ModId}}_SKZChangBin 4 0 1/
+                end"
+            }
+        },
+
+
         {
             "Action": "EditData",
             "Target": "Data/Events/BusStop",
