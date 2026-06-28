@@ -988,11 +988,21 @@
                 farmer 43 7 1 {{ModId}}_SKZChangBin 50 9 2/
                 skippable/
                 viewport 50 9 clamp/
-                move farmer 3 0 3/
-                speak {{ModId}}_SKZChangBin \"AAK\"/
-                changeYSourceRectOffset {{ModId}}_SKZChangBin 128/
+                move farmer 3 0 1/
                 addTemporaryActor {{ModId}}_SKZChangBin 16 32 50 11 0 true Character fishing/
                 changeYSourceRectOffset fishing 96/
+                playSound bob/
+                pause 100/
+                playSound bob/
+                pause 100/
+                playSound bob/
+                pause 100/
+                playSound bob/
+                pause 100/
+                playSound fishBite/
+                speak {{ModId}}_SKZChangBin \"AAK\"/
+                changeYSourceRectOffset {{ModId}}_SKZChangBin 128/
+                playSound fastReel/
                 viewport move -10 0 10/
                 viewport move 10 0 10/
                 viewport move 10 0 10/
@@ -1027,25 +1037,46 @@
                 viewport move 10 0 10/
                 viewport move 10 0 10/
                 viewport move -10 0 10/
+                stopSound fastReel/
+                playSound fishEscape/
                 speak {{ModId}}_SKZChangBin \"COME BACK!\"/
                 speak {{ModId}}_SKZChangBin \"I’LL GET YOU NEXT TIME FISHY\"/
                 changeYSourceRectOffset {{ModId}}_SKZChangBin 0/
-                
-                move {{ModId}}_SKZChangBin 0 0 0 /
+                move {{ModId}}_SKZChangBin 0 0 0/
+                warp fishing -1000 -1000/
                 speak {{ModId}}_SKZChangBin \"@, I’m trying to catch a fish to eat.\"/
                 speak {{ModId}}_SKZChangBin \"It’s the only way I get a good meal here.\"/
                 speak {{ModId}}_SKZChangBin \"I miss Korea.\"/
                 move {{ModId}}_SKZChangBin 0 0 2/
+                pause 500/
+                playSound cast/
+                changeYSourceRectOffset {{ModId}}_SKZChangBin 192/
+                pause 100/
+                changeYSourceRectOffset fishing 160/
+                warp fishing 50 11/
+                pause 500/
+                changeYSourceRectOffset {{ModId}}_SKZChangBin 128/
+                changeYSourceRectOffset fishing 96/
+                playSound bob/
+                pause 500/
+                playSound fishBite/
                 speak {{ModId}}_SKZChangBin \"GOT IT!\"/
+                playSound fastReel/
+                pause 500/
+                changeYSourceRectOffset {{ModId}}_SKZChangBin 192/
+                changeYSourceRectOffset fishing 160/
+                stopSound fastReel/
                 speak {{ModId}}_SKZChangBin \"YEEEAAAAAAHHHH!\"/
+                playSound newRecord/
+                changeYSourceRectOffset {{ModId}}_SKZChangBin 0/
+                warp fishing -1000 -1000/
                 speak {{ModId}}_SKZChangBin \"Little fishy you will be so yummy!\"/
                 speak {{ModId}}_SKZChangBin \"I can’t wait to eat you, little fishy.\"/
                 speak {{ModId}}_SKZChangBin \"This is my second one.\"/
+                move {{ModId}}_SKZChangBin 0 0 0/
                 speak {{ModId}}_SKZChangBin \"Hey, I can share, you take one as well you probably need it just as much as me.\"/
                 speak {{ModId}}_SKZChangBin \"What a happy day!\"/
                 speak {{ModId}}_SKZChangBin \"This is my second one.\"/
-                move {{ModId}}_SKZChangBin 0 -1 0/
-                move {{ModId}}_SKZChangBin 4 0 1/
                 end"
             }
         },
