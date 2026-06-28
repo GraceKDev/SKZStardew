@@ -979,7 +979,6 @@
                 end"
             }
         },
-
         {
             "Action": "EditData",
             "Target": "Data/Events/Mountain",
@@ -1080,6 +1079,7 @@
                 end"
             }
         },
+        
 
 
         {
@@ -1319,7 +1319,6 @@
                 viewport move -10 0 10/
                 end/"
             }
-            
         },
         {
             "LogName": "Felix Final",
@@ -1327,6 +1326,258 @@
             "Target": "Data/Events/StayHotelFelix",
             "FromFile": "assets/blank.json"
         },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/StayHotelFelix",
+            "Entries": {
+                "{{ModId}}_FelixEvent10/f {{ModId}}_SKZFelix 2500/Time 900 1500": "none/follow/
+                farmer 8 11 0 {{ModId}}_SKZFelix 4 9 3/
+                positionOffset {{ModId}}_SKZFelix -10 10/
+                /showFrame {{ModId}}_SKZFelix 17/
+                skippable/
+                viewport 8 11 clamp/
+                move farmer 0 -1 0/
+                move farmer -4 0 3/
+                emote {{ModId}}_SKZFelix 16/
+                pause 500/
+                move farmer 0 0 0/
+                speak {{ModId}}_SKZFelix \"AAAH\"/
+                speak {{ModId}}_SKZFelix \"@ you scared me! Warn a man next time!\"/
+                speak {{ModId}}_SKZFelix \"I’m so jumpy from this movie. Sungmin recommended it to trick me but he doesn’t know I can actually watch it by myself.\"/
+                speak {{ModId}}_SKZFelix \"The zombies are about to catch this guy and his leg is already broken because his \"friend\" pushed him out of the car.\"/
+                speak {{ModId}}_SKZFelix \"Come watch it with me, for sure it will be less scary.\"/
+                globalFade/
+                viewport -1000 -1000/
+                pause 2000/
+                warp farmer -21 6/
+                warp {{ModId}}_SKZFelix -21 6/
+                changeToTemporaryMap {{ModId}}_ZombieHand/
+                viewport -1000 -1000/
+                pause 1000/
+                warp farmer -21 6/
+                warp {{ModId}}_SKZFelix -21 6/
+                globalFade 1 false/
+                viewport 32 32/
+                message \"They’re...\"/
+                message \"Catching up...\"/
+                message \"But... I see the light...\"/
+                message \"If I can just...\"/
+                message \"Make it to the end...\"/
+                message \"Nearly...\"/
+                message \"There...\"/
+                changeToTemporaryMap {{ModId}}_JumpScare/
+                viewport 32 32/
+                message \"!!!\"/
+                globalFade/
+                viewport -1000 -1000/
+                pause 2000/
+                changeToTemporaryMap {{ModId}}_StayHotel_Felix/
+                warp {{ModId}}_SKZFelix 4 9/
+                warp farmer 4 10/
+                viewport -1000 -1000/
+                changeYSourceRectOffset {{ModId}}_SKZFelix -128/
+                changeYSourceRectOffset {{ModId}}_SKZFelix 128/
+                move {{ModId}}_SKZFelix 0 0 2/
+                shake {{ModId}}_SKZFelix 2000/
+                move farmer 0 0 0/
+                move {{ModId}}_SKZFelix 0 0 3/
+                pause 1000/
+                viewport 8 11 clamp/
+                globalFade 1 false/
+                speak {{ModId}}_SKZFelix \"AAAH\"/
+                speak {{ModId}}_SKZFelix \"Man I really thought I’d be okay!\"/
+                speak {{ModId}}_SKZFelix \"Sorry I kind of jumped on you\"/
+                speak {{ModId}}_SKZFelix \"It really was better with you here\"/
+                speak {{ModId}}_SKZFelix \"Suck on that, Sungmin I finished the whole movie!\"/
+                speak {{ModId}}_SKZFelix \"Lets put on something different now... You got any snacks?\"/
+                end"
+            }
+        },        
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "{{ModId}}_ChangBin8/f {{ModId}}_SKZChangBin 2500/Time 900 1500": "none/follow/
+                farmer 17 6 0 {{ModId}}_SKZChangBin -1000 -1000 3/
+                viewport 17 6/
+                addTemporaryActor {{ModId}}_SKZChangBin 16 32 17 5 0 true Character rockL/
+                addTemporaryActor {{ModId}}_SKZChangBin 16 32 18 5 0 true Character rockR/
+                addTemporaryActor {{ModId}}_SKZChangBin 48 32 1000 1000 0 true Character ChangCarry/
+                addTemporaryActor {{ModId}}_SKZChangBin 32 32 1000 1000 0 true Character ChangCarryFront/
+                changeYSourceRectOffset rockL 256/
+                changeYSourceRectOffset rockR 256/
+                changeYSourceRectOffset ChangCarryFront 224/
+                showFrame ChangCarryFront 2/
+                showFrame rockR 1/
+                showFrame rockL 0/
+                skippable/
+                pause 1000/
+                emote farmer 8/
+                move farmer -1 0 3/
+                move farmer 0 -1 0/
+                move farmer 0 0 1/
+                pause 1000/
+                emote farmer 40/
+                move farmer 0 -1 0/
+                move farmer 0 0 1/
+                pause 1000/
+                emote farmer 40/
+                pause 500/
+                warp {{ModId}}_SKZChangBin 18 12/
+                move {{ModId}}_SKZChangBin 0 0 0/
+                move {{ModId}}_SKZChangBin 0 -6 0/
+                move {{ModId}}_SKZChangBin -2 0 3/
+                move {{ModId}}_SKZChangBin 0 0 0/
+                move {{ModId}}_SKZChangBin 3 0 1/
+                speak {{ModId}}_SKZChangBin \"@, what are you doing in here?\"/
+                emote {{ModId}}_SKZChangBin 16/
+                speak {{ModId}}_SKZChangBin \"Me? I like to get my workout in sometimes, this cave is nice and cold.\"/
+                speak {{ModId}}_SKZChangBin \"You’re so sweaty, are you here for the same?\"/
+                speak {{ModId}}_SKZChangBin \"Oh, you need to collect stone from here?\"/
+                speak {{ModId}}_SKZChangBin \"Yea, I guess that makes sense with everything you need to build.\"/
+                speak {{ModId}}_SKZChangBin \"I do not know how you do it.\"/
+                pause 500/
+                emote {{ModId}}_SKZChangBin 40/
+                speak {{ModId}}_SKZChangBin \"Oh, do you need helping moving this?\"/
+                emote {{ModId}}_SKZChangBin 56/
+                pause 1000/
+                speak {{ModId}}_SKZChangBin \"OH!\"/
+                speak {{ModId}}_SKZChangBin \"THEN WHY DIDN’T YOU SAY SO?\"/
+                move {{ModId}}_SKZChangBin 0 -1 3/
+                speak {{ModId}}_SKZChangBin \"AAARRRGHGHH\"/
+                warp {{ModId}}_SKZChangBin 1000 1000/
+                warp rockL 1000 1000/
+                warp rockR 1000 1000/
+                showFrame ChangCarry 0/
+                changeYSourceRectOffset ChangCarry 256/
+                warp ChangCarry 17 5/
+                speak {{ModId}}_SKZChangBin \"AAARRRGHGHH\"/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                pause 500/
+                speak {{ModId}}_SKZChangBin \"UUAHHH\"/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                changeYSourceRectOffset ChangCarry 288/
+                speak {{ModId}}_SKZChangBin \"AAAAAH\"/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                warp ChangCarry 1000 1000/
+                warp ChangCarryFront 18 5/
+                speak {{ModId}}_SKZChangBin \"HEAVY!!!\"/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                ignoreMovementAnimation ChangCarryFront true/
+                move ChangCarryFront 0 1 1/
+                move ChangCarryFront 0 1 1/
+                move ChangCarryFront 0 1 1/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                warp {{ModId}}_SKZChangBin 18 7/
+                move {{ModId}}_SKZChangBin 0 0 2/
+                speak {{ModId}}_SKZChangBin \"I DID IT!\"/
+                move {{ModId}}_SKZChangBin 0 0 3/
+                speak {{ModId}}_SKZChangBin \"THAT WAS FUN!\"/
+                speak {{ModId}}_SKZChangBin \"WANT ME TO BRING THIS TO YOUR HOUSE!?\"/
+                end"
+            }
+        },        
+//         Player is struggling to hit the rock, perhaps she is shaking?? Or if we feel like a really powerful entity who can do anything we put our minds to, maybe the farmer will be hitting the rock with their pickaxe 
+// Struggle struggle struggle struggle 
+// Drop appears on head 
+// Changbin is here to save the day 
+// “@, what are you doing in here?” 
+// “Me? I like to get my workout in sometimes, this cave is nice and cold.” 
+// “You’re so sweaty, are you here for the same?” 
+// “Oh, you need to collect stone from here?” 
+// “Yea, I guess that makes sense with everything you need to build.” 
+// “I do not know how you do it.” 
+// “So, good luck!” 
+// “Changbin starts to walk towards the elevator 
+// Changbin stops and turns around. 
+// “Wait, do you need some help?” 
+// “OH!” 
+// “THEN WHY DIDN’T YOU SAY SO?” (smiling sprite) 
+// Changbin goes to pick up the rock 
+// ‘AAARRRGHGHH” 
+// “UUAHHH” 
+// “AAAAAH” 
+// Changbin picks up the rock. 
+// “I DID IT!” 
+// “THAT WAS FUN!” 
+// “I’LL BRING THIS BACK TO YOUR HOUSE!” 
+// Changbin walks out of the cave :3 
+                
         {
             "Action": "EditData",
             "Target": "Data/Events/StayHotelFelix",
