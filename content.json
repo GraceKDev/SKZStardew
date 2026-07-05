@@ -77,6 +77,16 @@
             "Target": "Portraits/{{ModId}}_SKZHan_Winter",
             "FromFile": "Portraits/SKZHanWinter.png"
         },
+        {
+            "Action": "Load",
+            "Target": "Portraits/{{ModId}}_SKZHan_Winter",
+            "FromFile": "Portraits/SKZHanWinter.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/{{ModId}}_SKZCrazyFan",
+            "FromFile": "Portraits/SKZCrazyFan.png"
+        },
         
         //Characters 
         {
@@ -144,6 +154,11 @@
             "Action": "Load",
             "Target": "Characters/{{ModId}}_SKZHan_Winter",
             "FromFile": "Characters/SKZHanWinter.png"
+        },
+          {
+            "Action": "Load",
+            "Target": "Characters/{{ModId}}_SKZCrazyFan",
+            "FromFile": "Characters/SKZCrazyFan.png"
         },
         //Dialogue
         {
@@ -1232,9 +1247,6 @@
                 end"
             }
         },
-        
-
-
         {
             "Action": "EditData",
             "Target": "Data/Events/BusStop",
