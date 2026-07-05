@@ -1487,6 +1487,48 @@
         },
         {
             "Action": "EditData",
+            "Target": "Data/Events/StayHotelBangChan",
+            "Entries": {
+                "{{ModId}}_BangChanEvent6/f {{ModId}}_SKZBangChan 1500/Time 600 2600": "none/follow/
+                farmer 8 11 0 {{ModId}}_SKZBangChan 8 6 2 {{ModId}}_SKZHan 9 7 3 {{ModId}}_SKZChangBin 7 7 1/
+                skippable/
+                viewport 8 8 clamp/
+                move farmer 0 -3 0/
+                emote {{ModId}}_SKZBangChan 12/
+                emote {{ModId}}_SKZHan 12/
+                emote {{ModId}}_SKZChangBin 12/
+                pause 700/
+                speak {{ModId}}_SKZChangBin \"THAT'S WHAT I SAID! OBVIOUSLY MY VOICE IS THE CUTEST!!!\"/
+                speak {{ModId}}_SKZHan \"Nooooo it's meeeee\"/
+                speak {{ModId}}_SKZHan \"Don't you see? I have a perm!\"/
+                speak {{ModId}}_SKZBangChan \"What does having a perm have to do with the cuteness of your voice?\"/
+                speak {{ModId}}_SKZChangBin \"SEE! CHANNIE DOESN'T GET IT WE SHOULD BE THE LEADERS\"/
+                speak {{ModId}}_SKZChangBin \"HEHEHEHEHE\"/
+                speak {{ModId}}_SKZHan \"Heh, yea let's invite Sungmin to be in 3 racha, Channie needs to go back to training\"/
+                speak {{ModId}}_SKZChangBin \"No, Felix is the cutest besides us, it should be him.\"/
+                emote {{ModId}}_SKZBangChan 28/
+                pause 500/
+                speak {{ModId}}_SKZHan \"But what about Innie's charm? He could be our leader for sure.\"/
+                speak {{ModId}}_SKZChangBin \"HEHEHEHE\"/
+                speak {{ModId}}_SKZChangBin \"CHANNIE IS OUR LITTLE BABY!\"/
+                speak {{ModId}}_SKZBangChan \"Ok I'm a little baby so now that that's sorted are we actually going to start making some music?\"/
+                speak {{ModId}}_SKZChangBin \"Only if you agree that I'm the cutest\"/
+                emote {{ModId}}_SKZHan 12/
+                speak {{ModId}}_SKZHan \"...\"/
+                speak {{ModId}}_SKZBangChan \"...\"/
+                speak {{ModId}}_SKZChangBin \"HEHEHEHE\"/
+                speak {{ModId}}_SKZChangBin \"HAHAHAHA\"/
+                speak {{ModId}}_SKZChangBin \"Look at your face! Don't worry bro I already finished my song don't stress!\"/
+                speak {{ModId}}_SKZBangChan \"Oh thank firetruck.\"/
+                emote {{ModId}}_SKZBangChan 16/
+                emote {{ModId}}_SKZHan 20/
+                emote {{ModId}}_SKZChangBin 32/
+                pause 700/
+                end"
+            }
+        },
+        {
+            "Action": "EditData",
             "Target": "Data/Events/StayHotelFelix",
             "Entries": {
                 "{{ModId}}_FelixEvent10/f {{ModId}}_SKZFelix 2500/Time 900 1500": "none/follow/
