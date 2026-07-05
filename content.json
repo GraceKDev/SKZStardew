@@ -84,8 +84,8 @@
         },
         {
             "Action": "Load",
-            "Target": "Portraits/{{ModId}}_SKZCrazyFan",
-            "FromFile": "Portraits/SKZCrazyFan.png"
+            "Target": "Portraits/Abigail_CrazyFan",
+            "FromFile": "Portraits/Abigail_CrazyFan.png"
         },
         
         //Characters 
@@ -155,10 +155,10 @@
             "Target": "Characters/{{ModId}}_SKZHan_Winter",
             "FromFile": "Characters/SKZHanWinter.png"
         },
-          {
+        {
             "Action": "Load",
-            "Target": "Characters/{{ModId}}_SKZCrazyFan",
-            "FromFile": "Characters/SKZCrazyFan.png"
+            "Target": "Characters/Abigail_CrazyFan",
+            "FromFile": "Characters/Abigail_CrazyFan.png"
         },
         //Dialogue
         {
@@ -1149,6 +1149,49 @@
         },
         {
             "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                "{{ModId}}_BangChanEvent10/f {{ModId}}_SKZBangChan 2500/Time 2400 2600": "none/follow/
+                farmer 57 17 1 {{ModId}}_SKZBangChan 55 16 1/
+                skippable/
+                viewport 55 16 clamp/
+                move farmer -2 0 3/
+                move farmer 0 -1 0/
+                move farmer 0 0 1/
+                pause 500/
+                speak {{ModId}}_SKZBangChan \"Oh where did you come from?\"/
+                speak {{ModId}}_SKZBangChan \"You really shouldn't be awake at this time.\"/
+                speak {{ModId}}_SKZBangChan \"Why am I here? Oh, haha.\"/
+                speak {{ModId}}_SKZBangChan \"I couldn't sleep again.\"/
+                speak {{ModId}}_SKZBangChan \"But don't worry, I'll go back to the hotel soon. I just came here to think a bit.\"/
+                speak {{ModId}}_SKZBangChan \"This is such a beautiful place.\"/
+                speak {{ModId}}_SKZBangChan \"The whole valley is beautiful.\"/
+                speak {{ModId}}_SKZBangChan \"Being here has been such a nice change of pace, I've been so happy just being here with you and the kids.\"/
+                pause 300/
+                speak {{ModId}}_SKZBangChan \"Maybe that's why I've taken so long to finish this project.\"/
+                speak {{ModId}}_SKZBangChan \"And now with you...\"/
+                speak {{ModId}}_SKZBangChan \"Things are just...\"/
+                speak {{ModId}}_SKZBangChan \"More complicated...\"/
+                speak {{ModId}}_SKZBangChan \"Sorry, I just want to share more with you about things like this but it's hard for me.\"/
+                speak {{ModId}}_SKZBangChan \"I don't want to feel like a burden, especially to the people I love.\"/
+                speak {{ModId}}_SKZBangChan \"Wait I guess that means.\"/
+                speak {{ModId}}_SKZBangChan \"Hahaha\"/
+                speak {{ModId}}_SKZBangChan \"I think it's time for me to go to bed.\"/
+                speak {{ModId}}_SKZBangChan \"Good luck to me...\"/
+                speed {{ModId}}_SKZBangChan 3/
+                move {{ModId}}_SKZBangChan 2 0 1/
+                move {{ModId}}_SKZBangChan 0 3 2/
+                move {{ModId}}_SKZBangChan 1 0 1/
+                move {{ModId}}_SKZBangChan 0 0 3/
+                speed {{ModId}}_SKZBangChan 2/
+                pause 300/
+                speak {{ModId}}_SKZBangChan \"Thank you, @, really\"/
+                speak {{ModId}}_SKZBangChan \"I want to spend more time with you.\"/
+                end"
+            }
+        },
+        {
+            "Action": "EditData",
             "Target": "Data/Events/Mountain",
             "Entries": {
                 "{{ModId}}_ChangBin6/f {{ModId}}_SKZChangBin 1500/Time 900 1500": "none/follow/
@@ -1252,8 +1295,9 @@
             "Target": "Data/Events/BusStop",
             "Entries": {
                 "{{ModId}}_FelixEvent8/f {{ModId}}_SKZFelix 2000/Time 900 1500": "none/follow/
-                farmer 21 16 0 {{ModId}}_SKZFelix 21 11 2/
+                farmer 21 16 0 {{ModId}}_SKZFelix 21 11 2 /
                 skippable/
+                
                 viewport 19 11 clamp/
                 move farmer 0 -3 0/
                 emote {{ModId}}_SKZFelix 16/
@@ -1307,6 +1351,70 @@
                 globalFadeToClear 0.007 false/
                 /message \"And representing Pelican town, Felix Lee!\"/
                 speak {{ModId}}_SKZFelix \"Thank you everyone!\"/    
+                end",
+
+                "{{ModId}}_BangChanEvent8/f {{ModId}}_SKZBangChan 2000/Time 900 1500": "none/follow/
+                farmer 22 23 1 {{ModId}}_SKZBangChan 24 21 2 Abigail 1000 1000 0/
+                skippable/
+                changePortrait Abigail CrazyFan/
+                changeSprite Abigail CrazyFan/
+                changeName Abigail \"Crazy Fan\"/
+                viewport 24 22 clamp/
+                speed farmer 3/
+                move farmer 2 0 1/
+
+                move {{ModId}}_SKZBangChan 0 1 2/
+
+                emote farmer 16/
+                move farmer 0 0 0/
+                pause 400/
+                speak {{ModId}}_SKZBangChan \"Oh, hey @\"/
+                speak {{ModId}}_SKZBangChan \"Sorry about the other day, the boys can get kind of rowdy when we're recording together.\"/
+                speak {{ModId}}_SKZBangChan \"At the end of the day I know they've got my back though, honestly where would I be without them.\"/
+                pause 700/
+                message \"AAAAAAAAAAAAAAH\"/
+                message \"AAAAAAAAAAAAAAH\"/
+                warp Abigail 21 7/
+                speed Abigail 5/
+                move Abigail -2 0 3/
+                speed Abigail 5/
+                move Abigail 0 4 2/
+                speed Abigail 5/
+                move Abigail 4 0 1/
+                speed Abigail 5/
+                move Abigail 0 11 2/
+                speed Abigail 3/
+                speak Abigail \"STRAY KIDS!\"/
+                pause 1500/
+                move Abigail 0 0 1/
+                speak Abigail \"I CAN'T BELIEVE IT'S YOU WHY ARE YOU HERE?\"/
+                speak Abigail \"DID YOU SEE MY PETITION ASKING YOU TO COME?\"/
+                speak Abigail \"DID YOU COME FOR ME???\"/
+                speak {{ModId}}_SKZBangChan \"uuh...\"/
+                speak {{ModId}}_SKZBangChan \"I'm just here passing through the town.\"/
+                speak Abigail \"Does that mean the other members are here too? Where's Hyunjin can I see him?\"/
+                speak Abigail \"I know he came for me!\"/
+                speak {{ModId}}_SKZBangChan \"Actually we're just here with our managers, I'll be sure to tell Hyunjin you said hello though.\"/
+                speak {{ModId}}_SKZBangChan \"Would you like an autograph?\"/
+                speak Abigail \"No offence but I don't really want an autograph from you...\"/
+                speak Abigail \"Wait, who is this? Could it be? A dating rumor???\"/
+                speak Abigail \"If you don't take me to see Hyunjin right now I'm going to take a photo with you and this girl or guy and then everyone will know that you're dating\"/
+                speak {{ModId}}_SKZBangChan \"Thank you for your support, but I will have to call the police if you take unconsensual photos.\"/
+                speak Abigail \"Of course Bang Chan would call the police on his fans, some idol...\"/
+                speak Abigail \"You suck, Hyunjin doesn't deserve to have you in his group, you know that right?\"/
+                speak Abigail \"Fine, just give me the autograph then.\"/
+                speak {{ModId}}_SKZBangChan \"Actually, please write your government name for me. I'm well within my rights to file a restraining order.\"/
+                speak Abigail \"REALLY??? Just for being a fan??? No idol should treat their fans like this!\"/
+                speed Abigail 5/
+                move Abigail 0 1 2/
+                speed Abigail 5/
+                move Abigail -10 0 3/
+                warp Abigail 1000 1000/
+                emote {{ModId}}_SKZBangChan 28/
+                pause 300/
+                speak {{ModId}}_SKZBangChan \"I'm sorry you had to see that\"/
+                speak {{ModId}}_SKZBangChan \"My fans are really great I promise\"/
+                speak {{ModId}}_SKZBangChan \"At least most of them...\"/
                 end",
                 "{{ModId}}_ChangBin2/f {{ModId}}_SKZChangBin 250/Time 900 1500": "none/follow/
                 farmer 33 14 3 {{ModId}}_SKZChangBin 1000 1000 0 lewis 1000 1000 3/ 
