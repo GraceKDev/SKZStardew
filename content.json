@@ -1,12 +1,17 @@
 {
     "Format": "2.8.0",
     "Changes": [
-        //Portraits
+        {
+            "Action": "Load",
+            "Target": "Portraits/{{ModId}}_SKZBangChan_JYP",
+            "FromFile": "Portraits/SKZBangChan_JYP.png"
+        },
         {
             "Action": "Load",
             "Target": "Portraits/{{ModId}}_SKZFelix",
             "FromFile": "Portraits/SKZFelix.png"
         },
+        
         {
             "Action": "Load",
             "Target": "Portraits/{{ModId}}_SKZFelix_Winter",
@@ -62,6 +67,17 @@
             "Target": "Portraits/{{ModId}}_SKZLeeKnow_Winter",
             "FromFile": "Portraits/SKZLeeKnowWinter.png"
         },
+         {
+            "Action": "Load",
+            "Target": "Portraits/{{ModId}}_SKZHan",
+            "FromFile": "Portraits/SKZHan.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/{{ModId}}_SKZHan_Winter",
+            "FromFile": "Portraits/SKZHanWinter.png"
+        },
+        
         //Characters 
         {
             "Action": "Load",
@@ -119,6 +135,16 @@
             "Target": "Characters/{{ModId}}_SKZLeeKnow_Winter",
             "FromFile": "Characters/SKZLeeKnowWinter.png"
         },
+            {
+            "Action": "Load",
+            "Target": "Characters/{{ModId}}_SKZHan",
+            "FromFile": "Characters/SKZHan.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/{{ModId}}_SKZHan_Winter",
+            "FromFile": "Characters/SKZHanWinter.png"
+        },
         //Dialogue
         {
             "Action": "Load",
@@ -150,6 +176,17 @@
             "Target": "Characters/Dialogue/{{ModId}}_SKZHyunjin",
             "FromFile": "Dialogue/SKZHyunjin.json"
         },
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/{{ModId}}_SKZHyunjin",
+            "FromFile": "Dialogue/SKZHyunjin.json"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/{{ModId}}_SKZHan",
+            "FromFile": "Dialogue/SKZHan.json"
+        },
+
 
         //Maps 
         {
@@ -748,6 +785,46 @@
                         // }
                     ]
                 },
+                  "{{ModId}}_SKZHan": {
+                    "DisplayName": "Han",
+                    "BirthSeason": "Fall",
+                    "BirthDay": 5,
+                    "HomeRegion": "Town",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "StayHotelHan",
+                            "Tile": {
+                                "X": 5,
+                                "Y": 6
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "Id": "Default",
+                            "Interval": "Any",
+                            "Portrait": "Portraits/{{ModId}}_SKZHan",
+                            "Sprite": "Characters/{{ModId}}_SKZHan",
+                            "Precedence": 2
+                        },
+                        {
+                            "LogName": "Seasonal Portraits - Winter Han",
+                            "Id": "{{ModId}}_WinterHanOutfit",
+                            "Season": "winter",
+                            "Portrait": "Portraits/{{ModId}}_SKZHan_Winter",
+                            "Sprite": "Characters/{{ModId}}_SKZHan_Winter",
+                            "Precedence": -1
+                        }
+                    ]
+                },
             }
         },
         {
@@ -783,6 +860,64 @@
                 /end"
             }
         },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/StayHotelBangChan",
+            "Entries": {
+                "{{ModId}}_BangChanEvent4/f {{ModId}}_SKZBangChan 1000/Time 600 2600": "none/follow/
+                farmer 8 11 0 {{ModId}}_SKZBangChan 5 6 0/
+                skippable/
+                viewport 5 6/
+                emote {{ModId}}_SKZBangChan 12/
+                pause 500/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                pause 500/
+                emote {{ModId}}_SKZBangChan 28/
+                move farmer 0 -5 3/
+                speak {{ModId}}_SKZBangChan \"I really am sorry this project is taking longer than expected.\"/
+                speak {{ModId}}_SKZBangChan \"I just want it to be perfect for our fans and for you.\"/
+                changePortrait {{ModId}}_SKZBangChan JYP/
+                changeName {{ModId}}_SKZBangChan JYP/
+                speak {{ModId}}_SKZBangChan \"I trusted you to lead this group.\"/
+                speak {{ModId}}_SKZBangChan \"Why can’t you just do it right?\"/
+                speak {{ModId}}_SKZBangChan \"Obviously you’re not that good.\"/
+                changePortrait {{ModId}}_SKZBangChan/
+                changeName {{ModId}}_SKZBangChan Bang Chan/
+                speak {{ModId}}_SKZBangChan \"I’m sorry, Mr Park.\"/
+                speak {{ModId}}_SKZBangChan \"I’ll get it finished as soon as possible, the town’s people have been very cooperative.\"/
+                changePortrait {{ModId}}_SKZBangChan JYP/
+                changeName {{ModId}}_SKZBangChan JYP/
+                speak {{ModId}}_SKZBangChan \"At least someone is...\"/
+                speak {{ModId}}_SKZBangChan \"Every year is one year closer to death.\"/
+                speak {{ModId}}_SKZBangChan \"That's what life is.\"/
+                speak {{ModId}}_SKZBangChan \"Do you know how your heart is pumping?\"/
+                speak {{ModId}}_SKZBangChan \"The electrical stimulation that is given to the muscle is like an electric spark 80 times a minute.\"/
+                speak {{ModId}}_SKZBangChan \"That’s the only reason we’re alive.\"/
+                speak {{ModId}}_SKZBangChan \"And it can stop.\"/
+                speak {{ModId}}_SKZBangChan \"Tonight.\"/
+                speak {{ModId}}_SKZBangChan \"So please, Bang Chan, make the most of your time here on earth.\"/
+                changePortrait {{ModId}}_SKZBangChan/
+                changeName {{ModId}}_SKZBangChan Bang Chan/
+                speak {{ModId}}_SKZBangChan \"Yes, sir...\"/
+                pause 500/
+                emote {{ModId}}_SKZBangChan 8/
+                move farmer -2 0 3/
+                pause 500/
+                emote {{ModId}}_SKZBangChan 28/
+                speak {{ModId}}_SKZBangChan \"I’m not really sure I understand what he was saying to me...\"/
+                speak {{ModId}}_SKZBangChan \"I think I better work harder though, JYP and the boys are counting on me.\"/
+                end",
+                "{{ModId}}_BangChanEvent4/f {{ModId}}_SKZBangChan 1000/Time 600 2600": "none/follow/
+                farmer 8 11 0 {{ModId}}_SKZBangChan 8 13 2 {{ModId}}_SKZChangBin 6 7 1 {{ModId}}_SKZIn 6 7 1  /
+                skippable/
+                viewport 5 6/
+                end"
+            }
+        },
+
         {
             "Action": "EditData",
             "Target": "Data/Events/Saloon",
@@ -940,10 +1075,28 @@
                 speak {{ModId}}_SKZFelix \"What does that even mean?? He knows I’m a man, right?\"/
                 speak {{ModId}}_SKZFelix \"I hate to ask for your help again, but it’s not a JYP event, so I won’t have my stylist—and you always dress so nicely even though you farm every day.\"/
                 speak {{ModId}}_SKZFelix \"If there’s anyone who can help me represent Pelican Town its you!\"/
+                end",
+                "{{ModId}}_ChangBin10/f {{ModId}}_SKZChangBin 1500/Time 900 1500": "none/follow/
+                farmer 64 15 2 {{ModId}}_SKZChangBin 64 16 0/
+                skippable/
+                viewport 64 15 clamp/
+                speak {{ModId}}_SKZChangBin \"Hey, @.\"/
+                speak {{ModId}}_SKZChangBin \"I brought you more of the stones you needed.\"/
+                speak {{ModId}}_SKZChangBin \"It was a great workout.\"/
+                speak {{ModId}}_SKZChangBin \"Really fun!\"/
+                speak {{ModId}}_SKZChangBin \"Do you have anything else you need help with?\"/
+                speak {{ModId}}_SKZChangBin \"If you do, make sure you tell me first.\"/
+                speak {{ModId}}_SKZChangBin \"I’ll always try my best to be there when you need me.\"/
+                speak {{ModId}}_SKZChangBin \"RELY ON ME!\"/
+                speak {{ModId}}_SKZChangBin \"Do you need some more wood?\"/
+                speak {{ModId}}_SKZChangBin \"Or fiber?\"/
+                speak {{ModId}}_SKZChangBin \"How about repairs? Do you need any?\"/
+                speak {{ModId}}_SKZChangBin \"I WILL HELP YOU!\"/
+                speak {{ModId}}_SKZChangBin \"UAAH!\"/
+                speak {{ModId}}_SKZChangBin \"AAAH!\"/
                 end"
-            }
+            }  
         },
-
         {
             "Action": "EditData",
             "Target": "Data/Events/SeedShop",
@@ -1326,6 +1479,12 @@
             "Target": "Data/Events/StayHotelFelix",
             "FromFile": "assets/blank.json"
         },
+         {
+            "LogName": "Felix Final",
+            "Action": "Load",
+            "Target": "Data/Events/StayHotelBangChan",
+            "FromFile": "assets/blank.json"
+        },
         {
             "Action": "EditData",
             "Target": "Data/Events/StayHotelFelix",
@@ -1552,31 +1711,8 @@
                 end"
             }
         },        
-//         Player is struggling to hit the rock, perhaps she is shaking?? Or if we feel like a really powerful entity who can do anything we put our minds to, maybe the farmer will be hitting the rock with their pickaxe 
-// Struggle struggle struggle struggle 
-// Drop appears on head 
-// Changbin is here to save the day 
-// “@, what are you doing in here?” 
-// “Me? I like to get my workout in sometimes, this cave is nice and cold.” 
-// “You’re so sweaty, are you here for the same?” 
-// “Oh, you need to collect stone from here?” 
-// “Yea, I guess that makes sense with everything you need to build.” 
-// “I do not know how you do it.” 
-// “So, good luck!” 
-// “Changbin starts to walk towards the elevator 
-// Changbin stops and turns around. 
-// “Wait, do you need some help?” 
-// “OH!” 
-// “THEN WHY DIDN’T YOU SAY SO?” (smiling sprite) 
-// Changbin goes to pick up the rock 
-// ‘AAARRRGHGHH” 
-// “UUAHHH” 
-// “AAAAAH” 
-// Changbin picks up the rock. 
-// “I DID IT!” 
-// “THAT WAS FUN!” 
-// “I’LL BRING THIS BACK TO YOUR HOUSE!” 
-// Changbin walks out of the cave :3 
+
+        
                 
         {
             "Action": "EditData",
