@@ -1147,10 +1147,59 @@
                 end"
             }
         },
+                //       speak {{ModId}}_SKZHyunjin \"Hey, your name's @ right?\"/
+                // speak {{ModId}}_SKZHyunjin \"This area is so beautiful. It's not like this in town.\"/
+                // speak {{ModId}}_SKZHyunjin \"The way the water flows down the stream is so energetic.\"/
+                // speak {{ModId}}_SKZHyunjin \"I used to take walks like this all the time in Seoul, but the colours in this forest are incredible.\"/
+                // speak {{ModId}}_SKZHyunjin \"It's great to get inspiration for my drawings.\"/
+                // speak {{ModId}}_SKZHyunjin \"Do you want to walk with me? If you were walking anyway.\"/
         {
             "Action": "EditData",
             "Target": "Data/Events/Forest",
             "Entries": {
+                "{{ModId}}_HyunjinEvent2/f {{ModId}}_SKZHyunjin 500/Time 900 1700": "none/follow/
+                farmer 72 44 2 {{ModId}}_SKZHyunjin 76 48 3/
+                skippable/
+                viewport 72 44 clamp/
+                move farmer 0 3 2 true/
+                move {{ModId}}_SKZHyunjin -4 0 3 false/
+                emote {{ModId}}_SKZHyunjin 16/
+                pause 800/
+                move farmer 0 0 2/
+                move {{ModId}}_SKZHyunjin 0 0 0/
+                move farmer -4 0 3 true/
+                move {{ModId}}_SKZHyunjin -4 0 3/
+                temporaryAnimatedSprite TileSheets\\critters 64 192 32 32 75 6 9999 62 43 false false 1 0.0 1 0 0 0 motion 4 0/
+                pause 700/
+                removeTemporarySprites/
+                temporaryAnimatedSprite TileSheets\\critters 64 192 32 32 75 6 9999 65 43 false false 100 0.0 1 0 4.71238898 0 motion 0 -4/
+                pause 700/
+                removeTemporarySprites/
+                pause 300/
+                playSound leafrustle/
+                move farmer 0 0 0/
+                move {{ModId}}_SKZHyunjin 0 0 0/
+                emote {{ModId}}_SKZHyunjin 16/
+                
+                speak {{ModId}}_SKZHyunjin \"Aaah! What was that??\"/
+                speak {{ModId}}_SKZHyunjin \"Squirrel? Chipmunk?\"/
+                speak {{ModId}}_SKZHyunjin \"Rabbit??\"/
+                speak {{ModId}}_SKZHyunjin \"Wow so exciting!\"/
+                speak {{ModId}}_SKZHyunjin \"You never know what you can find in this town.\"/
+                speak {{ModId}}_SKZHyunjin \"That animal was so cute, I want to draw it.\"/
+                move {{ModId}}_SKZHyunjin 0 -1 0/
+                speak {{ModId}}_SKZHyunjin \"Hellooo\"/
+                speak {{ModId}}_SKZHyunjin \"Are you still there?\"/
+                speak {{ModId}}_SKZHyunjin \"I want to draw you!\"/
+                speak {{ModId}}_SKZHyunjin \"...\"/
+                speak {{ModId}}_SKZHyunjin \"I think he ran away...\"/
+                speak {{ModId}}_SKZHyunjin \"Too bad.\"/
+                move {{ModId}}_SKZHyunjin 0 1 2/
+                speak {{ModId}}_SKZHyunjin \"Anyway, I better get back to town soon, Bang Chan is waiting for me.\"/
+                speak {{ModId}}_SKZHyunjin \"It was nice talking to you though.\"/
+                speak {{ModId}}_SKZHyunjin \"Enjoy your walk.\"/
+                move {{ModId}}_SKZHyunjin 4 0 1/
+                end",
                 "{{ModId}}_BangChanEvent10/f {{ModId}}_SKZBangChan 2500/Time 2400 2600": "none/follow/
                 farmer 34 22 2 {{ModId}}_SKZBangChan 34 25 2/
                 skippable/
