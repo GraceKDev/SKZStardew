@@ -1152,22 +1152,29 @@
             "Target": "Data/Events/Forest",
             "Entries": {
                 "{{ModId}}_BangChanEvent10/f {{ModId}}_SKZBangChan 2500/Time 2400 2600": "none/follow/
-                farmer 57 17 1 {{ModId}}_SKZBangChan 55 16 1/
+                farmer 34 22 2 {{ModId}}_SKZBangChan 34 25 2/
                 skippable/
-                viewport 55 16 clamp/
-                move farmer -2 0 3/
-                move farmer 0 -1 0/
-                move farmer 0 0 1/
+                viewport 34 23 clamp/
+                move farmer 0 2 2/
+                move farmer -1 0 3/
+                move farmer 0 1 2/
                 pause 500/
+                move farmer 0 0 1/
+                emote {{ModId}}_SKZBangChan 16/
+                move {{ModId}}_SKZBangChan 0 0 3/
                 speak {{ModId}}_SKZBangChan \"Oh where did you come from?\"/
                 speak {{ModId}}_SKZBangChan \"You really shouldn't be awake at this time.\"/
                 speak {{ModId}}_SKZBangChan \"Why am I here? Oh, haha.\"/
                 speak {{ModId}}_SKZBangChan \"I couldn't sleep again.\"/
                 speak {{ModId}}_SKZBangChan \"But don't worry, I'll go back to the hotel soon. I just came here to think a bit.\"/
                 speak {{ModId}}_SKZBangChan \"This is such a beautiful place.\"/
+                move {{ModId}}_SKZBangChan 0 0 2/
+                move farmer 0 0 2/
                 speak {{ModId}}_SKZBangChan \"The whole valley is beautiful.\"/
                 speak {{ModId}}_SKZBangChan \"Being here has been such a nice change of pace, I've been so happy just being here with you and the kids.\"/
                 pause 300/
+                move {{ModId}}_SKZBangChan 0 0 3/
+                move farmer 0 0 1/
                 speak {{ModId}}_SKZBangChan \"Maybe that's why I've taken so long to finish this project.\"/
                 speak {{ModId}}_SKZBangChan \"And now with you...\"/
                 speak {{ModId}}_SKZBangChan \"Things are just...\"/
@@ -1178,13 +1185,11 @@
                 speak {{ModId}}_SKZBangChan \"Hahaha\"/
                 speak {{ModId}}_SKZBangChan \"I think it's time for me to go to bed.\"/
                 speak {{ModId}}_SKZBangChan \"Good luck to me...\"/
-                speed {{ModId}}_SKZBangChan 3/
-                move {{ModId}}_SKZBangChan 2 0 1/
-                move {{ModId}}_SKZBangChan 0 3 2/
-                move {{ModId}}_SKZBangChan 1 0 1/
-                move {{ModId}}_SKZBangChan 0 0 3/
-                speed {{ModId}}_SKZBangChan 2/
+                move {{ModId}}_SKZBangChan 0 0 2/
+                move farmer 0 0 2/
                 pause 300/
+                move {{ModId}}_SKZBangChan 0 0 3/
+                move farmer 0 0 1/
                 speak {{ModId}}_SKZBangChan \"Thank you, @, really\"/
                 speak {{ModId}}_SKZBangChan \"I want to spend more time with you.\"/
                 end"
