@@ -1073,9 +1073,58 @@
                 speak {{ModId}}_SKZFelix \"Hey thanks for helping me today, Sebastian is a life saver.\"/
                 speak {{ModId}}_SKZFelix \"I’ll have to pay you back sometime soon.\"/
                 move {{ModId}}_SKZFelix 0 5 2/
+                end/",
+                "{{ModId}}_HyunjinEvent8/f {{ModId}}_SKZHyunjin 1500/Time 900 1500": "none/follow/
+                farmer 12 90 3 {{ModId}}_SKZHyunjin 1000 1000 2/
+                skippable/
+                viewport 11 88 clamp/
+                move farmer -2 0 3/
+                changeYSourceRectOffset {{ModId}}_SKZHyunjin 128/
+                warp {{ModId}}_SKZHyunjin 10 86/
+                move {{ModId}}_SKZHyunjin 0 0 2/
+                move farmer 0 0 0/
+                emote farmer 16/
+                emote {{ModId}}_SKZHyunjin 16/
+                move {{ModId}}_SKZHyunjin 0 3 2/
+                speak {{ModId}}_SKZHyunjin \"@! Fancy running into you again.\"/
+                speak {{ModId}}_SKZHyunjin \"What do you think about my new outfit?\"/
+                move {{ModId}}_SKZHyunjin 0 0 1/
+                pause 400/
+                move {{ModId}}_SKZHyunjin 0 0 3/
+                pause 400/
+                move {{ModId}}_SKZHyunjin 0 0 0/
+                pause 400/
+                move {{ModId}}_SKZHyunjin 0 0 2/
+                pause 400/
+                emote farmer 28/
+                speak {{ModId}}_SKZHyunjin \"It's a little bright for my tastes but this town doesn't even have a clothing store.\"/
+                speak {{ModId}}_SKZHyunjin \"Emily was nice enough to offer to make me some clothes.\"/
+                speak {{ModId}}_SKZHyunjin \"She said I'm a perfect model.\"/
+                speak {{ModId}}_SKZHyunjin \"I won't complain, handmade clothes are really a nice gift.\"/
+                speak {{ModId}}_SKZHyunjin \"She said she can teach me how to make my own.\"/
+                speak {{ModId}}_SKZHyunjin \"I've never learnt how to sew before but if we're staying in this town for a long time, it might be necessary.\"/
+                speak {{ModId}}_SKZHyunjin \"And Emily is a nice girl.\"/
+                speak {{ModId}}_SKZHyunjin \"Why do you look jealous?\"/
+                emote farmer 40/
+                speak {{ModId}}_SKZHyunjin \"Anyway, I'm wondering what I should try to make first.\"/
+                speak {{ModId}}_SKZHyunjin \"Probably something simple and classic.\"/
+                speak {{ModId}}_SKZHyunjin \"Or maybe I should make a gift? Lixie would love something like that.\"/
+                speak {{ModId}}_SKZHyunjin \"Hmmm.\"/
+                speak {{ModId}}_SKZHyunjin \"Grrrrr.\"/
+                speak {{ModId}}_SKZHyunjin \"Grmmmmm...\"/
+                speak {{ModId}}_SKZHyunjin \"There's a lot to think about.\"/
+                speak {{ModId}}_SKZHyunjin \"I bet you can give me some ideas.\"/
+                speak {{ModId}}_SKZHyunjin \"I'll have to sketch it up first and then show Emily.\"/
+                quickQuestion Should I go to the forest or the mountain for inspiration?#The forest.#The mountain.(break)speak {{ModId}}_SKZHyunjin \"The forest does sound inspiring. Let's head there.\"(break)speak {{ModId}}_SKZHyunjin \"The mountain might be perfect. Let's go.\"/
+                speak {{ModId}}_SKZHyunjin \"Are you coming with me?\"/
+                speak {{ModId}}_SKZHyunjin \"Let's go.\"/
+                move {{ModId}}_SKZHyunjin -6 0 3 true/
+                move farmer -6 0 3 true/
+                pause 900/
                 end/"
             }
         },
+
         {
             "Action": "EditData",
             "Target": "Data/Events/Farm",
@@ -1387,7 +1436,6 @@
                 end/"
             }
         },
-
          {
             "Action": "EditData",
             "Target": "Data/Events/ArchaeologyHouse",
