@@ -369,7 +369,7 @@
             "Target": "Data/Objects",
             "Entries": {
                 "{{ModId}}_Brownie": {
-                    "Name": "{{ModId}}_Brownie",
+                    "Name": "Felix Brownie",
                     "Displayname": "Felix's Brownie",
                     "Description": "♫ Brownie, brownie, brownie~ ♪",
                     "Type": "Cooking",
@@ -1146,13 +1146,7 @@
                 move {{ModId}}_SKZChangBin 0 4 2/
                 end"
             }
-        },
-                //       speak {{ModId}}_SKZHyunjin \"Hey, your name's @ right?\"/
-                // speak {{ModId}}_SKZHyunjin \"This area is so beautiful. It's not like this in town.\"/
-                // speak {{ModId}}_SKZHyunjin \"The way the water flows down the stream is so energetic.\"/
-                // speak {{ModId}}_SKZHyunjin \"I used to take walks like this all the time in Seoul, but the colours in this forest are incredible.\"/
-                // speak {{ModId}}_SKZHyunjin \"It's great to get inspiration for my drawings.\"/
-                // speak {{ModId}}_SKZHyunjin \"Do you want to walk with me? If you were walking anyway.\"/
+        },      
         {
             "Action": "EditData",
             "Target": "Data/Events/Forest",
@@ -1164,37 +1158,46 @@
                 move farmer 0 3 2 true/
                 move {{ModId}}_SKZHyunjin -4 0 3 false/
                 emote {{ModId}}_SKZHyunjin 16/
-                pause 800/
-                move farmer 0 0 2/
                 move {{ModId}}_SKZHyunjin 0 0 0/
-                move farmer -4 0 3 true/
-                move {{ModId}}_SKZHyunjin -4 0 3/
-                temporaryAnimatedSprite TileSheets\\critters 64 192 32 32 75 6 9999 62 43 false false 1 0.0 1 0 0 0 motion 4 0/
-                pause 700/
+                pause 800/
+                speak {{ModId}}_SKZHyunjin \"Hey, your name's @ right?\"/
+                speak {{ModId}}_SKZHyunjin \"This area is so beautiful. It's not like this in town.\"/
+                speak {{ModId}}_SKZHyunjin \"The way the water flows down the stream is so energetic.\"/
+                speak {{ModId}}_SKZHyunjin \"I used to take walks like this all the time in Seoul, but the colours in this forest are incredible.\"/
+                speak {{ModId}}_SKZHyunjin \"It's great to get inspiration for my drawings.\"/
+                speak {{ModId}}_SKZHyunjin \"Do you want to walk with me? If you were walking anyway.\"/
+                move farmer 0 0 2/
+                viewport move -2 0 6000/
+                move farmer -14 0 3 {{ModId}}_SKZHyunjin -14 0 3/
+                temporaryAnimatedSprite TileSheets\\critters 64 192 32 32 75 6 9999 56 42 false false 1 0.0 1 0 0 0 motion 4 0/
+                pause 400/
                 removeTemporarySprites/
-                temporaryAnimatedSprite TileSheets\\critters 64 192 32 32 75 6 9999 65 43 false false 100 0.0 1 0 4.71238898 0 motion 0 -4/
+                temporaryAnimatedSprite TileSheets\\critters 64 192 32 32 75 6 9999 58 42 false false 100 0.0 1 0 4.71238898 0 motion 0 -4/
                 pause 700/
-                removeTemporarySprites/
-                pause 300/
                 playSound leafrustle/
+                removeTemporarySprites/
                 move farmer 0 0 0/
                 move {{ModId}}_SKZHyunjin 0 0 0/
                 emote {{ModId}}_SKZHyunjin 16/
-                
                 speak {{ModId}}_SKZHyunjin \"Aaah! What was that??\"/
                 speak {{ModId}}_SKZHyunjin \"Squirrel? Chipmunk?\"/
                 speak {{ModId}}_SKZHyunjin \"Rabbit??\"/
                 speak {{ModId}}_SKZHyunjin \"Wow so exciting!\"/
                 speak {{ModId}}_SKZHyunjin \"You never know what you can find in this town.\"/
                 speak {{ModId}}_SKZHyunjin \"That animal was so cute, I want to draw it.\"/
+                move {{ModId}}_SKZHyunjin 1 0 3/
                 move {{ModId}}_SKZHyunjin 0 -1 0/
                 speak {{ModId}}_SKZHyunjin \"Hellooo\"/
                 speak {{ModId}}_SKZHyunjin \"Are you still there?\"/
                 speak {{ModId}}_SKZHyunjin \"I want to draw you!\"/
                 speak {{ModId}}_SKZHyunjin \"...\"/
+                pause 3000/
+                emote farmer 40/
+                pause 800/
+                emote {{ModId}}_SKZHyunjin 28/
                 speak {{ModId}}_SKZHyunjin \"I think he ran away...\"/
                 speak {{ModId}}_SKZHyunjin \"Too bad.\"/
-                move {{ModId}}_SKZHyunjin 0 1 2/
+                move {{ModId}}_SKZHyunjin 0 0 3/
                 speak {{ModId}}_SKZHyunjin \"Anyway, I better get back to town soon, Bang Chan is waiting for me.\"/
                 speak {{ModId}}_SKZHyunjin \"It was nice talking to you though.\"/
                 speak {{ModId}}_SKZHyunjin \"Enjoy your walk.\"/
@@ -1341,9 +1344,99 @@
                 speak {{ModId}}_SKZChangBin \"Hey, I can share, you take one as well you probably need it just as much as me.\"/
                 speak {{ModId}}_SKZChangBin \"What a happy day!\"/
                 speak {{ModId}}_SKZChangBin \"This is my second one.\"/
-                end"
+                end",
+                "{{ModId}}_HyunjinEvent4/f {{ModId}}_SKZHyunjin 1500/Time 900 1500": "none/follow/
+                farmer 39 27 2 {{ModId}}_SKZHyunjin 39 23 0/
+                skippable/
+                viewport 39 23 clamp/
+                move farmer 0 -3 0/
+                move {{ModId}}_SKZHyunjin 0 0 2/
+                speak {{ModId}}_SKZHyunjin \"Oh hi, @.\"/
+                speak {{ModId}}_SKZHyunjin \"I didn't expect to see anyone here.\"/
+                speak {{ModId}}_SKZHyunjin \"Sorry I'm a little flustered.\"/
+                speak {{ModId}}_SKZHyunjin \"...\"/
+                speak {{ModId}}_SKZHyunjin \"So, where were you heading? I can give you directions.\"/
+                speak {{ModId}}_SKZHyunjin \"Or... oh.\"/
+                speak {{ModId}}_SKZHyunjin \"You didn't come to find me, did you?\"/
+                speak {{ModId}}_SKZHyunjin \"No, it's just.\"/
+                speak {{ModId}}_SKZHyunjin \"I don't really like that.\"/
+                speak {{ModId}}_SKZHyunjin \"You're not the problem. I just like going on these walks alone...\"/
+                speak {{ModId}}_SKZHyunjin \"So....\"/
+                move {{ModId}}_SKZHyunjin 2 0 1/
+                pause 500/
+                move farmer 2 0 1 true/
+                pause 700/
+                move {{ModId}}_SKZHyunjin 0 0 2/
+                move farmer 0 0 1/
+                speak {{ModId}}_SKZHyunjin \"You're coming with me?\"/
+                speak {{ModId}}_SKZHyunjin \"You've given me all these gifts.\"/
+                speak {{ModId}}_SKZHyunjin \"And you talk to me all the time.\"/
+                speak {{ModId}}_SKZHyunjin \"I want you to know I'm really not that type of guy...\"/
+                quickQuestion Is this all because of the way I look?#Yes.#No.(break)speak {{ModId}}_SKZHyunjin \"Oh, I see.\"\\ friendship {{ModId}}_SKZHyunjin -500\\ speak {{ModId}}_SKZHyunjin \"I think I better continue my walk then.\"\\ speak {{ModId}}_SKZHyunjin \"See you around.\"\\ move {{ModId}}_SKZHyunjin 3 0 1\\ end(break)speak {{ModId}}_SKZHyunjin \"Really? Oh thank goodness that's a huge relief.\"\\ speak {{ModId}}_SKZHyunjin \"I guess you're just a friendly person then, right?\"/
+                speak {{ModId}}_SKZHyunjin \"My members are like that.\"/
+                speak {{ModId}}_SKZHyunjin \"I get a little nervous sometimes, especially in English.\"/
+                speak {{ModId}}_SKZHyunjin \"But you and the other people in town have been so welcoming, I feel so happy.\"/
+                speak {{ModId}}_SKZHyunjin \"I wonder if we can find that squirrel again, he must be hiding somewhere.\"/
+                move {{ModId}}_SKZHyunjin 0 0 0/
+                speak {{ModId}}_SKZHyunjin \"Squirrel!\"/
+                move {{ModId}}_SKZHyunjin 0 0 1/
+                speak {{ModId}}_SKZHyunjin \"Squirrel!!!\"/
+                move {{ModId}}_SKZHyunjin 0 0 2/
+                speak {{ModId}}_SKZHyunjin \"Let's go look for him together.\"/
+                move farmer 2 0 1 {{ModId}}_SKZHyunjin 2 0 1/
+                end/"
             }
         },
+
+         {
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries": {
+                "{{ModId}}_HyunjinEvent6/f {{ModId}}_SKZHyunjin 1500/Time 900 1500": "none/follow/
+                farmer 27 8 2 {{ModId}}_SKZHyunjin 28 12 0/
+                skippable/
+                viewport 28 12 clamp/
+                move farmer 0 4 2/
+                move farmer 0 0 1/
+                move {{ModId}}_SKZHyunjin 0 0 3/
+                speak {{ModId}}_SKZHyunjin \"@, nice to see you here.\"/
+                speak {{ModId}}_SKZHyunjin \"I was just looking at the minerals they have here.\"/
+                speak {{ModId}}_SKZHyunjin \"Would you like to join me?\"/
+                move {{ModId}}_SKZHyunjin 1 0 0/
+                move farmer 1 0 0/
+                pause 700/
+                speak {{ModId}}_SKZHyunjin \"It's really nice that each mineral has such vivid and unique colours.\"/
+                speak {{ModId}}_SKZHyunjin \"They seem to be very common to find here in Pelican Town, that's so lucky.\"/
+                speak {{ModId}}_SKZHyunjin \"This area has such a unique history as well.\"/
+                speak {{ModId}}_SKZHyunjin \"So many artifacts can be found here, some of it is art from thousands of years ago.\"/
+                speak {{ModId}}_SKZHyunjin \"So many different people and cultures must have lived here.\"/
+                speak {{ModId}}_SKZHyunjin \"And I get to look at all of it here in this museum.\"/
+                speak {{ModId}}_SKZHyunjin \"It's really inspiring.\"/
+                speak {{ModId}}_SKZHyunjin \"I want to make art just like this.\"/
+                speak {{ModId}}_SKZHyunjin \"Whether it's painting or music, it can be carried and enjoyed by people all over the world and even through time.\"/
+                speak {{ModId}}_SKZHyunjin \"It's really a beautiful thing.\"/
+                pause 900/
+                speak {{ModId}}_SKZHyunjin \"Sorry, I got carried away.\"/
+                speak {{ModId}}_SKZHyunjin \"This museum also has a library attached.\"/
+                speak {{ModId}}_SKZHyunjin \"They don't have any Korean books but I've been enjoying reading English books too.\"/
+                speak {{ModId}}_SKZHyunjin \"I might even have to learn some Dwarvish.\"/
+                quickQuestion Did you come here for the museum or the library?#The museum.#The library.(break)speak {{ModId}}_SKZHyunjin \"I thought so. There's so much to look at here.\"(break)speak {{ModId}}_SKZHyunjin \"The library is really cozy, isn't it?\"/
+                speak {{ModId}}_SKZHyunjin \"I missed Korea when I first came here, but I really love this town.\"/
+                speak {{ModId}}_SKZHyunjin \"The nature and the quietness is something I've really gotten used to.\"/
+                speak {{ModId}}_SKZHyunjin \"There's beauty in everything around here if you take the time to look.\"/
+                speak {{ModId}}_SKZHyunjin \"What kind of books do you like? Why don't you pick one out and we can read it together.\"/
+                move {{ModId}}_SKZHyunjin 0 2 3/
+                move {{ModId}}_SKZHyunjin -1 0 3/
+                move farmer 0 1 3/
+                move {{ModId}}_SKZHyunjin -6 0 3 true/
+                move farmer -6 0 3 true/
+                pause 800/
+                emote {{ModId}}_SKZHyunjin 20/
+                pause 500/
+                end/"
+            }
+        },
+
         {
             "Action": "EditData",
             "Target": "Data/Events/BusStop",
@@ -1416,9 +1509,7 @@
                 viewport 24 22 clamp/
                 speed farmer 3/
                 move farmer 2 0 1/
-
                 move {{ModId}}_SKZBangChan 0 1 2/
-
                 emote farmer 16/
                 move farmer 0 0 0/
                 pause 400/
@@ -1926,10 +2017,7 @@
                 speak {{ModId}}_SKZChangBin \"WANT ME TO BRING THIS TO YOUR HOUSE!?\"/
                 end"
             }
-        },        
-
-        
-                
+        },                
         {
             "Action": "EditData",
             "Target": "Data/Events/StayHotelFelix",
