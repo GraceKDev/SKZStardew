@@ -935,6 +935,90 @@
 
         {
             "Action": "EditData",
+            "Target": "Data/Events/StayHotelHyunjin",
+            "Entries": {
+                "{{ModId}}_HyunjinEvent10/f {{ModId}}_SKZBangChan 1000/Time 600 2600": "none/follow/
+                farmer 8 9 0 {{ModId}}_SKZHyunjin 8 7 0/
+                skippable/
+                viewport 8 9/
+                emote {{ModId}}_SKZBangChan 12/
+                pause 500/
+                viewport move 10 0 10/
+                viewport move 10 0 10/
+                viewport move -10 0 10/
+                viewport move -10 0 10/
+                pause 500/
+                emote {{ModId}}_SKZBangChan 28/
+                move farmer 0 -5 3/
+                speak {{ModId}}_SKZBangChan \"I really am sorry this project is taking longer than expected.\"/
+                speak {{ModId}}_SKZBangChan \"I just want it to be perfect for our fans and for you.\"/
+                changePortrait {{ModId}}_SKZBangChan JYP/
+                changeName {{ModId}}_SKZBangChan JYP/
+                speak {{ModId}}_SKZBangChan \"I trusted you to lead this group.\"/
+                speak {{ModId}}_SKZBangChan \"Why can’t you just do it right?\"/
+                speak {{ModId}}_SKZBangChan \"Obviously you’re not that good.\"/
+                changePortrait {{ModId}}_SKZBangChan/
+                changeName {{ModId}}_SKZBangChan Bang Chan/
+                speak {{ModId}}_SKZBangChan \"I’m sorry, Mr Park.\"/
+                speak {{ModId}}_SKZBangChan \"I’ll get it finished as soon as possible, the town’s people have been very cooperative.\"/
+                changePortrait {{ModId}}_SKZBangChan JYP/
+                changeName {{ModId}}_SKZBangChan JYP/
+                speak {{ModId}}_SKZBangChan \"At least someone is...\"/
+                speak {{ModId}}_SKZBangChan \"Every year is one year closer to death.\"/
+                speak {{ModId}}_SKZBangChan \"That's what life is.\"/
+                speak {{ModId}}_SKZBangChan \"Do you know how your heart is pumping?\"/
+                speak {{ModId}}_SKZBangChan \"The electrical stimulation that is given to the muscle is like an electric spark 80 times a minute.\"/
+                speak {{ModId}}_SKZBangChan \"That’s the only reason we’re alive.\"/
+                speak {{ModId}}_SKZBangChan \"And it can stop.\"/
+                speak {{ModId}}_SKZBangChan \"Tonight.\"/
+                speak {{ModId}}_SKZBangChan \"So please, Bang Chan, make the most of your time here on earth.\"/
+                changePortrait {{ModId}}_SKZBangChan/
+                changeName {{ModId}}_SKZBangChan Bang Chan/
+                speak {{ModId}}_SKZBangChan \"Yes, sir...\"/
+                pause 500/
+                emote {{ModId}}_SKZBangChan 8/
+                move farmer -2 0 3/
+                pause 500/
+                emote {{ModId}}_SKZBangChan 28/
+                speak {{ModId}}_SKZBangChan \"I’m not really sure I understand what he was saying to me...\"/
+                speak {{ModId}}_SKZBangChan \"I think I better work harder though, JYP and the boys are counting on me.\"/
+                end",
+                "{{ModId}}_BangChanEvent4/f {{ModId}}_SKZBangChan 1000/Time 600 2600": "none/follow/
+                farmer 8 11 0 {{ModId}}_SKZBangChan 8 13 2 {{ModId}}_SKZChangBin 6 7 1 {{ModId}}_SKZIn 6 7 1  /
+                skippable/
+                viewport 5 6/
+                end"
+            }
+        },
+
+        ### Ten Heart Event 
+ 
+	Title: Hyunjin will give you the jacket he made 
+	Location: Hyunjin’s hotel room 
+	Extra sprites needed: custom shirt (black with white flowers) 
+Script: 
+ 
+“Just about time, @ I’ve been wanting to tell you something.” 
+“Well, show you something actually.” 
+“I know we were talking a lot about the outfit design.” 
+“But actually, I lied.” 
+“So sneaky, right? I’m really surprised you didn’t notice.” 
+“Ever since we came to Pelican town, you’ve always been there for me to talk to, even when I pushed you away.” 
+“I’ve really enjoyed all the time we’ve spent together.” 
+“All the beautiful things we’ve seen and done.” 
+“Including meeting you.” 
+“so.” 
+“I thought it was only right.” 
+“For my creation to be a gift to you.” 
+“I tried to make it perfect but since it’s just my first piece it might not be.” 
+“I hope I can give you lots more in the future.” 
+“Anyway, I spent a lot of time on it so I hope you like it.” 
+“But anything would look wonderful on you.” 
+“You should try it on.” 
+
+
+        {
+            "Action": "EditData",
             "Target": "Data/Events/Saloon",
             "Entries": {
                 "{{ModId}}_FelixEvent2/f {{ModId}}_SKZFelix 500/Time 600 2600": "none/follow/
