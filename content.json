@@ -276,11 +276,11 @@
             "FromFile": "Tilesets/StayHotel_Han.tmx"
         },
         // items
-        {
-            "Action": "Load",
-            "Target": "Data/Shirts",
-            "FromFile": "Assets/shirt.png"
-        },
+        // {
+        //     "Action": "Load",
+        //     "Target": "Data/Shirts",
+        //     "FromFile": "Assets/shirt.png"
+        // },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
@@ -385,14 +385,14 @@
                     "Texture": "Maps/{{ModId}}_SKZTilesheet",
                     "SpriteIndex": 0,
                     "Edibility": 40
-                },
-                "{{ModId}}_HyunjinShirt": {
-                        "Name": "{{ModId}}_HyunjinShirt", 
-                        "Displayname": "Shirt",
-                        "Description": "A Shirt",
-                        "Price": 50,
-                        "SpriteIndex": 0
-                    }
+                }
+                // "{{ModId}}_HyunjinShirt": {
+                //         "Name": "{{ModId}}_HyunjinShirt", 
+                //         "Displayname": "Shirt",
+                //         "Description": "A Shirt",
+                //         "Price": 50,
+                //         "SpriteIndex": 0
+                //     }
             }
         },
         {
@@ -1080,8 +1080,6 @@
                 end"
             }
         },
-
-
         {
             "Action": "EditData",
             "Target": "Data/Events/Town",
@@ -1174,8 +1172,6 @@
                 pause 900/
                 end/",
 
-                
-
                 "{{ModId}}_SKZSeungminEvent2/f {{ModId}}_SKZSeungmin 1500/Time 900 1500": "none/follow/
                 farmer 20 23 3 {{ModId}}_SKZSeungmin 24 20 2/
                 skippable/
@@ -1215,7 +1211,6 @@
                 speak {{ModId}}_SKZSeungmin \"If we really want to test our luck, we can prank Lee Know.\"/
                 speak {{ModId}}_SKZSeungmin \"I hope you’re a fast runner though.\"/
                 speak {{ModId}}_SKZSeungmin \"So, what do you think? Who should we prank\"/
-                
                 quickQuestion Who should we prank?#Felix.#I.N.#Changbin.#Lee Know (break)speak {{ModId}}_SKZSeungmin \"Great choice!\"(break)speak {{ModId}}_SKZSeungmin \"Great choice!\"(break)speak {{ModId}}_SKZSeungmin \"Great choice!\"(break)speak {{ModId}}_SKZSeungmin \"Great choice!\"/
                 speak {{ModId}}_SKZSeungmin \"Ok so whats going to happen is I’m going to steal their keys.\"/
                 speak {{ModId}}_SKZSeungmin \"Wait! Keep listening! It gets good!\"/
@@ -1265,7 +1260,6 @@
                 message \"You threw Seungmin's keys into the fountain!\"/
                 speak {{ModId}}_SKZSeungmin \"No!! I didn’t deserve that!!\"/
                 end/",
-
                 "{{ModId}}_SKZSeungminEvent6/f {{ModId}}_SKZSeungmin 1500/Time 900 1500": "none/follow/
                 farmer 24 30 3 {{ModId}}_SKZSeungmin 28 30 2/
                 skippable/
@@ -1295,9 +1289,42 @@
                 speak {{ModId}}_SKZSeungmin \"No promises though.\"/
                 speak {{ModId}}_SKZSeungmin \"Maybe we can do our prank together another time.\"/
                 end/",
+                
+                "{{ModId}}_SKZSeungminEvent10/f {{ModId}}_SKZSeungmin 2500/Time 900 1500": "none/follow/
+                farmer 23 22 1 {{ModId}}_SKZSeungmin 29 22 3/
+                skippable/
+                viewport 22 23 clamp/
+                move farmer 3 0 1 true/
+                move {{ModId}}_SKZSeungmin -2 0 3 true/
+                pause 500/
+                speak {{ModId}}_SKZSeungmin \"@!\"/
+                speak {{ModId}}_SKZSeungmin \"It’s finally time!\"/
+                speak {{ModId}}_SKZSeungmin \"I stole his keys.\"/
+                speak {{ModId}}_SKZSeungmin \"For real this time.\"/
+                speak {{ModId}}_SKZSeungmin \"We can finally pull our prank.\"/
+                speak {{ModId}}_SKZSeungmin \"Quickly, put the keys under the bench, he’s coming soon.\"/
+                move {{ModId}}_SKZSeungmin 0 0 3/
+                move farmer 0 0 0/
+                message \"There already appears to be something under the bench.\"/
+                itemAboveHead (O)458 false/
+                pause 2000/
+                move farmer 0 0 1/
+                speak {{ModId}}_SKZSeungmin \"Surprise.\"/
+                speak {{ModId}}_SKZSeungmin \"I wanted to say thank you for taking the time to get to know me.\"/
+                speak {{ModId}}_SKZSeungmin \"I really appreciate all the time we’ve spent together.\"/
+                speak {{ModId}}_SKZSeungmin \"So I bought this for you.\"/
+                speak {{ModId}}_SKZSeungmin \"I hate meeting new people.\"/
+                speak {{ModId}}_SKZSeungmin \"So really, I don’t like to talk about myself or draw attention to myself.\"/
+                speak {{ModId}}_SKZSeungmin \"But when you found me the other day, it made me think.\"/
+                speak {{ModId}}_SKZSeungmin \"I shouldn’t keep my worries to myself.\"/
+                speak {{ModId}}_SKZSeungmin \"If it wasn’t for you, I wouldn’t feel like I can share how I’m feeling like this.\"/
+                speak {{ModId}}_SKZSeungmin \"Just promise me.\"/
+                speak {{ModId}}_SKZSeungmin \"To keep on acting the way you do now, I don’t want anything to change.\"/
+                speak {{ModId}}_SKZSeungmin \"I also want to make you proud of me.\"/
+                speak {{ModId}}_SKZSeungmin \"I’ll keep working in the background to make everyone proud.\"/
+                end/",
             }
         },
-
         {
             "Action": "EditData",
             "Target": "Data/Events/Farm",
@@ -1334,6 +1361,104 @@
                 end"
             }  
         },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/StayHotelSeungmin",
+            "Entries": {
+                "{{ModId}}_SKZSeungminEvent8/f {{ModId}}_SKZSeungmin 2000/Time 900 1500": "none/follow/
+                farmer 8 13 0 {{ModId}}_SKZSeungmin 8 9 2/
+                skippable/
+                viewport 8 10 clamp/
+                changeYSourceRectOffset {{ModId}}_SKZSeungmin 128/
+                hideShadow {{ModId}}_SKZSeungmin true/
+                move farmer 0 -1 0/
+                speak {{ModId}}_SKZSeungmin \"HmmmhmmmHmmm...\"/
+                showframe {{ModId}}_SKZSeungmin 0/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 1/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 2/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 3/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 0/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 1/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 2/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 3/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 0/
+                showframe {{ModId}}_SKZSeungmin 0/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 1/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 2/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 3/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 0/
+                speak {{ModId}}_SKZSeungmin \"Today, Chan showed me my lines for the new song.\"/
+                speak {{ModId}}_SKZSeungmin \"He said he knows only I can hit those notes, but I still think I might have to practice.\"/
+                speak {{ModId}}_SKZSeungmin \"My inflection isn’t quite perfect. I should spend some time tomorrow on it.\"/
+                speak {{ModId}}_SKZSeungmin \"I was so hungry before recording I couldn’t even think right.\"/
+                speak {{ModId}}_SKZSeungmin \"It’s so hard to get Korean food here, I must have lost at least 20kg.\"/
+                showframe {{ModId}}_SKZSeungmin 0/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 1/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 2/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 3/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 0/
+                speak {{ModId}}_SKZSeungmin \"I will eat my own foot before I eat Gus’ cooking again.\"/
+                speak {{ModId}}_SKZSeungmin \"I wish Felix would cook for me again.\"/
+                showframe {{ModId}}_SKZSeungmin 0/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 1/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 2/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 3/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 0/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 1/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 2/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 3/
+                pause 150/
+                showframe {{ModId}}_SKZSeungmin 0/
+                speak {{ModId}}_SKZSeungmin \"@ spoke to me again today, he or she even remembers my name.\"/
+                speak {{ModId}}_SKZSeungmin \"He or she pays a lot of attention to me, I don’t know what to do about it.\"/
+                speak {{ModId}}_SKZSeungmin \"I feel like I might explode next time he or she looks at me.\"/
+                speak {{ModId}}_SKZSeungmin \"I’m so not used to it...\"/
+                speak {{ModId}}_SKZSeungmin \"I miss the way things used to be in Korea.\"/
+                speak {{ModId}}_SKZSeungmin \"But still, change can be good.\"/
+                speak {{ModId}}_SKZSeungmin \"And @...\"/
+                showframe {{ModId}}_SKZSeungmin 0/
+                pause 50/
+                showframe {{ModId}}_SKZSeungmin 1/
+                pause 50/
+                showframe {{ModId}}_SKZSeungmin 2/
+                pause 50/
+                showframe {{ModId}}_SKZSeungmin 3/
+                pause 50/
+                showframe {{ModId}}_SKZSeungmin 0/
+                pause 500/
+                speak {{ModId}}_SKZSeungmin \"AAH! @! I didn’t know you were in here!\"/
+                speak {{ModId}}_SKZSeungmin \"That’s so embarrassing!\"/
+                speak {{ModId}}_SKZSeungmin \"I promise I’m not normally like this, I don’t know what’s going on with me.\"/
+                speak {{ModId}}_SKZSeungmin \"I write a diary to organise my thoughts but...\"/
+                speak {{ModId}}_SKZSeungmin \"Why am I like this?\"/
+                speak {{ModId}}_SKZSeungmin \"You must be so flustered.\"/
+                speak {{ModId}}_SKZSeungmin \"Forget about what I said, I don’t want you to worry about me.\"/
+                end"
+            }
+        },      
         {
             "Action": "EditData",
             "Target": "Data/Events/SeedShop",
@@ -1969,6 +2094,12 @@
             "LogName": "Felix Final",
             "Action": "Load",
             "Target": "Data/Events/StayHotelBangChan",
+            "FromFile": "assets/blank.json"
+        },
+           {
+            "LogName": "Felix Final",
+            "Action": "Load",
+            "Target": "Data/Events/StayHotelSeungmin",
             "FromFile": "assets/blank.json"
         },
         {
