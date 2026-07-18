@@ -1174,43 +1174,7 @@
                 pause 900/
                 end/",
 
-                "{{ModId}}_SKZSeungminEvent4/f {{ModId}}_SKZSeungmin 1500/Time 900 1500": "none/follow/
-                farmer 24 30 3 {{ModId}}_SKZSeungmin 28 30 2/
-                skippable/
-                viewport 26 30 clamp/
-                move farmer 2 0 1 true/
-                move {{ModId}}_SKZSeungmin -1 0 3 true/
-                pause 500/
-                speak {{ModId}}_SKZSeungmin \"@! I found you!\"/
-                speak {{ModId}}_SKZSeungmin \"The prank is ready, I finally found a way to steal his keys.\"/
-                speak {{ModId}}_SKZSeungmin \"He just left them sitting with his stuff on the ground while he was practicing what an idiot.\"/
-                speak {{ModId}}_SKZSeungmin \"He’ll come past here soon so you need to be ready.\"/
-                speak {{ModId}}_SKZSeungmin \"He won’t suspect you so you need to take his keys and go hide them under the bench quickly.\"/
-                move {{ModId}}_SKZSeungmin 3 0 3/   
-                move {{ModId}}_SKZSeungmin 0 2 0 true/   
-                viewport move 0 -1 1000/
-                move farmer 6 0 1 true/
-                move farmer 0 -4 1/
-                move {{ModId}}_SKZSeungmin 3 0 0/   
-                message \"All your tools are under the bench...\"/
-                speak {{ModId}}_SKZSeungmin \"Hahahaha! I got you!\"/
-                move {{ModId}}_SKZSeungmin -1 0 0 /
-                move {{ModId}}_SKZSeungmin 0 -5 0 true/
-                emote farmer 40/
-                speak {{ModId}}_SKZSeungmin \"You should have seen the look on your face! I bet you were looking for those all morning like an idiot!\"/
-                speak {{ModId}}_SKZSeungmin \"My master plan.\"/
-                speak {{ModId}}_SKZSeungmin \"He wasn’t in on it at all, those are actually my keys.\"/
-                emote {{ModId}}_SKZSeungmin 40/
-                pause 300/
-                move farmer -1 0 3/
-                speak {{ModId}}_SKZSeungmin \"...\"/
-                move {{ModId}}_SKZSeungmin 0 0 3/
-                speak {{ModId}}_SKZSeungmin \"Wait no! Don't!!\"/
-                move farmer -2 0 3/
-                playSound dropItemInWater/
-                message \"You threw Seungmin's keys into the fountain!\"/
-                speak {{ModId}}_SKZSeungmin \"No!! I didn’t deserve that!!\"/
-                end/",
+                
 
                 "{{ModId}}_SKZSeungminEvent2/f {{ModId}}_SKZSeungmin 1500/Time 900 1500": "none/follow/
                 farmer 20 23 3 {{ModId}}_SKZSeungmin 24 20 2/
@@ -1263,9 +1227,75 @@
                 speak {{ModId}}_SKZSeungmin \"OK, I’ll let you know when I’ve stolen his keys.\"/
                 speak {{ModId}}_SKZSeungmin \"What’s that? This isn’t a good idea? No sorry, I can’t hear you. This is gonna be so fun.\"/  
                 emote farmer 40/
-                end/"
-            }
+                end/",
+                "{{ModId}}_SKZSeungminEvent4/f {{ModId}}_SKZSeungmin 1500/Time 900 1500": "none/follow/
+                farmer 24 30 3 {{ModId}}_SKZSeungmin 28 30 2/
+                skippable/
+                viewport 26 30 clamp/
+                move farmer 2 0 1 true/
+                move {{ModId}}_SKZSeungmin -1 0 3 true/
+                pause 500/
+                speak {{ModId}}_SKZSeungmin \"@! I found you!\"/
+                speak {{ModId}}_SKZSeungmin \"The prank is ready, I finally found a way to steal his keys.\"/
+                speak {{ModId}}_SKZSeungmin \"He just left them sitting with his stuff on the ground while he was practicing what an idiot.\"/
+                speak {{ModId}}_SKZSeungmin \"He’ll come past here soon so you need to be ready.\"/
+                speak {{ModId}}_SKZSeungmin \"He won’t suspect you so you need to take his keys and go hide them under the bench quickly.\"/
+                move {{ModId}}_SKZSeungmin 3 0 3/   
+                move {{ModId}}_SKZSeungmin 0 2 0 true/   
+                viewport move 0 -1 1000/
+                move farmer 6 0 1 true/
+                move farmer 0 -4 1/
+                move {{ModId}}_SKZSeungmin 3 0 0/   
+                message \"All your tools are under the bench...\"/
+                speak {{ModId}}_SKZSeungmin \"Hahahaha! I got you!\"/
+                move {{ModId}}_SKZSeungmin -1 0 0 /
+                move {{ModId}}_SKZSeungmin 0 -5 0 true/
+                emote farmer 40/
+                speak {{ModId}}_SKZSeungmin \"You should have seen the look on your face! I bet you were looking for those all morning like an idiot!\"/
+                speak {{ModId}}_SKZSeungmin \"My master plan.\"/
+                speak {{ModId}}_SKZSeungmin \"He wasn’t in on it at all, those are actually my keys.\"/
+                emote {{ModId}}_SKZSeungmin 40/
+                pause 300/
+                move farmer -1 0 3/
+                speak {{ModId}}_SKZSeungmin \"...\"/
+                move {{ModId}}_SKZSeungmin 0 0 3/
+                speak {{ModId}}_SKZSeungmin \"Wait no! Don't!!\"/
+                move farmer -2 0 3/
+                playSound dropItemInWater/
+                message \"You threw Seungmin's keys into the fountain!\"/
+                speak {{ModId}}_SKZSeungmin \"No!! I didn’t deserve that!!\"/
+                end/",
 
+                "{{ModId}}_SKZSeungminEvent6/f {{ModId}}_SKZSeungmin 1500/Time 900 1500": "none/follow/
+                farmer 24 30 3 {{ModId}}_SKZSeungmin 28 30 2/
+                skippable/
+                viewport 26 30 clamp/
+                move farmer 2 0 1 true/
+                move {{ModId}}_SKZSeungmin -1 0 3 true/
+                speak {{ModId}}_SKZSeungmin \"@!\"/
+                emote farmer 40/
+                speak {{ModId}}_SKZSeungmin \"Wait why do you have that look on your face?\"/
+                speak {{ModId}}_SKZSeungmin \"Don’t be scared, I’m sorry about last time okay, it was pretty funny though.\"/
+                speak {{ModId}}_SKZSeungmin \"I’ll make it up to you, my favourite team is coming from Korea to play in Zuzu city, you can come with me.\"/
+                speak {{ModId}}_SKZSeungmin \"Oh right, baseball team, you didn’t know?\"/
+                speak {{ModId}}_SKZSeungmin \"I used to play baseball before I got injured, I’ll take you to see the game, you’ll love it.\"/
+                fade true/
+                changeToTemporaryMap Stadium/
+                warp farmer 13 12/
+                warp {{ModId}}_SKZSeungmin 14 12/
+                viewport 13 12 clamp/
+                move farmer 0 0 2/
+                move {{ModId}}_SKZSeungmin 0 0 2/
+                fade unfade/
+                speak {{ModId}}_SKZSeungmin \"Thanks for coming, it was a great game I hope you liked it.\"/
+                speak {{ModId}}_SKZSeungmin \"You understand the rules now, right? I tried my best to explain them.\"/
+                speak {{ModId}}_SKZSeungmin \"It’s nice to get away from work, right?\"/
+                speak {{ModId}}_SKZSeungmin \"I don’t really like to meet new people but you’re fun.\"/
+                speak {{ModId}}_SKZSeungmin \"If you need something from me in the future just ask, I’ll try not to make fun of you.\"/
+                speak {{ModId}}_SKZSeungmin \"No promises though.\"/
+                speak {{ModId}}_SKZSeungmin \"Maybe we can do our prank together another time.\"/
+                end/",
+            }
         },
 
         {
