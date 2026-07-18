@@ -17,6 +17,7 @@
             "Target": "Portraits/{{ModId}}_SKZFelix_Winter",
             "FromFile": "Portraits/SKZFelixWinter.png"
         },
+        
         {
             "Action": "Load",
             "Target": "Portraits/{{ModId}}_SKZBangChan",
@@ -274,6 +275,12 @@
             "Target": "Maps/{{ModId}}_StayHotel_Han",
             "FromFile": "Tilesets/StayHotel_Han.tmx"
         },
+        // items
+        {
+            "Action": "Load",
+            "Target": "Data/Shirts",
+            "FromFile": "Assets/shirt.png"
+        },
         {
             "Action": "EditData",
             "Target": "Data/Locations",
@@ -378,7 +385,14 @@
                     "Texture": "Maps/{{ModId}}_SKZTilesheet",
                     "SpriteIndex": 0,
                     "Edibility": 40
-                }
+                },
+                "{{ModId}}_HyunjinShirt": {
+                        "Name": "{{ModId}}_HyunjinShirt", 
+                        "Displayname": "Shirt",
+                        "Description": "A Shirt",
+                        "Price": 50,
+                        "SpriteIndex": 0
+                    }
             }
         },
         {
@@ -936,86 +950,37 @@
         {
             "Action": "EditData",
             "Target": "Data/Events/StayHotelHyunjin",
+            "LogName": "Hyunjin 10 Heart Event",
             "Entries": {
-                "{{ModId}}_HyunjinEvent10/f {{ModId}}_SKZBangChan 1000/Time 600 2600": "none/follow/
-                farmer 8 9 0 {{ModId}}_SKZHyunjin 8 7 0/
+                "{{ModId}}_HyunjinEvent10/f {{ModId}}_SKZHyunjin 2500/Time 600 2600": "none/follow/
+                farmer 8 11 0 {{ModId}}_SKZHyunjin 8 6 2/
                 skippable/
-                viewport 8 9/
-                emote {{ModId}}_SKZBangChan 12/
-                pause 500/
-                viewport move 10 0 10/
-                viewport move 10 0 10/
-                viewport move -10 0 10/
-                viewport move -10 0 10/
-                pause 500/
-                emote {{ModId}}_SKZBangChan 28/
-                move farmer 0 -5 3/
-                speak {{ModId}}_SKZBangChan \"I really am sorry this project is taking longer than expected.\"/
-                speak {{ModId}}_SKZBangChan \"I just want it to be perfect for our fans and for you.\"/
-                changePortrait {{ModId}}_SKZBangChan JYP/
-                changeName {{ModId}}_SKZBangChan JYP/
-                speak {{ModId}}_SKZBangChan \"I trusted you to lead this group.\"/
-                speak {{ModId}}_SKZBangChan \"Why can’t you just do it right?\"/
-                speak {{ModId}}_SKZBangChan \"Obviously you’re not that good.\"/
-                changePortrait {{ModId}}_SKZBangChan/
-                changeName {{ModId}}_SKZBangChan Bang Chan/
-                speak {{ModId}}_SKZBangChan \"I’m sorry, Mr Park.\"/
-                speak {{ModId}}_SKZBangChan \"I’ll get it finished as soon as possible, the town’s people have been very cooperative.\"/
-                changePortrait {{ModId}}_SKZBangChan JYP/
-                changeName {{ModId}}_SKZBangChan JYP/
-                speak {{ModId}}_SKZBangChan \"At least someone is...\"/
-                speak {{ModId}}_SKZBangChan \"Every year is one year closer to death.\"/
-                speak {{ModId}}_SKZBangChan \"That's what life is.\"/
-                speak {{ModId}}_SKZBangChan \"Do you know how your heart is pumping?\"/
-                speak {{ModId}}_SKZBangChan \"The electrical stimulation that is given to the muscle is like an electric spark 80 times a minute.\"/
-                speak {{ModId}}_SKZBangChan \"That’s the only reason we’re alive.\"/
-                speak {{ModId}}_SKZBangChan \"And it can stop.\"/
-                speak {{ModId}}_SKZBangChan \"Tonight.\"/
-                speak {{ModId}}_SKZBangChan \"So please, Bang Chan, make the most of your time here on earth.\"/
-                changePortrait {{ModId}}_SKZBangChan/
-                changeName {{ModId}}_SKZBangChan Bang Chan/
-                speak {{ModId}}_SKZBangChan \"Yes, sir...\"/
-                pause 500/
-                emote {{ModId}}_SKZBangChan 8/
-                move farmer -2 0 3/
-                pause 500/
-                emote {{ModId}}_SKZBangChan 28/
-                speak {{ModId}}_SKZBangChan \"I’m not really sure I understand what he was saying to me...\"/
-                speak {{ModId}}_SKZBangChan \"I think I better work harder though, JYP and the boys are counting on me.\"/
-                end",
-                "{{ModId}}_BangChanEvent4/f {{ModId}}_SKZBangChan 1000/Time 600 2600": "none/follow/
-                farmer 8 11 0 {{ModId}}_SKZBangChan 8 13 2 {{ModId}}_SKZChangBin 6 7 1 {{ModId}}_SKZIn 6 7 1  /
-                skippable/
-                viewport 5 6/
+                viewport 8 10 clamp/
+                move farmer 0 -3 0/
+                move farmer 0 0 1/
+                emote {{ModId}}_SKZHyunjin 16/
+                speak {{ModId}}_SKZHyunjin \"Just about time, @ I've been wanting to tell you something.\"/
+                speak {{ModId}}_SKZHyunjin \"Well, show you something actually.\"/
+                speak {{ModId}}_SKZHyunjin \"I know we were talking a lot about the outfit design.\"/
+                speak {{ModId}}_SKZHyunjin \"But actually, I lied.\"/
+                speak {{ModId}}_SKZHyunjin \"So sneaky, right? I'm really surprised you didn't notice.\"/
+                speak {{ModId}}_SKZHyunjin \"Ever since we came to Pelican town, you've always been there for me to talk to, even when I pushed you away.\"/
+                speak {{ModId}}_SKZHyunjin \"I've really enjoyed all the time we've spent together.\"/
+                speak {{ModId}}_SKZHyunjin \"All the beautiful things we've seen and done.\"/
+                speak {{ModId}}_SKZHyunjin \"Including meeting you.\"/
+                speak {{ModId}}_SKZHyunjin \"So.\"/
+                speak {{ModId}}_SKZHyunjin \"I thought it was only right.\"/
+                speak {{ModId}}_SKZHyunjin \"For my creation to be a gift to you.\"/
+                speak {{ModId}}_SKZHyunjin \"I tried to make it perfect but since it's just my first piece it might not be.\"/
+                speak {{ModId}}_SKZHyunjin \"I hope I can give you lots more in the future.\"/
+                speak {{ModId}}_SKZHyunjin \"Anyway, I spent a lot of time on it so I hope you like it.\"/
+                speak {{ModId}}_SKZHyunjin \"But anything would look wonderful on you.\"/
+                speak {{ModId}}_SKZHyunjin \"You should try it on.\"/
+                emote farmer 32/
+                pause 1000/
                 end"
             }
         },
-
-        ### Ten Heart Event 
- 
-	Title: Hyunjin will give you the jacket he made 
-	Location: Hyunjin’s hotel room 
-	Extra sprites needed: custom shirt (black with white flowers) 
-Script: 
- 
-“Just about time, @ I’ve been wanting to tell you something.” 
-“Well, show you something actually.” 
-“I know we were talking a lot about the outfit design.” 
-“But actually, I lied.” 
-“So sneaky, right? I’m really surprised you didn’t notice.” 
-“Ever since we came to Pelican town, you’ve always been there for me to talk to, even when I pushed you away.” 
-“I’ve really enjoyed all the time we’ve spent together.” 
-“All the beautiful things we’ve seen and done.” 
-“Including meeting you.” 
-“so.” 
-“I thought it was only right.” 
-“For my creation to be a gift to you.” 
-“I tried to make it perfect but since it’s just my first piece it might not be.” 
-“I hope I can give you lots more in the future.” 
-“Anyway, I spent a lot of time on it so I hope you like it.” 
-“But anything would look wonderful on you.” 
-“You should try it on.” 
-
 
         {
             "Action": "EditData",
@@ -1115,6 +1080,8 @@ Script:
                 end"
             }
         },
+
+
         {
             "Action": "EditData",
             "Target": "Data/Events/Town",
@@ -1205,8 +1172,100 @@ Script:
                 move {{ModId}}_SKZHyunjin -6 0 3 true/
                 move farmer -6 0 3 true/
                 pause 900/
+                end/",
+
+                "{{ModId}}_SKZSeungminEvent4/f {{ModId}}_SKZSeungmin 1500/Time 900 1500": "none/follow/
+                farmer 24 30 3 {{ModId}}_SKZSeungmin 28 30 2/
+                skippable/
+                viewport 26 30 clamp/
+                move farmer 2 0 1 true/
+                move {{ModId}}_SKZSeungmin -1 0 3 true/
+                pause 500/
+                speak {{ModId}}_SKZSeungmin \"@! I found you!\"/
+                speak {{ModId}}_SKZSeungmin \"The prank is ready, I finally found a way to steal his keys.\"/
+                speak {{ModId}}_SKZSeungmin \"He just left them sitting with his stuff on the ground while he was practicing what an idiot.\"/
+                speak {{ModId}}_SKZSeungmin \"He’ll come past here soon so you need to be ready.\"/
+                speak {{ModId}}_SKZSeungmin \"He won’t suspect you so you need to take his keys and go hide them under the bench quickly.\"/
+                move {{ModId}}_SKZSeungmin 3 0 3/   
+                move {{ModId}}_SKZSeungmin 0 2 0 true/   
+                viewport move 0 -1 1000/
+                move farmer 6 0 1 true/
+                move farmer 0 -4 1/
+                move {{ModId}}_SKZSeungmin 3 0 0/   
+                message \"All your tools are under the bench...\"/
+                speak {{ModId}}_SKZSeungmin \"Hahahaha! I got you!\"/
+                move {{ModId}}_SKZSeungmin -1 0 0 /
+                move {{ModId}}_SKZSeungmin 0 -5 0 true/
+                emote farmer 40/
+                speak {{ModId}}_SKZSeungmin \"You should have seen the look on your face! I bet you were looking for those all morning like an idiot!\"/
+                speak {{ModId}}_SKZSeungmin \"My master plan.\"/
+                speak {{ModId}}_SKZSeungmin \"He wasn’t in on it at all, those are actually my keys.\"/
+                emote {{ModId}}_SKZSeungmin 40/
+                pause 300/
+                move farmer -1 0 3/
+                speak {{ModId}}_SKZSeungmin \"...\"/
+                move {{ModId}}_SKZSeungmin 0 0 3/
+                speak {{ModId}}_SKZSeungmin \"Wait no! Don't!!\"/
+                move farmer -2 0 3/
+                playSound dropItemInWater/
+                message \"You threw Seungmin's keys into the fountain!\"/
+                speak {{ModId}}_SKZSeungmin \"No!! I didn’t deserve that!!\"/
+                end/",
+
+                "{{ModId}}_SKZSeungminEvent2/f {{ModId}}_SKZSeungmin 1500/Time 900 1500": "none/follow/
+                farmer 20 23 3 {{ModId}}_SKZSeungmin 24 20 2/
+                skippable/
+                viewport 22 23 clamp/
+                move farmer 3 0 0/
+                speak {{ModId}}_SKZSeungmin \"pssst.\"/
+                emote farmer 16/
+                move farmer 0 0 1/
+                pause 200/
+                move farmer 0 0 2/
+                pause 200/
+                move farmer 0 0 3/
+                pause 200/
+                move farmer 0 0 0/
+                pause 200/
+                move farmer 0 0 1/
+                pause 200/
+                move farmer 0 0 2/
+                pause 200/
+                move farmer 0 0 3/
+                pause 200/
+                move farmer 0 0 0/
+                pause 200/
+                speak {{ModId}}_SKZSeungmin \"pssst, @, over here\"/
+                emote farmer 40/
+                pause 800/
+                move farmer -2 0 0/
+                move farmer 0 -3 0/
+                move farmer 2 0 0/
+                move {{ModId}}_SKZSeungmin 0 0 3/
+                speak {{ModId}}_SKZSeungmin \"I have a secret, you can’t tell anybody.\"/
+                speak {{ModId}}_SKZSeungmin \"I want to play a prank on one of the members, I have a great idea.\"/
+                speak {{ModId}}_SKZSeungmin \"I need you to help me decide.\"/
+                speak {{ModId}}_SKZSeungmin \"Felix stole my heated blanket.\"/
+                speak {{ModId}}_SKZSeungmin \"I.N would never expect a prank from me.\"/
+                speak {{ModId}}_SKZSeungmin \"Changbin always reacts so well to my pranks, it's so funny.\"/
+                speak {{ModId}}_SKZSeungmin \"If we really want to test our luck, we can prank Lee Know.\"/
+                speak {{ModId}}_SKZSeungmin \"I hope you’re a fast runner though.\"/
+                speak {{ModId}}_SKZSeungmin \"So, what do you think? Who should we prank\"/
+                
+                quickQuestion Who should we prank?#Felix.#I.N.#Changbin.#Lee Know (break)speak {{ModId}}_SKZSeungmin \"Great choice!\"(break)speak {{ModId}}_SKZSeungmin \"Great choice!\"(break)speak {{ModId}}_SKZSeungmin \"Great choice!\"(break)speak {{ModId}}_SKZSeungmin \"Great choice!\"/
+                speak {{ModId}}_SKZSeungmin \"Ok so whats going to happen is I’m going to steal their keys.\"/
+                speak {{ModId}}_SKZSeungmin \"Wait! Keep listening! It gets good!\"/
+                speak {{ModId}}_SKZSeungmin \"I’ll tell him that I dropped his keys in the fountain while trying to prank him.\"/
+                speak {{ModId}}_SKZSeungmin \"I will convince him that he needs to go swimming for his keys.\"/
+                speak {{ModId}}_SKZSeungmin \"Then, just as he’s about to go for a dip.\"/
+                speak {{ModId}}_SKZSeungmin \"You’ll find his keys!\"/
+                speak {{ModId}}_SKZSeungmin \"He’ll think he dropped them and we’ll get out for free!\"/
+                speak {{ModId}}_SKZSeungmin \"OK, I’ll let you know when I’ve stolen his keys.\"/
+                speak {{ModId}}_SKZSeungmin \"What’s that? This isn’t a good idea? No sorry, I can’t hear you. This is gonna be so fun.\"/  
+                emote farmer 40/
                 end/"
             }
+
         },
 
         {
