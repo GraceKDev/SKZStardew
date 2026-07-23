@@ -2188,6 +2188,12 @@
         {
             "LogName": "Felix Final",
             "Action": "Load",
+            "Target": "Data/Events/StayHotelHan",
+            "FromFile": "assets/blank.json"
+        },
+        {
+            "LogName": "Felix Final",
+            "Action": "Load",
             "Target": "Data/Events/Beach",
             "FromFile": "assets/blank.json"
         },
@@ -2531,7 +2537,44 @@
                 speak {{ModId}}_SKZFelix \"Lets put on something different now... You got any snacks?\"/
                 end"
             }
-        },        
+        },  
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/StayHotelHan",
+            "Entries": {
+                "{{ModId}}_SKZHanEvent6/f {{ModId}}_SKZHan 750/Time 900 1500": "none/follow/
+                    farmer 10 10 0 {{ModId}}_SKZHan 10 5 0/
+                    skippable/
+                    viewport 10 9 clamp/
+                    move farmer 0 -2 0/
+                    pause 400/
+                    emote {{ModId}}_SKZHan 16/
+                    speak {{ModId}}_SKZHan \"@!\"/
+                    move {{ModId}}_SKZHan 0 0 2/
+                    pause 700/
+                    speak {{ModId}}_SKZHan \"What types of taxes do you have to pay for your farm?\"/
+                    speak {{ModId}}_SKZHan \"Where is the Pelican Town tax office?\"/
+                    speak {{ModId}}_SKZHan \"I'm in big trouble!\"/
+                    speak {{ModId}}_SKZHan \"Somehow JYP lost my taxes when I moved from Korea to Pelican Town.\"/
+                    speak {{ModId}}_SKZHan \"Or at least that's what I understand, everything is so stressful.\"/
+                    speak {{ModId}}_SKZHan \"Apparently I have to call the tax office to verify my identity.\"/
+                    speak {{ModId}}_SKZHan \"I don't even know who that is!!!\"/
+                    emote farmer 40/
+                    pause 700/
+                    speak {{ModId}}_SKZHan \"I can't make a phone call to the tax office of Pelican Town!\"/
+                    speak {{ModId}}_SKZHan \"What will I do???\"/
+                    speak {{ModId}}_SKZHan \"Maybe the problem will just go away.\"/
+                    speak {{ModId}}_SKZHan \"It's up to JYP, right? I can't do anything to help.\"/
+                    speak {{ModId}}_SKZHan \"Yes, that's right, I'll just leave it.\"/
+                    speak {{ModId}}_SKZHan \"Everything will be okay.\"/
+                    speak {{ModId}}_SKZHan \"Thanks, @, I feel much better now.\"/
+                    speak {{ModId}}_SKZHan \"Or something...\"/
+                    speak {{ModId}}_SKZHan \"...\"/
+                    emote farmer 40/
+                    pause 700/
+                    end/"
+            }
+        },           
         {
             "Action": "Load",
             "Target": "Characters/schedules/{{ModId}}_SKZFelix",
