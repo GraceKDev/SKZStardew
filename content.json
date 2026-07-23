@@ -362,7 +362,7 @@
                         "AlwaysActive": true
                     }
                 }, 
-                   "StayHotelHan": {
+                "StayHotelHan": {
                     "DisplayName": "Stay Hotel Han's Room",
                     "CreateOnLoad": {
                         "MapPath": "Maps/{{ModId}}_StayHotel_Han",
@@ -939,11 +939,6 @@
                 speak {{ModId}}_SKZBangChan \"I’m not really sure I understand what he was saying to me...\"/
                 speak {{ModId}}_SKZBangChan \"I think I better work harder though, JYP and the boys are counting on me.\"/
                 end",
-                "{{ModId}}_BangChanEvent4/f {{ModId}}_SKZBangChan 1000/Time 600 2600": "none/follow/
-                farmer 8 11 0 {{ModId}}_SKZBangChan 8 13 2 {{ModId}}_SKZChangBin 6 7 1 {{ModId}}_SKZIn 6 7 1  /
-                skippable/
-                viewport 5 6/
-                end"
             }
         },
 
@@ -1734,7 +1729,7 @@
                 end/"
             }
         },
-         {
+        {
             "Action": "EditData",
             "Target": "Data/Events/ArchaeologyHouse",
             "Entries": {
@@ -1780,6 +1775,94 @@
                 emote {{ModId}}_SKZHyunjin 20/
                 pause 500/
                 end/"
+            }
+        },
+        {
+            "LogName": "SKZHanEvent2",
+            "Action": "EditData",
+            "Target": "Data/Events/JojaMart",
+            "Entries": {
+                "{{ModId}}_SKZHanEvent2/f {{ModId}}_SKZHan 250/Time 900 1500": "none/follow/
+                farmer 12 25 0 {{ModId}}_SKZHan 11 23 3/
+                skippable/
+                viewport 11 23 clamp/
+                speak {{ModId}}_SKZHan \"Joja cola.\"/
+                speak {{ModId}}_SKZHan \"Two melon juice.\"/
+                speak {{ModId}}_SKZHan \"Joja cola.\"/
+                speak {{ModId}}_SKZHan \"Or was it three melon juice?\"/
+                speak {{ModId}}_SKZHan \"UUUAAH this sucks!\"/
+                speak {{ModId}}_SKZHan \"Two joja colas?\"/
+                speak {{ModId}}_SKZHan \"And green tea?\"/
+                move farmer 0 -2 3/
+                move {{ModId}}_SKZHan 0 0 1/
+                speak {{ModId}}_SKZHan \"@, do you know where they keep the orange juice?\"/
+                speak {{ModId}}_SKZHan \"Or did he want pomegranate juice…\"/
+                speak {{ModId}}_SKZHan \"UHHAA\"/
+                speak {{ModId}}_SKZHan \"Whoever lost the game had to buy the drinks.\"/
+                speak {{ModId}}_SKZHan \"It’s not fair, I lose every time!\"/
+                speak {{ModId}}_SKZHan \"Yes I ran away from the host but that’s not important.\"/
+                speak {{ModId}}_SKZHan \"It was funny.\"/
+                speak {{ModId}}_SKZHan \"I think there was two Joja colas, two melon juice, three orange juices, pomegranate juice and a green tea.\"/
+                speak {{ModId}}_SKZHan \"Wait, that's nine drinks.\"/
+                speak {{ModId}}_SKZHan \"I don’t remember!!\"/
+                speak {{ModId}}_SKZHan \"Seungmin said he wanted a large, too.\"/
+                speak {{ModId}}_SKZHan \"Or was it I.N\"/
+                speak {{ModId}}_SKZHan \"I guess I’ll just get what I think is correct and deal with the consequences…\"/
+                speak {{ModId}}_SKZHan \"Wish me luck…\"/
+                move {{ModId}}_SKZHan 0 0 3/
+                speak {{ModId}}_SKZHan \"Wait…\"/
+                speak {{ModId}}_SKZHan \"Did I bring any money?\"/
+                speak {{ModId}}_SKZHan \"...\"/
+                speak {{ModId}}_SKZHan \"...\"/
+                move {{ModId}}_SKZHan 0 0 1/
+                speak {{ModId}}_SKZHan \"Say @, want to help me put this back?\"/
+                emote farmer 40/
+                pause 800/
+                end/"
+            }
+        },
+        {
+        "LogName": "Beach Events",
+        "Action": "EditData",
+        "Target": "Data/Events/Beach",
+        "Entries": {
+            "{{ModId}}_SKZHanEvent4/f {{ModId}}_SKZHan 500/Time 900 1500": "none/follow/
+            farmer 38 4 2 {{ModId}}_SKZHan 38 7 3/
+            skippable/
+            viewport 38 7 clamp/
+            move {{ModId}}_SKZHan 0 2 2 true/
+            jump {{ModId}}_SKZHan 12/
+            speak {{ModId}}_SKZHan \"AAh!\"/
+            speak {{ModId}}_SKZHan \"Get back here!\"/
+            move {{ModId}}_SKZHan 0 2 2 true/
+            jump {{ModId}}_SKZHan 12/
+            pause 300/
+            speak {{ModId}}_SKZHan \"Nooo.\"/
+            move {{ModId}}_SKZHan 0 2 0/
+            speak {{ModId}}_SKZHan \"@! Be quiet for a moment please.\"/
+            speak {{ModId}}_SKZHan \"Don't make a move.\"/
+            speak {{ModId}}_SKZHan \"Three.\"/
+            speak {{ModId}}_SKZHan \"Two.\"/
+            speak {{ModId}}_SKZHan \"One.\"/
+            speak {{ModId}}_SKZHan \"Go!\"/
+            pause 300/
+            move {{ModId}}_SKZHan 0 2 2 true/
+            jump {{ModId}}_SKZHan 12/
+            pause 300/
+            speak {{ModId}}_SKZHan \"Got him!\"/
+            speak {{ModId}}_SKZHan \"Yes!!!\"/
+            speak {{ModId}}_SKZHan \"Richard is eating well tonight, worms and crickets.\"/
+            move {{ModId}}_SKZHan 0 0 0/
+            speak {{ModId}}_SKZHan \"Sorry, @, you can walk again now.\"/
+            move farmer 0 10 2/
+            speak {{ModId}}_SKZHan \"I just had to catch some bugs for my daughter.\"/
+            speak {{ModId}}_SKZHan \"Why are you looking at me like that?\"/
+            speak {{ModId}}_SKZHan \"Oh, my daughter is a lizard named Richard, I love her very much.\"/
+            speak {{ModId}}_SKZHan \"They don't sell lizard food here in Pelican Town so I have to catch bugs myself.\"/
+            speak {{ModId}}_SKZHan \"It was kinda freaky at first but anything for my kid.\"/
+            speak {{ModId}}_SKZHan \"Anyway, it's feeding time, see you later, @\"/
+            speak {{ModId}}_SKZHan \"Skrr.\"/
+            end/"
             }
         },
 
@@ -2090,10 +2173,22 @@
             "Target": "Data/Events/StayHotelFelix",
             "FromFile": "assets/blank.json"
         },
-         {
+        {
             "LogName": "Felix Final",
             "Action": "Load",
             "Target": "Data/Events/StayHotelBangChan",
+            "FromFile": "assets/blank.json"
+        },
+        {
+            "LogName": "Felix Final",
+            "Action": "Load",
+            "Target": "Data/Events/JojaMart",
+            "FromFile": "assets/blank.json"
+        },
+        {
+            "LogName": "Felix Final",
+            "Action": "Load",
+            "Target": "Data/Events/Beach",
             "FromFile": "assets/blank.json"
         },
            {
