@@ -68,7 +68,7 @@
             "Target": "Portraits/{{ModId}}_SKZLeeKnow_Winter",
             "FromFile": "Portraits/SKZLeeKnowWinter.png"
         },
-         {
+        {
             "Action": "Load",
             "Target": "Portraits/{{ModId}}_SKZHan",
             "FromFile": "Portraits/SKZHan.png"
@@ -80,8 +80,13 @@
         },
         {
             "Action": "Load",
-            "Target": "Portraits/{{ModId}}_SKZHan_Winter",
-            "FromFile": "Portraits/SKZHanWinter.png"
+            "Target": "Portraits/{{ModId}}_SKZIN",
+            "FromFile": "Portraits/SKZIN.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/{{ModId}}_SKZIN_Winter",
+            "FromFile": "Portraits/SKZINWinter.png"
         },
         {
             "Action": "Load",
@@ -138,6 +143,11 @@
         },
         {
             "Action": "Load",
+            "Target": "Characters/{{ModId}}_SKZSeungmin_Winter",
+            "FromFile": "Characters/SKZSeungminWinter.png"
+        },
+        {
+            "Action": "Load",
             "Target": "Characters/{{ModId}}_SKZLeeKnow",
             "FromFile": "Characters/SKZLeeKnow.png"
         },
@@ -160,6 +170,16 @@
             "Action": "Load",
             "Target": "Characters/Abigail_CrazyFan",
             "FromFile": "Characters/Abigail_CrazyFan.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/{{ModId}}_SKZIN",
+            "FromFile": "Characters/SKZIN.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/{{ModId}}_SKZIN_Winter",
+            "FromFile": "Characters/SKZINWinter.png"
         },
         //Dialogue
         {
@@ -201,6 +221,11 @@
             "Action": "Load",
             "Target": "Characters/Dialogue/{{ModId}}_SKZHan",
             "FromFile": "Dialogue/SKZHan.json"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/{{ModId}}_SKZIN",
+            "FromFile": "Dialogue/SKZIN.json"
         },
 
 
@@ -576,8 +601,8 @@
             "Entries": {
                 "{{ModId}}_SKZFelix": {
                     "DisplayName": "Felix",
-                    "BirthSeason": "Spring",
-                    "BirthDay": 14,
+                    "BirthSeason": "Fall",
+                    "BirthDay": 5,
                     "HomeRegion": "Town",
                     "Gender": "Male",
                     "Age": "Adult",
@@ -803,15 +828,15 @@
                             "Portrait": "Portraits/{{ModId}}_SKZSeungmin",
                             "Sprite": "Characters/{{ModId}}_SKZSeungmin",
                             "Precedence": 1
+                        },
+                        {
+                            "LogName": "Seasonal Portraits - Autumn Seungmin",
+                            "Id": "{{ModId}}_WinterSeungminOutfit",
+                            "Season": "winter",
+                            "Portrait": "Portraits/{{ModId}}_SKZSeungmin_Winter",
+                            "Sprite": "Characters/{{ModId}}_SKZSeungmin_Winter",
+                            "Precedence": -1
                         }
-                        // {
-                        //     "LogName": "Seasonal Portraits - Autumn Seungmin",
-                        //     "Id": "{{ModId}}_WinterSeungminOutfit",
-                        //     "Season": "winter",
-                        //     "Portrait": "Portraits/{{ModId}}_SKZSeungmin_Winter",
-                        //     "Sprite": "Characters/{{ModId}}_SKZSeungmin_Winter",
-                        //     "Precedence": -1
-                        // }
                     ]
                 },
                   "{{ModId}}_SKZHan": {
@@ -850,6 +875,46 @@
                             "Season": "winter",
                             "Portrait": "Portraits/{{ModId}}_SKZHan_Winter",
                             "Sprite": "Characters/{{ModId}}_SKZHan_Winter",
+                            "Precedence": -1
+                        }
+                    ]
+                },
+                "{{ModId}}_SKZIN": {
+                    "DisplayName": "I.N",
+                    "BirthSeason": "Winter",
+                    "BirthDay": 4,
+                    "HomeRegion": "Town",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "StayHotelIn",
+                            "Tile": {
+                                "X": 5,
+                                "Y": 6
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "Id": "Default",
+                            "Interval": "Any",
+                            "Portrait": "Portraits/{{ModId}}_SKZIN",
+                            "Sprite": "Characters/{{ModId}}_SKZIN",
+                            "Precedence": 2
+                        },
+                        {
+                            "LogName": "Seasonal Portraits - Winter I.N",
+                            "Id": "{{ModId}}_WinterHanOutfit",
+                            "Season": "winter",
+                            "Portrait": "Portraits/{{ModId}}_SKZIN_Winter",
+                            "Sprite": "Characters/{{ModId}}_SKZIN_Winter",
                             "Precedence": -1
                         }
                     ]
