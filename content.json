@@ -2639,7 +2639,45 @@
                     pause 700/
                     end/"
             }
-        },           
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/StayHotelHan",
+            "Entries": {
+                "{{ModId}}_SKZHanEvent8/f {{ModId}}_SKZHan 750/Time 900 1500": "none/follow/
+                    farmer 6 7 3 {{ModId}}_SKZHan 5 7 1/
+                    skippable/
+                    viewport 6 7 clamp/
+                    speak {{ModId}}_SKZHan \"...\"/
+                    speak {{ModId}}_SKZHan \"@...\"/
+                    speak {{ModId}}_SKZHan \"I think you're right...\"/
+                    speak {{ModId}}_SKZHan \"I have to call them.\"/
+                    speak {{ModId}}_SKZHan \"I'm so nervous I really don't want to.\"/
+                    speak {{ModId}}_SKZHan \"Will you stay here with me? I want to make sure I understand what they're saying to me.\"/
+                    speak {{ModId}}_SKZHan \"Thank you, @.\"/
+                    move {{ModId}}_SKZHan 0 0 2/
+                    emote {{ModId}}_SKZHan 40/
+                    pause 700/
+                    speak {{ModId}}_SKZHan \"...\"/
+                    pause 300/
+                    speak {{ModId}}_SKZHan \"H-hello, I'm calling to ask about a mistake with my tax.\"/
+                    speak {{ModId}}_SKZHan \"My name is Jisung Han.\"/
+                    speak {{ModId}}_SKZHan \"Thank you.\"/
+                    speak {{ModId}}_SKZHan \"My company is JYP entertainment.\"/
+                    speak {{ModId}}_SKZHan \"My birthday is the 5th of fall.\"/
+                    speak {{ModId}}_SKZHan \"Oh really? Oh okay, thank you.\"/
+                    speak {{ModId}}_SKZHan \"Thank you so much, okay, bye bye.\"/
+                    emote {{ModId}}_SKZHan 28/
+                    pause 700/
+                    speak {{ModId}}_SKZHan \"Phew, I think it's over.\"/
+                    speak {{ModId}}_SKZHan \"It wasn't as bad as I thought.\"/
+                    speak {{ModId}}_SKZHan \"Thank you for helping me, @.\"/
+                    move {{ModId}}_SKZHan 0 0 1/
+                    speak {{ModId}}_SKZHan \"Melon juice on me today!\"/
+                    speak {{ModId}}_SKZHan \"Boom boom pow!\"/
+                    end/"
+            }
+        },                      
         {
             "Action": "Load",
             "Target": "Characters/schedules/{{ModId}}_SKZFelix",
