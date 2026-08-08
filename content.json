@@ -262,6 +262,11 @@
         },
         {
             "Action": "Load",
+            "Target": "TileSheets/{{ModId}}_HanMonopoly",
+            "FromFile": "Tilesets/HanMonopoly.png"
+        },
+        {
+            "Action": "Load",
             "Target": "Maps/{{ModId}}_StayHotel_Felix",
             "FromFile": "Tilesets/StayHotel_Felix.tmx"
         },
@@ -1927,6 +1932,51 @@
             speak {{ModId}}_SKZHan \"It was kinda freaky at first but anything for my kid.\"/
             speak {{ModId}}_SKZHan \"Anyway, it's feeding time, see you later, @\"/
             speak {{ModId}}_SKZHan \"Skrr.\"/
+            end/",
+            "{{ModId}}_SKZINEvent2/f {{ModId}}_SKZIN 500/Time 900 1500": "none/follow/
+            farmer 38 4 2 {{ModId}}_SKZIN 38 7 3 {{ModId}}_SKZFelix 36 7 1 {{ModId}}_SKZBangChan 40 7 3 {{ModId}}_SKZHyunjin 38 9 0/
+            skippable/
+            viewport 38 7 clamp/
+            move {{ModId}}_SKZIN 0 0 1/
+            speak {{ModId}}_SKZBangChan \"Just come a little closer!\"/
+            move {{ModId}}_SKZIN 0 0 3/
+            speak {{ModId}}_SKZFelix \"We nearly got him.\"/
+            move {{ModId}}_SKZIN 0 0 2/
+            speak {{ModId}}_SKZHyunjin \"So cute! He pretends not to love us.\"/
+            emote {{ModId}}_SKZIN 12/
+            pause 700/
+            speak {{ModId}}_SKZIN \"Go away!\"/
+            speak {{ModId}}_SKZIN \"Noooo!\"/
+            move {{ModId}}_SKZIN 0 0 1/
+            pause 500/
+            speak {{ModId}}_SKZIN \"Let me escape!\"/
+            speak {{ModId}}_SKZFelix \"But you’re so cute!\"/
+            move {{ModId}}_SKZIN 0 0 3/
+            speak {{ModId}}_SKZHyunjin \"Just let me pinch your cheeks a little.\"/
+            move {{ModId}}_SKZIN 0 0 2/
+            speak {{ModId}}_SKZFelix \"Do you need us to help you build your sandcastle?\"/
+            move {{ModId}}_SKZIN 0 0 3/
+            speak {{ModId}}_SKZBangChan \"Are you eating enough?\"/
+            move {{ModId}}_SKZIN 0 0 1/
+            speak {{ModId}}_SKZFelix \"Do you need me to bake you some cookies?\"/
+            move {{ModId}}_SKZIN 0 0 3/
+            speak {{ModId}}_SKZIN \"Cookies do sound nice…\"/
+            speak {{ModId}}_SKZBangChan \"I thought so! Come here and let us take care of you.\"/
+            move {{ModId}}_SKZIN 0 0 1/
+            speak {{ModId}}_SKZIN \"NOo!\"/
+            move {{ModId}}_SKZIN 0 0 0/
+            speak {{ModId}}_SKZIN \"@! Save me!\"/
+            move {{ModId}}_SKZIN 0 -1 3 true/
+            move farmer 1 0 2 true/
+            speak {{ModId}}_SKZIN \"I’m not a baby anymore!\"/
+            move {{ModId}}_SKZIN 0 -2 2/
+            move {{ModId}}_SKZFelix 0 0 0/
+            move {{ModId}}_SKZBangChan 0 0 0/
+            move {{ModId}}_SKZHyunjin 0 0 0/
+            pause 500/
+            speak {{ModId}}_SKZHyunjin \"He’s so cute when he does that.\"/
+            speak {{ModId}}_SKZBangChan \"Eee I can’t wait for him to come back.\"/
+         
             end/"
             }
         },
@@ -2675,8 +2725,45 @@
                     move {{ModId}}_SKZHan 0 0 1/
                     speak {{ModId}}_SKZHan \"Melon juice on me today!\"/
                     speak {{ModId}}_SKZHan \"Boom boom pow!\"/
+                    end/",
+                    "{{ModId}}_SKZHanEvent10/f {{ModId}}_SKZHan 2500/Time 900 1500": "none/follow/
+                    farmer 8 12 0 {{ModId}}_SKZHan 8 9 2/
+                    
+                    skippable/
+                    viewport 8 10 clamp/
+                    temporaryAnimatedSprite TileSheets\\{{ModId}}_HanMonopoly 0 0 16 32 100 1 9999 8 7 false false 1 0.0 1 0 0 0 motion 0 0/
+                    speak {{ModId}}_SKZHan \"@ whattup whattup what’s going on!\"/
+                    speak {{ModId}}_SKZHan \"Yo! Thank you for the other day, really it was massive.\"/
+                    speak {{ModId}}_SKZHan \"Let’s spend some time together, guess what I have.\"/
+                    move {{ModId}}_SKZHan -1 0 1/
+                    speak {{ModId}}_SKZHan \"Monopoly! Okay let’s go let’s go.\"/
+                    emote farmer 16/
+                    globalFade/
+                    viewport -1000 -1000/
+                    warp {{ModId}}_SKZHan 9 8/
+                    move {{ModId}}_SKZHan 0 0 3/
+                    warp farmer 7 8/
+                    move farmer 0 0 1/
+                    pause 1000/
+                    fade unfade/
+                    viewport 8 10 clamp/
+                    pause 3000/
+                    speak {{ModId}}_SKZHan \"Ha! I’ve got the best properties! You will never beat me!\"/
+                    speak {{ModId}}_SKZHan \"Eat my rent!\"/
+                    speak {{ModId}}_SKZHan \"You’ll never catch up!\"/
+                    speak {{ModId}}_SKZHan \"Look! I just passed go!\"/
+                    speak {{ModId}}_SKZHan \"Wait…\"/
+                    speak {{ModId}}_SKZHan \"You can also pass go…\"/
+                    speak {{ModId}}_SKZHan \"Wait! That’s not fair!\"/
+                    speak {{ModId}}_SKZHan \"Nooo! Go back!\"/
+                    speak {{ModId}}_SKZHan \"UAARRRHG!\"/
+                    speak {{ModId}}_SKZHan \"No! That’s not fair! We need to play again!\"/
+                    speak {{ModId}}_SKZHan \"I will win next time for sure.\"/
+                    speak {{ModId}}_SKZHan \"If you don’t cheat!\"/
                     end/"
-            }
+            },
+
+
         },                      
         {
             "Action": "Load",
