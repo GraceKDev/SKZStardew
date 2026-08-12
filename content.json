@@ -1891,6 +1891,88 @@
                 end/"
             }
         },
+
+        {
+            "LogName": "SKZIN2",
+            "Action": "EditData",
+            "Target": "Data/Events/StayHotelIn",
+            "Entries": {
+                "{{ModId}}_SKZINEvent4/f {{ModId}}_SKZIN 500/Time 900 1500": "none/follow/
+                farmer 8 10 0 {{ModId}}_SKZIN 8 7 2/
+                skippable/
+                viewport 8 7 clamp/
+                temporaryAnimatedSprite Maps\\springobjects 368 96 16 16 100 1 9999 6 7 false false 1 0.0 1 0 0 0 motion 0 0/
+                temporaryAnimatedSprite Maps\\springobjects 368 96 16 16 100 1 9999 5 7 false false 1 0.0 1 0 0 0 motion 0 0/
+                temporaryAnimatedSprite Maps\\springobjects 368 96 16 16 100 1 9999 4 7 false false 1 0.0 1 0 0 0 motion 0 0/
+                temporaryAnimatedSprite Maps\\springobjects 368 96 16 16 100 1 9999 7 6 false false 1 0.0 1 0 0 0 motion 0 0/
+                temporaryAnimatedSprite Maps\\springobjects 368 96 16 16 100 1 9999 7 7 false false 1 0.0 1 0 0 0 motion 0 0/
+                temporaryAnimatedSprite Maps\\springobjects 368 96 16 16 100 1 9999 9 7 false false 1 0.0 1 0 0 0 motion 0 0/
+                temporaryAnimatedSprite Maps\\springobjects 368 96 16 16 100 1 9999 9 6 false false 1 0.0 1 0 0 0 motion 0 0/
+                emote farmer 40/
+                speak {{ModId}}_SKZIN \"Welcome, Stays!\"/
+                speak {{ModId}}_SKZIN \"It's been a while since we've spoken.\"/
+                speak {{ModId}}_SKZIN \"We've been so busy preparing a special project for you in this town. My English has even gotten better!\"/
+                speak {{ModId}}_SKZIN \"Since we're here, I thought I'd show you something from this town that I really love.\"/
+                changeYSourceRectOffset {{ModId}}_SKZIN  128/
+                showframe {{ModId}}_SKZIN 1/
+                speak {{ModId}}_SKZIN \"Joja Cola!\"/
+                speak {{ModId}}_SKZIN \"Today I'm going to be trying every single flavor of Joja Cola for you. Just don't tell Bang Chan.\"/
+                speak {{ModId}}_SKZIN \"First, we have the original.\"/
+                showframe {{ModId}}_SKZIN 2/
+                playSound gulp/
+                pause 500/
+                showframe {{ModId}}_SKZIN 1/
+                speak {{ModId}}_SKZIN \"Delicious!\"/
+                speak {{ModId}}_SKZIN \"I really needed the energy since we've all been working so hard.\"/
+                speak {{ModId}}_SKZIN \"Next, Joja Zero Sugar.\"/
+                showframe {{ModId}}_SKZIN 2/
+                playSound gulp/
+                pause 500/
+                showframe {{ModId}}_SKZIN 1/
+                speak {{ModId}}_SKZIN \"Just as good! I can't believe they managed to put in all the energy and taste with no sugar!\"/
+                speak {{ModId}}_SKZIN \"I'll try Cherry Joja next.\"/
+                showframe {{ModId}}_SKZIN 2/
+                playSound gulp/
+                pause 500/
+                showframe {{ModId}}_SKZIN 1/
+                speak {{ModId}}_SKZIN \"Wow! Such a unique taste. I can really taste the cherry!\"/
+                speak {{ModId}}_SKZIN \"Next up is Joja No Caffeine.\"/
+                speak {{ModId}}_SKZIN \"Wait...\"/
+                changeYSourceRectOffset {{ModId}}_SKZIN 160/
+                move {{ModId}}_SKZIN 0 0 2/
+               
+                speak {{ModId}}_SKZIN \"They all had caffeine?\"/
+                speak {{ModId}}_SKZIN \"Oh no...\"/
+                end/"
+                
+            }
+//             Script:
+// The farmer walks into I.N’s room and he is sat behind his table filled with like 20 cans of Joja Cola.
+// Welcome, Stays
+// It’s been a while since we’ve spoken.
+// We’ve been so busy preparing a special project for you in this town. My English has even gotten better!
+// Since we’re here, I thought I’d show you something from this town that I really love.
+// Joja Cola!
+// Today I’m going to be trying every single flavor of Joja cola for you. Just don’t tell Bang Chan.
+// First, we have the original.
+// *drinks Joja Cola* (plz add sound)
+// Delicious!
+// I really needed the energy since We’ve all been working so hard.
+// Next, Joja zero sugar.
+// *drinks Joja Cola* (plz add sound)
+// Just as good! I can’t believe they managed to put in all the energy and taste with no sugar! I’ll try Cherry Joja next.
+// *drinks Joja Cola* (plz add sound)
+// Wow! Such a unique taste. I can really taste the cherry! Next up is Joja no caffeine.
+// Wait…
+// They all had caffeine?
+// Oh no…
+// *In starts to shake
+// I don’t feel good… Oh…
+// @! When did you get here???
+// Don’t look at me!
+// Turn the camera off!
+
+        },
         {
         "LogName": "Beach Events",
         "Action": "EditData",
@@ -2292,6 +2374,13 @@
             "LogName": "Felix Final",
             "Action": "Load",
             "Target": "Data/Events/StayHotelBangChan",
+            "FromFile": "assets/blank.json"
+        },
+
+        {
+            "LogName": "Felix Final",
+            "Action": "Load",
+            "Target": "Data/Events/StayHotelIn",
             "FromFile": "assets/blank.json"
         },
         {
