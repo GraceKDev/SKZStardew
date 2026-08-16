@@ -1188,6 +1188,96 @@
                 speak {{ModId}}_SKZFelix \"I’ll have to pay you back sometime soon.\"/
                 move {{ModId}}_SKZFelix 0 5 2/
                 end/",
+
+                "{{ModId}}_SKZINEvent8/f {{ModId}}_SKZIN 1000/Time 900 1500": "none/follow/ 
+                farmer 65 66 0 Alex 65 65 2 {{ModId}}_SKZIN 60 65 1/ 
+                skippable/ 
+                viewport 60 65 clamp/ 
+                changeYSourceRectOffset Alex 224/
+                move {{ModId}}_SKZIN 1 0 1 true/ 
+                move {{ModId}}_SKZIN 1 0 1 true/ 
+                move {{ModId}}_SKZIN 1 0 1 true/ 
+                move {{ModId}}_SKZIN 1 0 1 true/ 
+                move {{ModId}}_SKZIN 1 0 1 true/ 
+                emote {{ModId}}_SKZIN 40/
+                pause 600/
+                showFrame Alex 1/
+                speak {{ModId}}_SKZIN \"Hmm Hm Hm...\"/ 
+                showFrame Alex 2/
+                speak {{ModId}}_SKZIN \"What do I need again? I think everyone wants cup noodles.\"/
+                showFrame Alex 3 /
+                speak {{ModId}}_SKZIN \"We don't even have a kettle in our hotel room though…\"/ 
+                showFrame Alex 0/
+                speak Alex \"I could keep going but I don't want to bore you.\"/ 
+                emote farmer 40/
+                speak Alex \"I seriously could do this forever. I'm pretty strong.\"/ 
+                speak Alex \"Comes with the territory of being an athlete, you know.\"/ 
+                speak Alex \"Maybe if you train enough, you could try to keep up with me some day.\"/ 
+                speak {{ModId}}_SKZIN \"What the Yoba... Is this guy serious?\"/ 
+                speak Alex \"Did you say something?\"/ 
+                changeYSourceRectOffset Alex 0/
+                move Alex 0 0 3 true/
+                move farmer 0 0 3 true/
+                move {{ModId}}_SKZIN 2 0 1/
+                speak {{ModId}}_SKZIN \"Yeah, maybe stop showing off and actually do some real work. Nobody wants to hear your boasting.\"/ 
+                speak Alex \"Excuse me? What do you know about work? At least I can lift weights. What can you do?\"/ 
+                speak {{ModId}}_SKZIN \"I can go about my day without making a show out of myself and disturbing everyone around me.\"/ 
+                speak {{ModId}}_SKZIN \"Nobody cares that you can lift weights.\"/ 
+                speak Alex \"@ cares. It's not my problem that I'm the strongest.\"/ 
+                speak {{ModId}}_SKZIN \"I really can't stand people who do nothing but boast all day, and neither can @.\"/ 
+                speak {{ModId}}_SKZIN \"Go find yourself some substance and leave other people alone.\"/ 
+                speak {{ModId}}_SKZIN \"Right, @?\"/ 
+                quickQuestion What do you think?#Yeah, I agree..#Actually, I was kind of enjoying it.(break)friendship {{ModId}}_SKZIN 100 (break)friendship {{ModId}}_SKZIN -300/
+                speak Alex \"Whatever, get a life dude and get out of other people's business.\"/ 
+                emote farmer 28/
+                move Alex 3 0 0 true/ 
+                move {{ModId}}_SKZIN -3 0 0 true/ 
+                pause 1000/
+                end/",
+
+
+               "{{ModId}}_SKZINEvent10/f {{ModId}}_SKZIN 2500/Time 900 1500": "none/follow/ 
+                farmer 59 65 2 Alex 1000 1000 2 {{ModId}}_SKZIN 61 66 1/ 
+                skippable/ 
+                viewport 60 65 clamp/ 
+                move {{ModId}}_SKZIN -2 0 0/
+                speak {{ModId}}_SKZIN \"Oh, @ I didn't expect to see you here.\"/ 
+                speak {{ModId}}_SKZIN \"I was actually hoping to talk to you. I've been thinking a lot and do you think I was out of line when I spoke to Alex?\"/ 
+                quickQuestion Do you think I was out of line?#Yea, you were.#No, I think he deserved it.(break)friendship {{ModId}}_SKZIN -100 (break)friendship {{ModId}}_SKZIN 0/
+                speak {{ModId}}_SKZIN \"I see… I normally don't get into fights like that but I just couldn't stand the way he was speaking.\"/ 
+                speak {{ModId}}_SKZIN \"What's the point of working hard when it's only to show other people?\"/ 
+                speak {{ModId}}_SKZIN \"Man, that attitude really sucks, people like that are so annoying.\"/ 
+                speak {{ModId}}_SKZIN \"But I shouldn't have said what I said, it was rude. I don't want to be a rude person either.\"/ 
+                speak {{ModId}}_SKZIN \"So I'm here to apologize to Alex. I'm glad you can be here to help me.\"/ 
+                move {{ModId}}_SKZIN -2 0 3 farmer -1 0 3/
+                move {{ModId}}_SKZIN 0 -1 0 farmer 0 -1 3/
+                emote {{ModId}}_SKZIN 40/
+                pause 600/
+                warp Alex 57 64/
+                move Alex 0 0 2/
+                speak Alex \"It's you, what do you want?\"/ 
+                speak {{ModId}}_SKZIN \"I came to apologize for what I said the other day. I was wrong to say it even if it's true.\"/ 
+                speak Alex \"What's that supposed to mean? That's not an apology.\"/ 
+                speak Alex \"Look, I know you only said those things because you're jealous so I'm willing to give you a pass.\"/ 
+                speak {{ModId}}_SKZIN \"That's not..\"/ 
+                speak {{ModId}}_SKZIN \"Ok fine, I brought you a carton of eggs, I heard you like them.\"/ 
+                speak Alex \"How did you know?? This is amazing!\"/ 
+                speak Alex \"My brother! Let's go work out sometime!\"/ 
+                speak Alex \"I bet you can't do more push ups than me!\"/ 
+                move Alex 0 1 0 true/ 
+                move Alex 0 1 0 true/ 
+                move Alex 0 1 0/ 
+                speak {{ModId}}_SKZIN \"That was weird. What a weirdo.\"/ 
+                speak {{ModId}}_SKZIN \"I'm glad you were here to help me keep my cool. I still can't stand that guy.\"/ 
+                speak {{ModId}}_SKZIN \"I bet he can't even do that many push ups…\"/ 
+                speak {{ModId}}_SKZIN \"Anyway, I think it's about time we went to get those Joja Colas.\"/ 
+                speak {{ModId}}_SKZIN \"Come with me! We can meet the others there!\"/ 
+                move {{ModId}}_SKZIN 1 0 0 true/ 
+                move {{ModId}}_SKZIN 1 0 0 true/ 
+                move {{ModId}}_SKZIN 1 0 0 true/ 
+                move {{ModId}}_SKZIN 1 0 0/ 
+                end/",
+
                 "{{ModId}}_HyunjinEvent8/f {{ModId}}_SKZHyunjin 1500/Time 900 1500": "none/follow/
                 farmer 12 90 3 {{ModId}}_SKZHyunjin 1000 1000 2/
                 skippable/
@@ -1940,38 +2030,48 @@
                 speak {{ModId}}_SKZIN \"Wait...\"/
                 changeYSourceRectOffset {{ModId}}_SKZIN 160/
                 move {{ModId}}_SKZIN 0 0 2/
-               
                 speak {{ModId}}_SKZIN \"They all had caffeine?\"/
                 speak {{ModId}}_SKZIN \"Oh no...\"/
+                // speak {{ModId}}_SKZIN \"Who is that?\"/
+                // speak {{ModId}}_SKZIN \"Uuwahhhh…\"/
+                // pause 300/
+                // speak {{ModId}}_SKZIN \"@, sorry I can't get out of bed right now.\"/
+                // speak {{ModId}}_SKZIN \"I really don't feel good. It was not a good idea to drink so many Joja colas.\"/
+                // speak {{ModId}}_SKZIN \"Do you have any water?\"/
+                // emote farmer 40/
+                // pause 700/
+                // speak {{ModId}}_SKZIN \"Thank you, @. You know you're not so bad. Maybe I should let you take care of me every now and again.\"/
+                // speak {{ModId}}_SKZIN \"Let's get Joja Colas together when I'm feeling better.\"/
+                end/",
+                "{{ModId}}_SKZINEvent6/f {{ModId}}_SKZIN 750/Time 900 1500": "none/follow/
+                farmer 10 6 1 {{ModId}}_SKZIN 11 6 2 {{ModId}}_SKZFelix 1000 1000 0 {{ModId}}_SKZHyunjin 1000 1000 0 {{ModId}}_SKZBangChan 1000 1000 0/
+                changeYSourceRectOffset {{ModId}}_SKZIN 160/
+                skippable/
+                viewport 10 6 clamp/
+                emote farmer 40/
+                pause 1000/
+                speak {{ModId}}_SKZBangChan \"Oh Yoba, it's true.\"/
+                warp {{ModId}}_SKZBangChan 8 14/
+                move {{ModId}}_SKZBangChan 0 -1 0/
+                warp {{ModId}}_SKZHyunjin 8 14/
+                move {{ModId}}_SKZBangChan 0 -1 0 {{ModId}}_SKZHyunjin 0 -1 0/
+                warp {{ModId}}_SKZFelix 8 14/
+                move {{ModId}}_SKZBangChan 0 -1 0 {{ModId}}_SKZHyunjin 0 -1 0 {{ModId}}_SKZFelix 0 -1 0 /
+                move {{ModId}}_SKZBangChan 1 0 0 {{ModId}}_SKZHyunjin 0 -1 0 {{ModId}}_SKZFelix 0 -1 0/
+                move {{ModId}}_SKZBangChan 1 0 0 {{ModId}}_SKZHyunjin 1 0 0 {{ModId}}_SKZFelix 0 -1 0/
+                move {{ModId}}_SKZBangChan 0 -1 0 {{ModId}}_SKZHyunjin 1 0 0 {{ModId}}_SKZFelix 1 0 0/
+                move {{ModId}}_SKZBangChan 0 -1 0 {{ModId}}_SKZHyunjin 1 0 0 {{ModId}}_SKZFelix 1 0 0/
+                move {{ModId}}_SKZBangChan 0 -1 0 {{ModId}}_SKZHyunjin 0 -1 0 {{ModId}}_SKZFelix 1 0 0  /
+                move {{ModId}}_SKZBangChan 0 -1 1 {{ModId}}_SKZHyunjin 0 -1 0 {{ModId}}_SKZFelix 1 0 0  /
+                move {{ModId}}_SKZHyunjin 0 -1 0 {{ModId}}_SKZFelix 0 -1 0 {{ModId}}_SKZFelix 0 -1 0 /
+                move {{ModId}}_SKZFelix 0 -1 0 {{ModId}}_SKZFelix 0 -1 0 /
+                move {{ModId}}_SKZFelix 0 -1 0/
+                speak {{ModId}}_SKZHyunjin \"Our baby is sick! Hold on tight little bread we've got you!\"/
+                speak {{ModId}}_SKZBangChan \"Felix, turn on the stethoscope! Hyunjin get the medicine! @, you already got water I see good job\"/
+                speak {{ModId}}_SKZBangChan \"I'm going to charge up my super special healing hug.\"/
+                pause 500/
                 end/"
-                
             }
-//             Script:
-// The farmer walks into I.N’s room and he is sat behind his table filled with like 20 cans of Joja Cola.
-// Welcome, Stays
-// It’s been a while since we’ve spoken.
-// We’ve been so busy preparing a special project for you in this town. My English has even gotten better!
-// Since we’re here, I thought I’d show you something from this town that I really love.
-// Joja Cola!
-// Today I’m going to be trying every single flavor of Joja cola for you. Just don’t tell Bang Chan.
-// First, we have the original.
-// *drinks Joja Cola* (plz add sound)
-// Delicious!
-// I really needed the energy since We’ve all been working so hard.
-// Next, Joja zero sugar.
-// *drinks Joja Cola* (plz add sound)
-// Just as good! I can’t believe they managed to put in all the energy and taste with no sugar! I’ll try Cherry Joja next.
-// *drinks Joja Cola* (plz add sound)
-// Wow! Such a unique taste. I can really taste the cherry! Next up is Joja no caffeine.
-// Wait…
-// They all had caffeine?
-// Oh no…
-// *In starts to shake
-// I don’t feel good… Oh…
-// @! When did you get here???
-// Don’t look at me!
-// Turn the camera off!
-
         },
         {
         "LogName": "Beach Events",
