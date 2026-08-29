@@ -267,6 +267,16 @@
         },
         {
             "Action": "Load",
+            "Target": "TileSheets/{{ModId}}_LeeSonDonDor",
+            "FromFile": "Tilesets/Lee SonDonDor.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/{{ModId}}_LeeSonDonDor",
+            "FromFile": "Tilesets/Lee SonDonDor.png"
+        },
+        {
+            "Action": "Load",
             "Target": "Maps/{{ModId}}_StayHotel_Felix",
             "FromFile": "Tilesets/StayHotel_Felix.tmx"
         },
@@ -1415,6 +1425,60 @@
                 message \"You threw Seungmin's keys into the fountain!\"/
                 speak {{ModId}}_SKZSeungmin \"No!! I didn’t deserve that!!\"/
                 end/",
+
+                "{{ModId}}_SKZLeeKnowEvent2/f {{ModId}}_SKZLeeKnow 250/Time 900 1500": "none/follow/
+                farmer 14 56 2 {{ModId}}_SKZLeeKnow 6 65 2/
+                skippable/
+                
+                
+                
+                speak {{ModId}}_SKZLeeKnow \"pspspsps\"/
+                move farmer 0 9 2/
+                emote {{ModId}}_SKZLeeKnow 40/
+                speak {{ModId}}_SKZLeeKnow \"Kitty kitty kitty!\"/
+                move farmer -6 0 3/
+                move {{ModId}}_SKZLeeKnow -1 0 3/
+                speak {{ModId}}_SKZLeeKnow \"meow!\"/
+                move {{ModId}}_SKZLeeKnow -1 0 2/
+                speak {{ModId}}_SKZLeeKnow \"MEOW MEOW!\"/
+                move {{ModId}}_SKZLeeKnow 2 0 1/
+                emote {{ModId}}_SKZLeeKnow 16/
+                pause 1000/
+                speak {{ModId}}_SKZLeeKnow \"Where did you come from?\"/
+                speak {{ModId}}_SKZLeeKnow \"Don't mind me, you can walk around but don't make too much noise.\"/
+
+                speak {{ModId}}_SKZLeeKnow \"Soonie!\"/
+                move {{ModId}}_SKZLeeKnow -1 0 3/
+                speak {{ModId}}_SKZLeeKnow \"pspspsps\"/
+                emote {{ModId}}_SKZLeeKnow 40/
+                move {{ModId}}_SKZLeeKnow 2 0 1/
+                speak {{ModId}}_SKZLeeKnow \"I lost my cat.\"/
+                speak {{ModId}}_SKZLeeKnow \"I was just opening my window to get a better view of Bangchan's butt.\"/
+                speak {{ModId}}_SKZLeeKnow \"And he jumped out!\"/
+                speak {{ModId}}_SKZLeeKnow \"I've been chasing him all around town.\"/
+                speak {{ModId}}_SKZLeeKnow \"Now he's stuck in this tree.\"/
+                move {{ModId}}_SKZLeeKnow -1 0 0/
+                speak {{ModId}}_SKZLeeKnow \"Soonie! Come down!\"/
+                move {{ModId}}_SKZLeeKnow 0 0 1/
+                speak {{ModId}}_SKZLeeKnow \"You see him?\"/
+                speak {{ModId}}_SKZLeeKnow \"Soonie...\"/
+                move {{ModId}}_SKZLeeKnow 0 0 0/
+                move {{ModId}}_SKZLeeKnow -3 0 0/
+                emote {{ModId}}_SKZLeeKnow 40/
+                addTemporaryActor {{ModId}}_LeeSonDonDor 32 32 4 61 2 true Animal Soonie/
+                ignoreMovementAnimation Soonie/
+                speed Soonie 5/ 
+                move Soonie 0 4 0 true/
+                shake Soonie 1000/
+                pause 1000/
+                showframe Soonie 2/
+                move {{ModId}}_SKZLeeKnow 0 0 1/
+                speak {{ModId}}_SKZLeeKnow \"Soonie!\"/
+                speak {{ModId}}_SKZLeeKnow \"I missed you!\"/
+                speak {{ModId}}_SKZLeeKnow \"Don't ever run away again.\"/
+                speak {{ModId}}_SKZLeeKnow \"Hey thanks for that, I think we should head home now.\"/
+                speak {{ModId}}_SKZLeeKnow \"I have more watching to do.\"/
+                end/",
                 "{{ModId}}_SKZSeungminEvent6/f {{ModId}}_SKZSeungmin 1500/Time 900 1500": "none/follow/
                 farmer 24 30 3 {{ModId}}_SKZSeungmin 28 30 2/
                 skippable/
@@ -2074,93 +2138,59 @@
             }
         },
         {
-        "LogName": "Beach Events",
+        "LogName": "Stay Hotel Events",
         "Action": "EditData",
-        "Target": "Data/Events/Beach",
+        "Target": "Data/Events/StayHotel",
         "Entries": {
-            "{{ModId}}_SKZHanEvent4/f {{ModId}}_SKZHan 500/Time 900 1500": "none/follow/
-            farmer 38 4 2 {{ModId}}_SKZHan 38 7 3/
+         "{{ModId}}_SKZLeeKnowEvent6/f {{ModId}}_SKZLeeKnow 750/Time 900 1500": "none/follow/
+            farmer 25 22 3 {{ModId}}_SKZLeeKnow 23 22 2 {{ModId}}_SKZHan 23 27 2 {{ModId}}_SKZBangChan 22 26 1 {{ModId}}_SKZChangBin 24 26 3  /
             skippable/
-            viewport 38 7 clamp/
-            move {{ModId}}_SKZHan 0 2 2 true/
-            jump {{ModId}}_SKZHan 12/
-            speak {{ModId}}_SKZHan \"AAh!\"/
-            speak {{ModId}}_SKZHan \"Get back here!\"/
-            move {{ModId}}_SKZHan 0 2 2 true/
-            jump {{ModId}}_SKZHan 12/
-            pause 300/
-            speak {{ModId}}_SKZHan \"Nooo.\"/
-            move {{ModId}}_SKZHan 0 2 0/
-            speak {{ModId}}_SKZHan \"@! Be quiet for a moment please.\"/
-            speak {{ModId}}_SKZHan \"Don't make a move.\"/
-            speak {{ModId}}_SKZHan \"Three.\"/
-            speak {{ModId}}_SKZHan \"Two.\"/
-            speak {{ModId}}_SKZHan \"One.\"/
-            speak {{ModId}}_SKZHan \"Go!\"/
-            pause 300/
-            move {{ModId}}_SKZHan 0 2 2 true/
-            jump {{ModId}}_SKZHan 12/
-            pause 300/
-            speak {{ModId}}_SKZHan \"Got him!\"/
-            speak {{ModId}}_SKZHan \"Yes!!!\"/
-            speak {{ModId}}_SKZHan \"Richard is eating well tonight, worms and crickets.\"/
+            viewport 23 22 clamp/
+            move farmer -1 0 3/
+            emote {{ModId}}_SKZLeeKnow 16/
+            move {{ModId}}_SKZLeeKnow 0 0 3/
+            speak {{ModId}}_SKZLeeKnow \"@...$3\"/
+            speak {{ModId}}_SKZLeeKnow \"You found me...$3\"/
+            speak {{ModId}}_SKZLeeKnow \"Be quiet.$3\"/
+            speak {{ModId}}_SKZLeeKnow \"I'm hunting.$3\"/
+            move {{ModId}}_SKZLeeKnow 0 0 2/
+            changeYSourceRectOffset {{ModId}}_SKZLeeKnow 192/
+            showframe {{ModId}}_SKZLeeKnow 0/
+            speak {{ModId}}_SKZLeeKnow \"I'm sure they have no idea.$3\"/
+            speak {{ModId}}_SKZLeeKnow \"What's in store for them.$3\"/
+            speak {{ModId}}_SKZLeeKnow \"But first I have to decide.$3\"/
+            speak {{ModId}}_SKZLeeKnow \"Whose butt should I hunt first.$3\"/
+            speak {{ModId}}_SKZLeeKnow \"Jeongin's butt is so soft and cute.$3\"/
+            speak {{ModId}}_SKZLeeKnow \"Hyunjin has a gorgeous butt.$3\"/
+            speak {{ModId}}_SKZLeeKnow \"And Bang Chan...$3\"/
+            speak {{ModId}}_SKZLeeKnow \"His butt is the biggest of them all.$3\"/
+            speak {{ModId}}_SKZLeeKnow \"The real prize.$3\"/
+            speak {{ModId}}_SKZLeeKnow \"So, who should I target?$3\"/
+            question \"Who should Lee Know target?\" \"Bang Chan\" \"Hyunjin\" \"I.N\"/
+            speak {{ModId}}_SKZLeeKnow \"Excellent choice.$3\"/
+            speak {{ModId}}_SKZLeeKnow \"Now, you go down there and distract them while I work my magic.$3\"/
+            emote farmer 12/
+            move farmer 5 0 3/
+            move farmer 0 3 2/
+            move farmer -5 0 2/
+            emote {{ModId}}_SKZHan 24/
+            emote {{ModId}}_SKZChangBin 24/
+            emote {{ModId}}_SKZBangChan 24/
             move {{ModId}}_SKZHan 0 0 0/
-            speak {{ModId}}_SKZHan \"Sorry, @, you can walk again now.\"/
-            move farmer 0 10 2/
-            speak {{ModId}}_SKZHan \"I just had to catch some bugs for my daughter.\"/
-            speak {{ModId}}_SKZHan \"Why are you looking at me like that?\"/
-            speak {{ModId}}_SKZHan \"Oh, my daughter is a lizard named Richard, I love her very much.\"/
-            speak {{ModId}}_SKZHan \"They don't sell lizard food here in Pelican Town so I have to catch bugs myself.\"/
-            speak {{ModId}}_SKZHan \"It was kinda freaky at first but anything for my kid.\"/
-            speak {{ModId}}_SKZHan \"Anyway, it's feeding time, see you later, @\"/
-            speak {{ModId}}_SKZHan \"Skrr.\"/
-            end/",
-            "{{ModId}}_SKZINEvent2/f {{ModId}}_SKZIN 500/Time 900 1500": "none/follow/
-            farmer 38 4 2 {{ModId}}_SKZIN 38 7 3 {{ModId}}_SKZFelix 36 7 1 {{ModId}}_SKZBangChan 40 7 3 {{ModId}}_SKZHyunjin 38 9 0/
-            skippable/
-            viewport 38 7 clamp/
-            move {{ModId}}_SKZIN 0 0 1/
-            speak {{ModId}}_SKZBangChan \"Just come a little closer!\"/
-            move {{ModId}}_SKZIN 0 0 3/
-            speak {{ModId}}_SKZFelix \"We nearly got him.\"/
-            move {{ModId}}_SKZIN 0 0 2/
-            speak {{ModId}}_SKZHyunjin \"So cute! He pretends not to love us.\"/
-            emote {{ModId}}_SKZIN 12/
-            pause 700/
-            speak {{ModId}}_SKZIN \"Go away!\"/
-            speak {{ModId}}_SKZIN \"Noooo!\"/
-            move {{ModId}}_SKZIN 0 0 1/
-            pause 500/
-            speak {{ModId}}_SKZIN \"Let me escape!\"/
-            speak {{ModId}}_SKZFelix \"But you’re so cute!\"/
-            move {{ModId}}_SKZIN 0 0 3/
-            speak {{ModId}}_SKZHyunjin \"Just let me pinch your cheeks a little.\"/
-            move {{ModId}}_SKZIN 0 0 2/
-            speak {{ModId}}_SKZFelix \"Do you need us to help you build your sandcastle?\"/
-            move {{ModId}}_SKZIN 0 0 3/
-            speak {{ModId}}_SKZBangChan \"Are you eating enough?\"/
-            move {{ModId}}_SKZIN 0 0 1/
-            speak {{ModId}}_SKZFelix \"Do you need me to bake you some cookies?\"/
-            move {{ModId}}_SKZIN 0 0 3/
-            speak {{ModId}}_SKZIN \"Cookies do sound nice…\"/
-            speak {{ModId}}_SKZBangChan \"I thought so! Come here and let us take care of you.\"/
-            move {{ModId}}_SKZIN 0 0 1/
-            speak {{ModId}}_SKZIN \"NOo!\"/
-            move {{ModId}}_SKZIN 0 0 0/
-            speak {{ModId}}_SKZIN \"@! Save me!\"/
-            move {{ModId}}_SKZIN 0 -1 3 true/
-            move farmer 1 0 2 true/
-            speak {{ModId}}_SKZIN \"I’m not a baby anymore!\"/
-            move {{ModId}}_SKZIN 0 -2 2/
-            move {{ModId}}_SKZFelix 0 0 0/
+            move {{ModId}}_SKZChangBin 0 0 0/
             move {{ModId}}_SKZBangChan 0 0 0/
-            move {{ModId}}_SKZHyunjin 0 0 0/
-            pause 500/
-            speak {{ModId}}_SKZHyunjin \"He’s so cute when he does that.\"/
-            speak {{ModId}}_SKZBangChan \"Eee I can’t wait for him to come back.\"/
-         
+            speak {{ModId}}_SKZHan \"Were you just talking to Lee Know?\"/
+            speak {{ModId}}_SKZChangBin \"He knows we know we can see him, right?$5\"/
+            speak {{ModId}}_SKZHan \"He probably wants to touch our butts again.$2\"/
+            speak {{ModId}}_SKZBangChan \"MINHO!$5\"/
+            speak {{ModId}}_SKZBangChan \"STOP BEING CREEPY WE CAN SEE WHAT YOU'RE DOING!$5\"/
+            emote {{ModId}}_SKZLeeKnow 12/
+            speak {{ModId}}_SKZLeeKnow \"...$3\"/
+            speak {{ModId}}_SKZLeeKnow \"You won this time...$3\"/
+            move {{ModId}}_SKZLeeKnow 3 0 1/
+
             end/"
-            }
+        }
         },
 
         {
@@ -2476,6 +2506,12 @@
             "Target": "Data/Events/StayHotelBangChan",
             "FromFile": "assets/blank.json"
         },
+        {
+            "LogName": "Felix Final",
+            "Action": "Load",
+            "Target": "Data/Events/StayHotel",
+            "FromFile": "assets/blank.json"
+        },
 
         {
             "LogName": "Felix Final",
@@ -2772,7 +2808,54 @@
                 move {{ModId}}_SKZChangBin 0 0 3/
                 speak {{ModId}}_SKZChangBin \"THAT WAS FUN!\"/
                 speak {{ModId}}_SKZChangBin \"WANT ME TO BRING THIS TO YOUR HOUSE!?\"/
-                end"
+                end/",
+            
+            "{{ModId}}_SKZLeeKnowEvent4/f {{ModId}}_SKZLeeKnow 500/Time 900 1500": "none/follow/
+                farmer 17 9 0 {{ModId}}_SKZLeeKnow -1000 -1000 2/
+                viewport 17 9/
+                skippable/
+                speak {{ModId}}_SKZLeeKnow \"Wait up, @!\"/
+                warp {{ModId}}_SKZLeeKnow 18 12/
+                move {{ModId}}_SKZLeeKnow 0 -3 3/
+                move farmer 0 0 1/
+                speak {{ModId}}_SKZLeeKnow \"You're about to go into the mines, right?\"/
+                speak {{ModId}}_SKZLeeKnow \"Everybody in the town told me to stay away from that place.\"/
+                speak {{ModId}}_SKZLeeKnow \"It's super scary.$1\"/
+                speak {{ModId}}_SKZLeeKnow \"So I want to go with you.$5\"/
+                emote farmer 8/
+                speak {{ModId}}_SKZLeeKnow \"Why?\"/
+                speak {{ModId}}_SKZLeeKnow \"So that I can sleep well tonight.\"/
+                speak {{ModId}}_SKZLeeKnow \"I can't sleep without an adequate amount of fear in my system.$1\"/
+                speak {{ModId}}_SKZLeeKnow \"So, I spoke to that old guy with the eye patch and he helped me out.\"/
+                speak {{ModId}}_SKZLeeKnow \"He told me all about what you can find down there.\"/
+                move {{ModId}}_SKZLeeKnow 0 -2 0/
+                move {{ModId}}_SKZLeeKnow -1 0 2/
+                move farmer 0 0 0/
+                speak {{ModId}}_SKZLeeKnow \"I really want to see the creepy face guys on the lava levels!$1\"/
+                speak {{ModId}}_SKZLeeKnow \"He even gave me this!\"/
+                changeYSourceRectOffset {{ModId}}_SKZLeeKnow 128/
+                showFrame {{ModId}}_SKZLeeKnow 0/
+                emote farmer 16/
+                speak {{ModId}}_SKZLeeKnow \"Why do you look like that?$2\"/
+                speak {{ModId}}_SKZLeeKnow \"Did I do something wrong?\"/
+                speak {{ModId}}_SKZLeeKnow \"...\"/
+                ignoreMovementAnimation {{ModId}}_SKZLeeKnow/
+                move farmer 0 -1 0/
+                speak {{ModId}}_SKZLeeKnow \"What are you doing?\"/
+                jump {{ModId}}_SKZLeeKnow 8/
+                speed {{ModId}}_SKZLeeKnow 5/
+                move {{ModId}}_SKZLeeKnow 0 -2 2/
+                changeYSourceRectOffset {{ModId}}_SKZLeeKnow 0/
+                speak {{ModId}}_SKZLeeKnow \"Aack!$5\"/
+                move farmer 0 -1 0/
+                speak {{ModId}}_SKZLeeKnow \"Don't take that from me!\"/
+                message \"You take it from him\"/
+                speak {{ModId}}_SKZLeeKnow \"Nooo!$2\"/
+                speak {{ModId}}_SKZLeeKnow \"You don't trust me?\"/
+                speak {{ModId}}_SKZLeeKnow \"Yea maybe that's smart of you...$2\"/
+                speak {{ModId}}_SKZLeeKnow \"Chan will probably thank you later.$1\"/
+                speak {{ModId}}_SKZLeeKnow \"I guess I'll just have to get my fix elsewhere.\"/
+                end/"
             }
         },                
         {
