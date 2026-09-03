@@ -1388,6 +1388,7 @@
                 speak {{ModId}}_SKZSeungmin \"What’s that? This isn’t a good idea? No sorry, I can’t hear you. This is gonna be so fun.\"/  
                 emote farmer 40/
                 end/",
+                
                 "{{ModId}}_SKZSeungminEvent4/f {{ModId}}_SKZSeungmin 1500/Time 900 1500": "none/follow/
                 farmer 24 30 3 {{ModId}}_SKZSeungmin 28 30 2/
                 skippable/
@@ -1425,7 +1426,7 @@
                 message \"You threw Seungmin's keys into the fountain!\"/
                 speak {{ModId}}_SKZSeungmin \"No!! I didn’t deserve that!!\"/
                 end/",
-
+                
                 "{{ModId}}_SKZLeeKnowEvent2/f {{ModId}}_SKZLeeKnow 250/Time 900 1500": "none/follow/
                 farmer 14 56 2 {{ModId}}_SKZLeeKnow 6 65 2/
                 skippable/
@@ -2143,16 +2144,17 @@
         "Target": "Data/Events/StayHotel",
         "Entries": {
          "{{ModId}}_SKZLeeKnowEvent6/f {{ModId}}_SKZLeeKnow 750/Time 900 1500": "none/follow/
-            farmer 25 22 3 {{ModId}}_SKZLeeKnow 23 22 2 {{ModId}}_SKZHan 23 27 2 {{ModId}}_SKZBangChan 22 26 1 {{ModId}}_SKZChangBin 24 26 3  /
+            farmer 23 22 3 {{ModId}}_SKZLeeKnow 21 22 2 {{ModId}}_SKZHan 21 27 0 {{ModId}}_SKZBangChan 20 26 1 {{ModId}}_SKZChangBin 22 26 3  /
             skippable/
             viewport 23 22 clamp/
             move farmer -1 0 3/
             emote {{ModId}}_SKZLeeKnow 16/
-            move {{ModId}}_SKZLeeKnow 0 0 3/
-            speak {{ModId}}_SKZLeeKnow \"@...$3\"/
-            speak {{ModId}}_SKZLeeKnow \"You found me...$3\"/
-            speak {{ModId}}_SKZLeeKnow \"Be quiet.$3\"/
-            speak {{ModId}}_SKZLeeKnow \"I'm hunting.$3\"/
+            move {{ModId}}_SKZLeeKnow 0 0 1/
+
+            speak {{ModId}}_SKZLeeKnow \"@...$1\"/
+            speak {{ModId}}_SKZLeeKnow \"You found me...$1\"/
+            speak {{ModId}}_SKZLeeKnow \"Be quiet.$1\"/
+            speak {{ModId}}_SKZLeeKnow \"I'm hunting.$1\"/
             move {{ModId}}_SKZLeeKnow 0 0 2/
             changeYSourceRectOffset {{ModId}}_SKZLeeKnow 192/
             showframe {{ModId}}_SKZLeeKnow 0/
@@ -2166,16 +2168,18 @@
             speak {{ModId}}_SKZLeeKnow \"His butt is the biggest of them all.$3\"/
             speak {{ModId}}_SKZLeeKnow \"The real prize.$3\"/
             speak {{ModId}}_SKZLeeKnow \"So, who should I target?$3\"/
-            question \"Who should Lee Know target?\" \"Bang Chan\" \"Hyunjin\" \"I.N\"/
-            speak {{ModId}}_SKZLeeKnow \"Excellent choice.$3\"/
+            quickQuestion Who should Lee Know target?#Bang Chan.#Hyunjin.#I.N.
+            (break)speak {{ModId}}_SKZLeeKnow \"Excellent choice.\"
+            (break)speak {{ModId}}_SKZLeeKnow \"Excellent choice.\"
+            (break)speak {{ModId}}_SKZLeeKnow \"Excellent choice.\"/
             speak {{ModId}}_SKZLeeKnow \"Now, you go down there and distract them while I work my magic.$3\"/
             emote farmer 12/
-            move farmer 5 0 3/
+            move farmer 7 0 3/
             move farmer 0 3 2/
-            move farmer -5 0 2/
-            emote {{ModId}}_SKZHan 24/
-            emote {{ModId}}_SKZChangBin 24/
-            emote {{ModId}}_SKZBangChan 24/
+            move farmer -8 0 2/
+            emote {{ModId}}_SKZHan 16/
+            emote {{ModId}}_SKZChangBin 16/
+            emote {{ModId}}_SKZBangChan 16/
             move {{ModId}}_SKZHan 0 0 0/
             move {{ModId}}_SKZChangBin 0 0 0/
             move {{ModId}}_SKZBangChan 0 0 0/
@@ -2184,16 +2188,152 @@
             speak {{ModId}}_SKZHan \"He probably wants to touch our butts again.$2\"/
             speak {{ModId}}_SKZBangChan \"MINHO!$5\"/
             speak {{ModId}}_SKZBangChan \"STOP BEING CREEPY WE CAN SEE WHAT YOU'RE DOING!$5\"/
-            emote {{ModId}}_SKZLeeKnow 12/
             speak {{ModId}}_SKZLeeKnow \"...$3\"/
             speak {{ModId}}_SKZLeeKnow \"You won this time...$3\"/
+            changeYSourceRectOffset {{ModId}}_SKZLeeKnow 0/
             move {{ModId}}_SKZLeeKnow 3 0 1/
 
             end/"
         }
         },
-
         {
+        "LogName": "Stay Hotel Lee Know",
+        "Action": "EditData",
+        "Target": "Data/Events/StayHotelLeeKnow",
+        "Entries": {
+           "{{ModId}}_SKZLeeKnowEvent8/f {{ModId}}_SKZLeeKnow 1250/Time 900 1500": "none/follow/
+            farmer 8 12 0 {{ModId}}_SKZLeeKnow 8 6 2/
+            skippable/
+            viewport 8 10 clamp/
+            changeYSourceRectOffset {{ModId}}_SKZLeeKnow 160/
+            showFrame {{ModId}}_SKZLeeKnow 0/
+            speak {{ModId}}_SKZLeeKnow \"One, two, three...$7\"/
+            showFrame {{ModId}}_SKZLeeKnow 0/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 1/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 2/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 3/
+            pause 300/
+            showFrame {{ModId}}_SKZLeeKnow 0/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 1/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 2/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 3/
+            pause 300/
+            showFrame {{ModId}}_SKZLeeKnow 0/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 1/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 2/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 3/
+            pause 300/
+            showFrame {{ModId}}_SKZLeeKnow 0/
+            pause 50/
+            move {{ModId}}_SKZLeeKnow 0 1 2/
+            speak {{ModId}}_SKZLeeKnow \"And the other day and night at my house is so much more...$7\"/
+            showFrame {{ModId}}_SKZLeeKnow 0/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 1/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 2/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 3/
+            pause 300/
+            showFrame {{ModId}}_SKZLeeKnow 0/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 1/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 2/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 3/
+            pause 300/
+            showFrame {{ModId}}_SKZLeeKnow 0/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 1/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 2/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 3/
+            pause 300/
+            showFrame {{ModId}}_SKZLeeKnow 0/
+            pause 50/
+            move {{ModId}}_SKZLeeKnow 0 1 2/
+            speak {{ModId}}_SKZLeeKnow \"Zero hour ago but I’m sure you don’t want to know that...$7\"/
+            speak {{ModId}}_SKZLeeKnow \"@... you're here.$7\"/
+            speak {{ModId}}_SKZLeeKnow \"But why are you so scary?$7\"/
+            speak {{ModId}}_SKZLeeKnow \"Where did you go?$7\"/
+            speak {{ModId}}_SKZLeeKnow \"Oh no...$7\"/
+            showFrame {{ModId}}_SKZLeeKnow 0/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 1/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 2/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 3/
+            pause 300/
+            showFrame {{ModId}}_SKZLeeKnow 0/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 1/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 2/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 3/
+            pause 300/
+            showFrame {{ModId}}_SKZLeeKnow 0/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 1/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 2/
+            pause 50/
+            showFrame {{ModId}}_SKZLeeKnow 3/
+            pause 300/
+            showFrame {{ModId}}_SKZLeeKnow 0/
+            pause 50/
+            move {{ModId}}_SKZLeeKnow 0 3 2/
+            speak {{ModId}}_SKZLeeKnow \"For me to do it again but it’s not just for fun.$7\"/
+            pause 500/
+            screenFlash 1/
+            jump {{ModId}}_SKZLeeKnow 2/
+            changeYSourceRectOffset {{ModId}}_SKZLeeKnow 0/
+            speak {{ModId}}_SKZLeeKnow \"AAH!$5\"/
+            speak {{ModId}}_SKZLeeKnow \"Ow! Why are you hurting me? Where am I? Was I asleep?$6\"/
+            speak {{ModId}}_SKZLeeKnow \"I must have been sleepwalking.$6\"/
+            speak {{ModId}}_SKZLeeKnow \"I’m glad you were here to wake me up, thanks!$1\"/
+            speak {{ModId}}_SKZLeeKnow \"I guess I need to watch more scary movies to help me sleep better...$2\"/
+            end/",
+            "{{ModId}}_SKZLeeKnowEvent10/f {{ModId}}_SKZLeeKnow 1500/Time 900 1500": "none/follow/
+            farmer 11 11 1 {{ModId}}_SKZLeeKnow 12 11 1/
+            skippable/
+            viewport 11 11 clamp/
+            speak {{ModId}}_SKZLeeKnow \"Why do I even have to do this? The other members are way better solo than me.$2\"/
+            speak {{ModId}}_SKZLeeKnow \"I have no idea what to say.\"/
+            speak {{ModId}}_SKZLeeKnow \"I could talk about the weather? Or my cats?$6\"/
+            speak {{ModId}}_SKZLeeKnow \"There’s just so much time though and I have so little things to say.$2\"/
+            move {{ModId}}_SKZLeeKnow 0 0 3/
+            speak {{ModId}}_SKZLeeKnow \"@, when did you get here?\"/
+            speak {{ModId}}_SKZLeeKnow \"Chan said I should do a live stream since I haven’t done one in a while.\"/
+            speak {{ModId}}_SKZLeeKnow \"I really don’t want to.$2\"/
+            speak {{ModId}}_SKZLeeKnow \"But it’s fine don’t worry about it.$2\"/
+            speak {{ModId}}_SKZLeeKnow \"I guess I’ll just push through.\"/
+            move {{ModId}}_SKZLeeKnow 0 0 1/
+            speak {{ModId}}_SKZLeeKnow \"Time to press start.\"/
+            speak {{ModId}}_SKZLeeKnow \"Hello everybody it’s Lee Know!$1\"/
+            speak {{ModId}}_SKZLeeKnow \"...$1\"/
+            speak {{ModId}}_SKZLeeKnow \"...\"/
+            speak {{ModId}}_SKZLeeKnow \"...$2\"/
+            speak {{ModId}}_SKZLeeKnow \"...$5\"/
+            speak {{ModId}}_SKZLeeKnow \"Okay bye!$1\"/
+            emote farmer 28/
+            speak {{ModId}}_SKZLeeKnow \"Was that too short?\"/
+            end/"
+            }
+            },
+            {
             "Action": "EditData",
             "Target": "Data/Events/BusStop",
             "Entries": {
@@ -2498,6 +2638,12 @@
             "LogName": "Felix Final",
             "Action": "Load",
             "Target": "Data/Events/StayHotelFelix",
+            "FromFile": "assets/blank.json"
+        },
+        {
+            "LogName": "Lee Know ",
+            "Action": "Load",
+            "Target": "Data/Events/StayHotelLeeKnow",
             "FromFile": "assets/blank.json"
         },
         {
